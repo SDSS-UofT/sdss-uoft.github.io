@@ -50,7 +50,7 @@ li {
     padding-right: 10px;
     /*margin-left: 150px;*/
     /*margin-right: 150px;*/
-
+    text-decoration: none;
 }
 
 .nav-links a:hover{
