@@ -14,6 +14,57 @@ body {
         margin-left: 9vmin;
         margin-right: 9vmin;
     }
+    .intro2{
+        font-size: 10vmin;
+    }
+
+    .intro-container {
+        float: none;
+        padding-bottom: 10%;
+    }
+
+    .intro-body-container img{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        left: 30%;
+    }
+
+    .intro-body-container{
+        font-size: 2.5vmax;
+    }
+
+    .button-container {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .about-us{
+        margin-top: 100%;
+        margin-bottom: 10%;
+    }
+
+    .about-us-container{
+        position: center;
+    }
+
+    .subtitle{
+        font-weight: 700;
+        font-size: 8vmin;
+        text-align: center;
+    }
+
+    .about-us-left{
+        float: none;
+        text-align: center;
+        display: block;
+        padding-top: 1%;
+    }
+
+    .about-us-right{
+        margin-left: 0;
+        padding-top: 5%;
+    }
 
 }
 
@@ -156,34 +207,6 @@ li {
 }
 
 
-/* If the screen size is 640px wide or less */
-@media screen and (max-width: 1000px) {
-    .intro2{
-        font-size: 10vmin;
-    }
-
-    .intro-container {
-        float: none;
-        padding-bottom: 10%;
-    }
-
-    .intro-body-container img{
-        position: absolute;
-        top: 10%;
-        width: 100%;
-        left: 30%;
-    }
-
-    .intro-body-container{
-        font-size: 2.5vmax;
-    }
-
-    .button-container{
-        width: 100%;
-        padding-top: 10%;
-    }
-}
-
 /*intro end*/
 
 /* subtitle styling */
@@ -224,35 +247,6 @@ li {
 .about-us-right{
     display: flex;
     margin-left: 40%;
-}
-
-@media screen and (max-width: 1000px) {
-    .about-us{
-        margin-top: 100%;
-        margin-bottom: 10%;
-    }
-
-    .about-us-container{
-        position: center;
-    }
-
-    .subtitle{
-        font-weight: 700;
-        font-size: 8vmin;
-        text-align: center;
-    }
-
-    .about-us-left{
-        float: none;
-        text-align: center;
-        display: block;
-        padding-top: 1%;
-    }
-
-    .about-us-right{
-        margin-left: 0;
-        padding-top: 5%;
-    }
 }
 
 /*OUR TEAMS STYLING*/
