@@ -9,7 +9,7 @@ body {
     margin-right: 20%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .content{
         margin-left: 9vmin;
         margin-right: 9vmin;
@@ -157,7 +157,7 @@ li {
 
 
 /* If the screen size is 640px wide or less */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .intro2{
         font-size: 10vmin;
     }
@@ -226,7 +226,7 @@ li {
     margin-left: 40%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .about-us{
         margin-top: 100%;
         margin-bottom: 10%;
