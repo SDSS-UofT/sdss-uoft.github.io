@@ -39,33 +39,6 @@ body {
         padding-top: 10%;
     }
 
-    .about-us{
-        margin-top: 100%;
-        margin-bottom: 10%;
-    }
-
-    .about-us-container{
-        position: center;
-    }
-
-    .subtitle{
-        font-weight: 700;
-        font-size: 8vmin;
-        text-align: center;
-    }
-
-    .about-us-left{
-        float: none;
-        text-align: center;
-        display: block;
-        padding-top: 1%;
-    }
-
-    .about-us-right{
-        margin-left: 0;
-        padding-top: 5%;
-    }
-
 }
 
 * {
@@ -247,6 +220,35 @@ li {
 .about-us-right{
     display: flex;
     margin-left: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us{
+        margin-top: 100%;
+        margin-bottom: 10%;
+    }
+
+    .about-us-container{
+        position: center;
+    }
+
+    .subtitle{
+        font-weight: 700;
+        font-size: 8vmin;
+        text-align: center;
+    }
+
+    .about-us-left{
+        float: none;
+        text-align: center;
+        display: block;
+        padding-top: 1%;
+    }
+
+    .about-us-right{
+        margin-left: 0;
+        padding-top: 5%;
+    }
 }
 
 /*OUR TEAMS STYLING*/
