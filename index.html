@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <nav class="navbar ms-auto" id="navBar">
@@ -14,14 +14,25 @@
     <a href="index.html"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
     <!-- NAVIGATION MENU -->
     <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <!-- NAVIGATION MENUS -->
         <div class="menu">
             <li class="About Us"><a href="">About Us</a></li>
-            <li><a href="">Our Team</a></li>
+            <li class="our-team-navbar">
+                <a href="/">Our Team</a>
+            <ul class="dropdown">
+                <li><a href="/">Internal</a></li>
+                <li><a href="/">Professional Development</a></li>
+                <li><a href="/">Academic Development</a></li>
+                <li><a href="/">Consulting</a></li>
+            </ul>
             <li><a href="events.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
         </div>
     </ul>
+
+
 </nav>
 
 <body>
@@ -44,7 +55,8 @@
             </div>
 
             <div class="intro-body-container">
-                <img src="sdss-website-images/sdss-intro-img.png" alt="sdss-intro-img"/>
+<!--                I think we should integrate this into the web page-->
+<!--                <img src="sdss-website-images/sdss-intro-img.png" alt="sdss-intro-img"/>-->
                 <div class="intro-body1">
                     Welcome to the world of data and technology at UofT.
                 </div>
