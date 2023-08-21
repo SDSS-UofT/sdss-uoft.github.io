@@ -9,7 +9,7 @@ body {
     margin-right: 20%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .content{
         margin-left: 9vmin;
         margin-right: 9vmin;
@@ -222,7 +222,7 @@ li {
     margin-left: 40%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .about-us{
         margin-top: 100%;
         margin-bottom: 10%;
