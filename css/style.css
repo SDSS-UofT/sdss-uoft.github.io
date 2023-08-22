@@ -408,7 +408,7 @@ input[type=checkbox] {
     width: 100%;
     display: flex;
     min-height: 5vmax;
-    padding: 2% 3%;
+    padding: 1.15% 2%;
 }
 
 .footer-images img{
