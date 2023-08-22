@@ -253,7 +253,7 @@ input[type=checkbox] {
 .intro-body-container img{
     position: absolute;
     top: 15%;
-    z-index:0;
+    z-index: -1;
 }
 
 
@@ -420,7 +420,7 @@ input[type=checkbox] {
 }
 .footer-socials{
     display: flex;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 .copyright{
