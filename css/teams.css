@@ -5,8 +5,26 @@ html {
 body {
     font-family: 'Inter',serif;
     font-size: 22px;
-    background-image: url(/sdss-website-images/background.png);
+    background: linear-gradient(-45deg, #FFFFFF, #fde9f9,#FFFFFF, #EBF1FF);
+	background-size: 400% 400%;
+    background-attachment: fixed;
+    background-position: center;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .content{
     margin-left: 20%;
