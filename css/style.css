@@ -460,6 +460,7 @@ input[type=checkbox] {
 
 .join-us p {
     margin: 1rem;
+    font-size: 1.15rem;
 }
 
 .join-us .subtitle {
@@ -473,7 +474,6 @@ input[type=checkbox] {
 .join-us-buttons{
     text-align: center;
     display: block;
-    padding-top: 3vmax;
     padding-bottom: 3vmax;
     grid-column: 1 / 2;
 }
@@ -489,50 +489,30 @@ input[type=checkbox] {
     
 }
 
-.join-us-button{
-    padding: 1%;
+.join-us-buttons button{
+    min-width: 80%;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    text-align: center;
+    /*text-decoration: none;*/ 
+    font-size: 1.115rem;
+    border-radius: 15px;
+    font-weight: 300;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 .join-us-executive{
-    width: 50%;
-    padding: 1%;
     background-color: #B0579C;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 .join-us-consulting{
-    width: 50%;
-    padding: 1%;
     background-color: #57A0B0;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 .join-us-gen-mem{
-    width: 50%;
-    padding: 1%;
     background-color: #856E9F;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 /*contact us page*/
