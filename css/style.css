@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -370,16 +371,18 @@ input[type=checkbox] {
 .row-1{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .row-2{
     display: flex;
     flex-direction: row;
     padding-top: 1%;
+    justify-content: center;
 }
 
 .our-teams-button{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     display: flex;
     padding: 2%;
@@ -389,7 +392,7 @@ input[type=checkbox] {
     background-color: #FFFFFF;
     border: none;
     color: black;
-    width: 100%;
+    width: 30vmax;
     /*padding: 8px 32px;*/
     text-align: center;
     /*text-decoration: none;*/
@@ -400,6 +403,33 @@ input[type=checkbox] {
     padding-top: 20px;
     padding-bottom: 10vmax;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width: 1024px) {
+    .our-teams-container{
+        padding-top: 3%;
+    }
+    
+    .row-1{
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .row-2{
+        display: block;
+        flex-direction: row;
+        padding-top: 1%;
+        justify-content: center;
+    }
+    
+    .our-teams-button{
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 2%;
+        justify-content: center;
+    }
 }
 
 /*JOIN US PAGE*/
