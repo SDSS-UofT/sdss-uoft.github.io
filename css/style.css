@@ -1,7 +1,29 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter',serif;
     font-size: 22px;
-    background-image: url(/sdss-website-images/background.png);
+    background: linear-gradient(-45deg, #FFFFFF, #fde9f9,#FFFFFF, #EBF1FF, #eedfff);
+	background-size: 400% 400%;
+    background-attachment: fixed;
+    background-position: center;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .content{
@@ -41,7 +63,6 @@ li {
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #EBF1FF;
     width: 100%;
     z-index: 100;
     height: 12vmin;
@@ -246,14 +267,13 @@ input[type=checkbox] {
     padding-bottom: 2.5vmax;
 }
 
-.intro-body2{
-
-}
 
 .intro-body-container img{
     position: absolute;
-    top: 15%;
+    top: 10%;
     z-index: -1;
+    width: 45%;
+    opacity: 70%;
 }
 
 
@@ -369,16 +389,18 @@ input[type=checkbox] {
 .row-1{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .row-2{
     display: flex;
     flex-direction: row;
     padding-top: 1%;
+    justify-content: center;
 }
 
 .our-teams-button{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     display: flex;
     padding: 2%;
@@ -388,7 +410,7 @@ input[type=checkbox] {
     background-color: #FFFFFF;
     border: none;
     color: black;
-    width: 100%;
+    width: 30vmax;
     /*padding: 8px 32px;*/
     text-align: center;
     /*text-decoration: none;*/
@@ -399,6 +421,33 @@ input[type=checkbox] {
     padding-top: 20px;
     padding-bottom: 10vmax;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width: 1024px) {
+    .our-teams-container{
+        padding-top: 3%;
+    }
+    
+    .row-1{
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .row-2{
+        display: block;
+        flex-direction: row;
+        padding-top: 1%;
+        justify-content: center;
+    }
+    
+    .our-teams-button{
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 2%;
+        justify-content: center;
+    }
 }
 
 /*JOIN US PAGE*/
