@@ -1,0 +1,292 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter',serif;
+    font-size: 22px;
+    background-image: url(/sdss-website-images/background.png);
+}
+
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .content{
+        margin-left: 9vmin;
+        margin-right: 9vmin;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR MENU */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #EBF1FF;
+    width: 100%;
+    z-index: 100;
+    height: 12vmin;
+
+}
+
+.navbar-right{
+    float: right;
+}
+
+.nav-links a {
+    color: #8FA2C4;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #152950;
+}
+
+/*logo*/
+.navbar img {
+    float: left;
+    padding-left: 2vmin;
+    width: 10%;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Inter',serif;
+    font-size: 3vmin;
+    text-align: right;
+    align-items: center;
+    white-space: nowrap;
+    color: #E6E9F8;
+}
+
+
+.menu li:hover {
+    color: #152950;
+    transition: 0.5s ease-in;
+}
+
+.menu li {
+    padding: 4vmin;
+}
+
+.hamburger{
+    display: none;
+    font-size: 5vmax;
+    user-select: none;
+    padding: 3vmax;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* DROPDOWN MENU */
+.our-team-navbar {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #EBF1FF;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    /*border-radius: 8px;*/
+    top: 12vmin;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 15em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #856E9F;
+}
+
+.dropdown a:hover {
+    color: white;
+}
+
+.our-team-navbar:hover .dropdown {
+    display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .menu {
+        display:none;
+        position: absolute;
+        background-color: #EBF1FF;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #856E9F;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12vmin;
+    }
+
+    .nav-links a {
+        color: #8FA2C4;
+        text-decoration: none;
+    }
+
+    .menu a:hover{
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 20%;
+        transform: translateX(35%);
+        border-radius: 8px;
+        top: 12vmin;
+    }
+
+    .dropdown li:hover {
+        background-color: #856E9F;
+        color: white;
+    }
+
+
+}
+
+/* PAGE CONTENT STARTS */
+
+.team-title {
+    font-size: 4vmax;
+    font-weight: 600;
+    color: #152950;
+    margin-top: 15vmin;
+    text-align: center;
+}
+.team-description{
+    margin-top: 1%;
+    margin-bottom: 5vmin;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.team-image-row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.exec-container{
+    margin: 2vmin;
+    width: 25%;
+}
+
+.exec-image{
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: inline-block;
+}
+
+.exec-separator{
+    height: 1vmin;
+    width: 40%;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+
+.exec-name{
+    color: #856E9F;
+    font-weight: 600;
+    font-size: 1.5vmax;
+}
+
+.exec-position{
+    color: #152950;
+    font-weight: 300;
+    font-size: 1vmax;
+}
+
+.subteam-title{
+    font-size: 3vmax;
+    font-weight: 600;
+    color: #B0579C;
+    margin-top: 15vmin;
+    margin-bottom: 5vmin;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #856E9F;
+    width: 100%;
+    display: flex;
+    min-height: 5vmax;
+    padding: 1.15% 2%;
+    margin-bottom: 0;
+}
+
+.footer-images img{
+    height: 5vw;
+}
+
+.footer-socials img{
+    height: 4vw;
+}
+.footer-socials{
+    display: flex;
+    gap: 2vw;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    font-family: 'Inter',serif;
+    font-size: 1vmax;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+
