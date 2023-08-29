@@ -10,7 +10,7 @@ body {
 	background-size: 400% 400%;
     background-attachment: fixed;
     background-position: center;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
 }
 
@@ -270,8 +270,10 @@ input[type=checkbox] {
 
 .intro-body-container img{
     position: absolute;
-    top: 15%;
+    top: 10%;
     z-index: -1;
+    width: 45%;
+    opacity: 70%;
 }
 
 
