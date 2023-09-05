@@ -53,7 +53,9 @@ li {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    background-color: #ffffffe8;
+    transition: background-color 200ms linear;
 }
 
 .sticky + .content {
@@ -127,11 +129,12 @@ input[type=checkbox] {
 
 .dropdown {
     background-color: #EBF1FF;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     /*border-radius: 8px;*/
     top: 12vmin;
+    left: -50%;
 }
 
 .dropdown li + li {
@@ -219,7 +222,6 @@ input[type=checkbox] {
     justify-content: center;
     padding-top: 10%;
     align-items: center;
-
 }
 
 .intro-container{
@@ -319,7 +321,7 @@ input[type=checkbox] {
 
 /* ABOUT US */
 .about-us{
-    margin-top: 50%;
+    margin-top: 30%;
     margin-bottom: 10%;
  }
 
@@ -379,7 +381,6 @@ input[type=checkbox] {
 
 /*OUR TEAMS STYLING*/
 .our-teams{
-    margin-top: 20%;
 }
 
 .our-teams-container{
@@ -450,6 +451,10 @@ input[type=checkbox] {
     }
 }
 
+/*EVENTS SECTION*/
+.events {
+    margin-top: 3rem;
+}
 /*JOIN US PAGE*/
 .join-us {
     margin-top: 3rem;
@@ -460,6 +465,7 @@ input[type=checkbox] {
 
 .join-us p {
     margin: 1rem;
+    font-size: 1.15rem;
 }
 
 .join-us .subtitle {
@@ -473,7 +479,6 @@ input[type=checkbox] {
 .join-us-buttons{
     text-align: center;
     display: block;
-    padding-top: 3vmax;
     padding-bottom: 3vmax;
     grid-column: 1 / 2;
 }
@@ -489,50 +494,31 @@ input[type=checkbox] {
     
 }
 
-.join-us-button{
-    padding: 1%;
+.join-us-buttons button{
+    min-width: 80%;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    text-align: center;
+    /*text-decoration: none;*/ 
+    font-size: 1.115rem;
+    border-radius: 15px;
+    font-weight: 300;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
 }
 
 .join-us-executive{
-    width: 50%;
-    padding: 1%;
     background-color: #B0579C;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 .join-us-consulting{
-    width: 50%;
-    padding: 1%;
     background-color: #57A0B0;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 .join-us-gen-mem{
-    width: 50%;
-    padding: 1%;
     background-color: #856E9F;
-    border: none;
-    color: white;
-    text-align: center;
-    /*text-decoration: none;*/
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
 }
 
 /*contact us page*/
@@ -632,3 +618,14 @@ input[type=submit] {
     align-self: flex-end;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
