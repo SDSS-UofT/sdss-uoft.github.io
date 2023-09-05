@@ -222,7 +222,6 @@ input[type=checkbox] {
     justify-content: center;
     padding-top: 10%;
     align-items: center;
-
 }
 
 .intro-container{
@@ -322,7 +321,7 @@ input[type=checkbox] {
 
 /* ABOUT US */
 .about-us{
-    margin-top: 50%;
+    margin-top: 30%;
     margin-bottom: 10%;
  }
 
@@ -382,7 +381,6 @@ input[type=checkbox] {
 
 /*OUR TEAMS STYLING*/
 .our-teams{
-    margin-top: 20%;
 }
 
 .our-teams-container{
@@ -453,6 +451,10 @@ input[type=checkbox] {
     }
 }
 
+/*EVENTS SECTION*/
+.events {
+    margin-top: 3rem;
+}
 /*JOIN US PAGE*/
 .join-us {
     margin-top: 3rem;
@@ -616,3 +618,14 @@ input[type=submit] {
     align-self: flex-end;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
