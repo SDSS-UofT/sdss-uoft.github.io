@@ -53,7 +53,9 @@ li {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    background-color: #ffffffe8;
+    transition: background-color 200ms linear;
 }
 
 .sticky + .content {
@@ -127,11 +129,12 @@ input[type=checkbox] {
 
 .dropdown {
     background-color: #EBF1FF;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     /*border-radius: 8px;*/
     top: 12vmin;
+    left: -50%;
 }
 
 .dropdown li + li {
@@ -501,6 +504,7 @@ input[type=checkbox] {
     border-radius: 15px;
     font-weight: 300;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
 }
 
 .join-us-executive{
