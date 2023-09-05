@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 	animation: gradient 10s ease infinite;
-    min-height: 100vh;
+	height: 100vh;
 }
 
 @keyframes gradient {
@@ -53,9 +53,7 @@ li {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-    background-color: #ffffffe8;
-    transition: background-color 200ms linear;
+    width: 100%
 }
 
 .sticky + .content {
