@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 	animation: gradient 10s ease infinite;
-	height: 100vh;
+    min-height: 100vh;
 }
 
 @keyframes gradient {
@@ -53,7 +53,9 @@ li {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    background-color: #ffffffe8;
+    transition: background-color 200ms linear;
 }
 
 .sticky + .content {
@@ -378,8 +380,6 @@ input[type=checkbox] {
 }
 
 /*OUR TEAMS STYLING*/
-.our-teams{
-}
 
 .our-teams-container{
     padding-top: 3%;
