@@ -460,7 +460,7 @@ input[type=checkbox] {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .join-us p {
