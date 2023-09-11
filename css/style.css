@@ -1,6 +1,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    /* scroll-padding-top: 30vmax; */
 }
 
 body {
@@ -44,7 +45,7 @@ body {
     box-sizing: border-box;
 }
 
-li {
+.navbar li {
     list-style: none;
 }
 
@@ -321,9 +322,9 @@ input[type=checkbox] {
 
 /* ABOUT US */
 .about-us{
-    margin-top: 30%;
+    margin-top: 30vmax;
     margin-bottom: 10%;
- }
+}
 
 .about-us-container{
     /*display: flex;*/
@@ -380,6 +381,10 @@ input[type=checkbox] {
 }
 
 /*OUR TEAMS STYLING*/
+
+.our-teams{
+    margin-top: 20vmax;
+}
 
 .our-teams-container{
     padding-top: 3%;
@@ -451,7 +456,7 @@ input[type=checkbox] {
 
 /*EVENTS SECTION*/
 .events {
-    margin-top: 3rem;
+    margin-top: 30vmax;
 }
 
 .events-section-title{
@@ -495,7 +500,11 @@ input[type=checkbox] {
     font-size: 5vmin;
 }
 
-
+.events-arrow{
+    position: absolute;
+    padding-left: 10vmax;
+    padding-top: 2.5vmax;
+}
 
 .events-description{
     margin-left: 5%;
@@ -571,6 +580,17 @@ input[type=checkbox] {
 
 .join-us-gen-mem{
     background-color: #856E9F;
+}
+
+.gen-mem-benefits{
+    font-family: 'Inter',serif;
+    font-size: 1.115rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+.gen-mem-benefits li{
+    padding-bottom: .8rem;
 }
 
 /*contact us page*/

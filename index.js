@@ -13,6 +13,8 @@ function makeNavSticky() {
     }
 }
 
+// $('.about-us-link').click(function(){$('.about-us').reveal()});
+
 // When the user scrolls the page, execute myFunction
 window.addEventListener("scroll", makeNavSticky);
 
@@ -21,7 +23,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 175;
+        var elementVisible = 0;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         } else {
@@ -31,6 +33,7 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
 
 // To check the scroll position on page load
 reveal();
