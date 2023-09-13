@@ -139,7 +139,7 @@ input[type=checkbox] {
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     /*border-radius: 8px;*/
-    top: 10vmin;
+    top: 12vmin;
     left: -50%;
 }
 
