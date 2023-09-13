@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<nav class="navbar ms-auto" id="navBar">
-    <!-- LOGO -->
-    <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-            <li class="About Us"><a href="#about-us">About Us</a></li>
-            <li class="our-team-navbar">
-                <a href="#our-teams">Our Teams</a>
-            <ul class="dropdown">
-                <li><a href="/pages/our-teams-pages/internal-team.html">Internal</a></li>
-                <li><a href="/pages/our-teams-pages/prof-dev.html">Professional Development</a></li>
-                <li><a href="/pages/our-teams-pages/aca-dev.html">Academic Development</a></li>
-                <li><a href="/pages/our-teams-pages/consulting.html">Consulting</a></li>
-            </ul>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#join-us">Join Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </div>
-    </ul>
-</nav>
-
 <body>
+    <nav class="navbar ms-auto" id="navBar">
+        <!-- LOGO -->
+        <a href="#index.html"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li class="About Us"><a href="#about-us">About Us</a></li>
+                <li class="our-team-navbar">
+                    <a href="#our-teams">Our Teams</a>
+                <ul class="dropdown">
+                    <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
+                    <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
+                    <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
+                    <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
+                </ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join-us">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
     <div class="content">
         <div class="intro">
             <div class="intro1">
@@ -196,8 +196,8 @@
                     <p>You can register to be a general member anytime! Anyone can be a general member. Benefits include:</p>
                     <ul class="gen-mem-benefits">
                         <li>Be an active part of the SDSS community</li>
-                        <li>Be a part of the SDSS monthly newsletter for data science and statistics highlights throughout the world, resources, event updates, and more</li>
-                        <li>Opportunities to be volunteer/lead events</li>
+                        <li>Be subscribed to the SDSS monthly newsletter for data science and statistics highlights throughout the world, resources, event updates, and more</li>
+                        <li>Opportunities to volunteer/lead events</li>
                         <li>Priority in future executive selection</li>
                         <li>Early access to our events</li>
                         <li>And more!</li>
@@ -227,7 +227,8 @@
             
            
         </div>
-        <div class="contact-us reveal">
+
+        <div class="contact-us" id="contact">
         </div>
     </div>
 

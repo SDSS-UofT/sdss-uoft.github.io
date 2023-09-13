@@ -143,9 +143,6 @@ input[type=checkbox] {
     left: -50%;
 }
 
-.dropdown li + li {
-    margin-top: 10px;
-}
 
 .dropdown li {
     padding: 0.5em 1em;
@@ -167,7 +164,7 @@ input[type=checkbox] {
 
 @media screen and (max-width: 1024px){
     .menu {
-        display:none;
+        display: none;
         position: absolute;
         background-color: #EBF1FF;
         right: 0;
@@ -207,9 +204,7 @@ input[type=checkbox] {
     }
 
     .dropdown {
-        left: 20%;
-        transform: translateX(35%);
-        border-radius: 8px;
+        left: 25%;
         top: 12vmin;
     }
 
