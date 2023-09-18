@@ -47,3 +47,39 @@ function topNav() {
         x.style.display = "block";
     }
 }
+
+// Router
+(function () {
+
+    var app = angular.module('sampleApp',['ngRoute']);
+    
+    app.config(function ($routeProvider){
+        $routeProvider
+            .when('/internal-team',{
+                templateUrl:'/our-teams-pages/internal-team.html'
+            })
+            .when('/prof-dev',{
+                templateUrl:'/our-teams-pages/prof-dev.html'
+            })
+            .when('/aca-dev',{
+                templateUrl: '/our-teams-pages/aca-dev.html'
+            })
+            .when('/consulting',{
+                templateUrl: '/our-teams-pages/consulting.html'
+            })
+            .otherwise({ redirectTo:'/'});
+    });
+    })();
+
+    // HeaderController to highlight the active tabs
+(function () { 
+
+    var headerController = function ($scope, $location) 
+    { 
+        $scope.isActive = function (viewLocation) { 
+            return viewLocation === $location.path();
+        };
+    };
+    
+    angular.module('sampleApp').controller('HeaderController',headerController);
+    }());

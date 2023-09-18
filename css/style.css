@@ -1,3 +1,43 @@
+#fade-in{
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -102,7 +142,7 @@ body {
 .menu {
     display: flex;
     font-family: 'Inter',serif;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     text-align: right;
     align-items: center;
     white-space: nowrap;
@@ -112,7 +152,7 @@ body {
 
 .menu li:hover {
     color: #152950;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease;
 }
 
 .menu li {
@@ -136,12 +176,10 @@ input[type=checkbox] {
 }
 
 .dropdown {
-    background-color: #EBF1FF;
-    /* padding: 1em 0; */
+    background-color: white;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
-    /*border-radius: 8px;*/
-    top: 12vmin;
+    top: 10vmin;
     left: -50%;
 }
 
@@ -153,7 +191,7 @@ input[type=checkbox] {
 }
 
 .dropdown li:hover {
-    background-color: #856E9F;
+    background-color: #c2b6cf;
 }
 
 .dropdown a:hover {
