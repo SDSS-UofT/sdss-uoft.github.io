@@ -1,10 +1,15 @@
 /* PAGE CONTENT STARTS */
 
+.content-teams{
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
 .team-title {
     font-size: 4vmax;
     font-weight: 600;
     color: #152950;
-    margin-top: 3vmin;
+    margin-top: 5vmin;
     text-align: center;
 }
 .team-description{
@@ -26,7 +31,6 @@
 }
 
 .exec-image{
-    aspect-ratio: 1/1;
     width: 100%;
     display: inline-block;
 }
@@ -44,6 +48,12 @@
     font-size: 1.5vmax;
 }
 
+.exec-name-fit{
+    color: #856E9F;
+    font-weight: 600;
+    font-size: 1.1vmax;
+}
+
 .exec-position{
     color: #152950;
     font-weight: 300;
@@ -54,10 +64,11 @@
     font-size: 3vmax;
     font-weight: 600;
     color: #B0579C;
-    margin-top: 15vmin;
-    margin-bottom: 5vmin;
+    margin-top: 10vmin;
+    /* margin-bottom: 3vmin; */
     text-align: center;
 }
 
-
-
+.spacing-down{
+    margin-bottom: 10vmin;
+}
