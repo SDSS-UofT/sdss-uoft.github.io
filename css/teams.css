@@ -48,10 +48,12 @@
     font-size: 1.5vmax;
 }
 
-.exec-name-fit{
-    color: #856E9F;
-    font-weight: 600;
-    font-size: 1.1vmax;
+.exec-linkedin{
+    height: .9em;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: center;
 }
 
 .exec-position{
