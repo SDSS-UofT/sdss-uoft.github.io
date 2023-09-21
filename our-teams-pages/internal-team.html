@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/teams.css"/>
         <link rel="stylesheet" href="../css/style.css"/>
     </head>
-<body>
+<body id="fade-in">
 
     <nav class="navbar ms-auto" id="navBar">
         <!-- LOGO -->
@@ -36,7 +36,7 @@
         </ul>
     </nav>
 
-    <div class="content">
+    <div class="content" id="fade-in">
         <div class="team-title">Internal Team</div>
         <div class="team-description">Our group that enables a diverse community of passionate individuals to explore, learn, grow, and engage in social good in the world of Data Science and Statistics.</div>
         <div class="team-image-row">
@@ -46,7 +46,7 @@
                     <div class="exec-name">Lina Jin</div>
                 <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Co-President</div>
-                <div class="exec-socials"></div>
+                <a href='https://www.linkedin.com/in/lina-jin-99b5121b0'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
                 </div>
                 
             </div>
@@ -55,11 +55,11 @@
                 <div class="exec-name">Rustam Atahodja</div>
                 <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Co-President</div>
-                <div class="exec-socials"></div>
+                <a href='https://www.linkedin.com/in/rustam-atahodja-257b5921a/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
             </div>
         </div>
         
-        <div class="subteam-title">Operations</div>
+        <div class="subteam-title operations">Operations</div>
         <div class="team-image-row">
             <div class="exec-container">
                 <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/amanda.jpg"/>
@@ -73,7 +73,20 @@
                 <div class="exec-name">Siyi Zhu</div>
                 <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Co-Director of Operations</div>
-                <div class="exec-socials"></div>
+                <a href='http://linkedin.com/in/siyi-zhu-18603224b'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+            </div>
+        </div>
+
+        <div class='subteam-title web-dev'>Web Development</div>
+        <div class="team-image-row">
+            <div class="exec-container">
+                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/shirley.jpg"/>
+                <div class="exec-caption">
+                    <div class="exec-name">Shirley Chen</div>
+                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                <div class="exec-position">Web Developer</div>
+                <a href='https://www.linkedin.com/in/shirley-chen-7b153216b/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                </div>
             </div>
         </div>
 
@@ -89,24 +102,24 @@
                 </div>
                 
             </div>
-            <!-- <div class="exec-container">
-                <img class="exec-image"/>
-                <div class="exec-name"></div>
+            <div class="exec-container">
+                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/jessica.jpg"/>
+                <div class="exec-name">Jessica Im</div>
                 <img src="/sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Graphic Designer</div>
                 <div class="exec-socials"></div>
-            </div> -->
+            </div>
         </div>
 
         <div class="subteam-title">Finance</div>
-        <div class="team-image-row">
+        <div class="team-image-row spacing-down">
             <div class="exec-container">
                 <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/jake.jpg"/>
                 <div class="exec-caption">
                     <div class="exec-name">Jake Miao-Marshall</div>
                 <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Co-Director of Finance</div>
-                <div class="exec-socials"></div>
+                <a href='https://www.linkedin.com/in/jake-miao-marshall-ab1258235/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
                 </div>
                 
             </div>
@@ -115,25 +128,30 @@
                 <div class="exec-name">Chin Chin Jim</div>
                 <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
                 <div class="exec-position">Co-Director of Finance</div>
-                <div class="exec-socials"></div>
+                <a href='https://www.linkedin.com/in/chin-chin-jim/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
             </div>
         </div>
+
     </div>
 
     <footer class="footer">
         <div class="footer-images">
-            <img src="../sdss-website-images/logo%202%201.png" alt="white-logo"/>
-            <img src="../sdss-website-images/image%20(3)%201.png" alt="uoft"/>
+            <img src="sdss-website-images/logo%202%201.png" alt="white-logo"/>
+            <a href='https://www.utoronto.ca/'><img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
         </div>
-        <div class="copyright">
+        <div class="footer-container">
+            <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
+            <div class="copyright">
             Students in Data Science and Statistics &copy 2023
+            </div>
         </div>
+        
         <div class="footer-socials">
             <a href="https://instagram.com/sdssuoft"><img src="sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
             <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
-                <img src="../sdss-website-images/image%201.png" alt="sdss-linkedin"/>
+                <img src="sdss-website-images/image%201.png" alt="sdss-linkedin"/>
             </a>
-            <a href="https://discord.gg/9b8Z5aGk36"><img src="../sdss-website-images/image 2.png" alt="sdss-discord"></a>
+            <a href="https://discord.gg/9b8Z5aGk36"><img src="sdss-website-images/image 2.png" alt="sdss-discord"></a>
         </div>
     </footer>
 

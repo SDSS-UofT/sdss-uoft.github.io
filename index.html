@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar ms-auto" id="navBar">
         <!-- LOGO -->
-        <a href="#index.html"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
+        <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle" />
@@ -21,7 +21,7 @@
             <div class="menu">
                 <li class="About Us"><a href="#about-us">About Us</a></li>
                 <li class="our-team-navbar">
-                    <a href="#our-teams">Our Teams</a>
+                    <a>Our Teams</a>
                 <ul class="dropdown">
                     <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
                     <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
@@ -35,7 +35,7 @@
         </ul>
     </nav>
 
-    <div class="content">
+    <div class="content" id="fade-in">
         <div class="intro">
             <div class="intro1">
                 University of Toronto's
@@ -66,13 +66,13 @@
             </div>
 
             <div class="button-container">
-                <button type="button" class='get-in-touch'>Get in Touch</button>
+                <button type="button" class='get-in-touch'>Get Involved</button>
             </div>
 
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" id="fade-in">
         <div class="about-us" id="about-us">
             <div class="subtitle">About Us</div>
             <div class="about-us-container">
@@ -81,7 +81,7 @@
                         Education.
                     </div>
                     <div class="about-us-right">
-                        Through our academic development team, we provide academic opportunities and resources for students of 
+                        Through our <a class="about-us-link" href="/our-teams-pages/aca-dev.html"> Academic Development Team</a>, we provide academic opportunities and resources for students of 
                         all skill levels to learn and grow in the field of data science and statistics.
                     </div>
                 </div>
@@ -90,10 +90,16 @@
                         Career.
                     </div>
                     <div class="about-us-right">
-                        Our group that enables a diverse community of
-                        passionate individuals to explore, learn, grow,
-                        and engage in social good in the world of Data Science
-                        and Statistics.
+                        Our <a class="about-us-link" href="/our-teams-pages/prof-dev.html">Professional Development</a> events will provide students exposure to Data Science and Statistics in a professional workplace and give the confidence to continue to pursue a career in this pathway. 
+
+                    </div>
+                </div>
+                <div class="about-us-text">
+                    <div class="about-us-left">
+                        Consulting.
+                    </div>
+                    <div class="about-us-right">
+                        Our <a class="about-us-link" href="/our-teams-pages/consulting.html">Consulting Team</a> provides students with the opportunity to work on real-world data science and statistics projects for non-profit organizations and businesses.
                     </div>
                 </div>
                 <div class="about-us-text">
@@ -101,16 +107,13 @@
                         Community.
                     </div>
                     <div class="about-us-right">
-                        Our group that enables a diverse community of
-                        passionate individuals to explore, learn, grow,
-                        and engage in social good in the world of Data Science
-                        and Statistics.
+                        SDSS is dedicated to providing a supportive and positive community at UofT. Our <a class='about-us-link' href="/our-teams-pages/internal-team.html">Internal Team</a> establishes the foundation of our community and ensures that our members are able to grow and learn in a safe and welcoming environment.
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="our-teams" id="our-teams">
+        <!-- <div class="our-teams" id="our-teams">
             <div class="subtitle">Our Teams</div>
             <div class="our-teams-container">
                 <div class="row-1">
@@ -141,7 +144,7 @@
 
 
             </div>
-        </div>
+        </div> -->
         <div class="events" id="events">
             <div class="subtitle">
                 Events
@@ -235,11 +238,15 @@
     <footer class="footer">
         <div class="footer-images">
             <img src="sdss-website-images/logo%202%201.png" alt="white-logo"/>
-            <img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/>
+            <a href='https://www.utoronto.ca/'><img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
         </div>
-        <div class="copyright">
+        <div class="footer-container">
+            <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
+            <div class="copyright">
             Students in Data Science and Statistics &copy 2023
+            </div>
         </div>
+        
         <div class="footer-socials">
             <a href="https://instagram.com/sdssuoft"><img src="sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
             <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
