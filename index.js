@@ -63,16 +63,3 @@ const files = await imagemin(['images/*.{jpg}'], {
 });
 
 console.log(files);
-
-function SendMail() {
-    var contactParams = {
-        from_name: document.getElementById("contact-name").value,
-        email_id: document.getElementById("contact-email").value,
-        company: document.getElementById("contact-company").value,
-        role: document.getElementById("contact-role").value,
-        message: document.getElementById("contact-message").value
-
-    }
-
-    emailjs.send("service_xz4ojhe", "template_b7e1t6n", contactParams);
-}

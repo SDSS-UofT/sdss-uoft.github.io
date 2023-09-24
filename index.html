@@ -316,6 +316,16 @@
                         Role:
                         <input type="text" id="contact-role"/><br />
                     </div>
+                    <div class="sender-reason">
+                        Select Reason:
+                        <select id="contact-reason">
+                            <option value="General">General</option>
+                            <option value="Academic Development">Academic Development</option>
+                            <option value="Professional Development">Professional Development</option>
+                            <option value="Consulting">Consulting</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="sender-message">
                     Message:
@@ -327,7 +337,7 @@
             
             <div class="contact-button">
                 <button onClick="SendMail()">Submit</button>
-                <dialog open class="send-confirm" id="send-confirm-popup">
+                <dialog class="send-confirm" id="send-confirm-popup">
                     Email successfully sent!</br>
                     <button class="send-return-popup">Return</button>
                 </dialog>
@@ -342,6 +352,7 @@
                             email_id: document.getElementById("contact-email").value,
                             company: document.getElementById("contact-company").value,
                             role: document.getElementById("contact-role").value,
+                            reason: document.getElementById("contact-reason").value,
                             message: document.getElementById("contact-message").value
 
                         }
