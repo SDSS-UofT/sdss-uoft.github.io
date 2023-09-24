@@ -758,9 +758,14 @@ input[type=submit] {
     column-gap: 2.5rem;
 }
 
-.sender-info input, .sender-message textarea {
+.sender-info input, .sender-message textarea, .sender-info select {
     border-radius: 15px;
     border: solid 2px #856E9F;
+}
+
+.sender-info select, .sender-message textarea{
+    font-family: "Inter", serif;
+    font-size: 1vmax;
 }
 
 .sender-info input {
@@ -768,7 +773,7 @@ input[type=submit] {
 }
 
 .sender-message textarea{
-    height: 300px;
+    height: 400px;
 }
 
 .contact-button{
