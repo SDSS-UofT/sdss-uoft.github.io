@@ -295,6 +295,71 @@
         </div>
 
         <div class="contact-us" id="contact">
+            <div class="subtitle">
+                Contact Us
+            </div>
+            <div class="sender-form">
+                <div class="sender-info">
+                    <div class="sender-name">
+                        Name:
+                        <input type="text" id="contact-name" required /><br />
+                    </div>
+                    <div class="sender-email">
+                        Email:
+                        <input type="text" id="contact-email" required /><br />
+                    </div>
+                    <div class="sender-company">
+                        Company:
+                        <input type="text" id="contact-company"/><br />
+                    </div>
+                    <div class="sender-role">
+                        Role:
+                        <input type="text" id="contact-role"/><br />
+                    </div>
+                </div>
+                <div class="sender-message">
+                    Message:
+                    <div class="sender-message-text">
+                        <textarea id="contact-message" required></textarea><br />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-button">
+                <button onClick="SendMail()">Submit</button>
+                <dialog open class="send-confirm" id="send-confirm-popup">
+                    Email successfully sent!</br>
+                    <button class="send-return-popup">Return</button>
+                </dialog>
+
+                <script>
+                    const ConfirmPopUp = document.querySelector(".send-confirm");
+                    const CloseConfirmPopUp = document.querySelector(".send-return-popup");
+
+                    function SendMail() {
+                        var contactParams = {
+                            from_name: document.getElementById("contact-name").value,
+                            email_id: document.getElementById("contact-email").value,
+                            company: document.getElementById("contact-company").value,
+                            role: document.getElementById("contact-role").value,
+                            message: document.getElementById("contact-message").value
+
+                        }
+                        emailjs.send("service_xz4ojhe", "template_b7e1t6n", contactParams);
+                        document.getElementById("contact-name").value="";
+                        document.getElementById("contact-email").value="";
+                        document.getElementById("contact-company").value="";
+                        document.getElementById("contact-role").value="";
+                        document.getElementById("contact-message").value="";
+                        ConfirmPopUp.showModal();
+                    }
+                    
+                    CloseConfirmPopUp.addEventListener('click', () => {
+                        ConfirmPopUp.close();
+                    });
+                </script>
+            </div>
+            
         </div>
     </div>
 
@@ -321,5 +386,13 @@
 
 
     <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("s9mHeu7INv0aC72Sq");
+        })();
+    </script>
 </body>
 </html>
