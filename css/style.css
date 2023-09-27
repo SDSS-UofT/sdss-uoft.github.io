@@ -113,13 +113,10 @@ body {
     opacity: 1;
 }
 
+/* NAVBAR MENU */
 .navbar li {
     list-style: none;
 }
-
-
-
-/* NAVBAR MENU */
 
 .sticky {
     position: fixed;
