@@ -53,6 +53,10 @@ a{
     cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
+
 body {
     font-family: 'Inter',serif;
     font-size: 22px;
@@ -93,6 +97,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* UTILITIES */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .navbar li {
@@ -428,27 +446,20 @@ input[type=checkbox] {
     }
 }
 
-/*OUR TEAMS STYLING*/
+/*OUR PARTNERS STYLING*/
 
-.our-teams{
+.our-partners{
     margin-top: 10vmax;
     padding-top: 7rem;
 }
 
-.our-teams-container{
+.our-partners-container{
     padding-top: 3%;
 }
 
-.row-1{
+.partner-images-row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.row-2{
-    display: flex;
-    flex-direction: row;
-    padding-top: 1%;
     justify-content: center;
 }
 
@@ -523,38 +534,17 @@ input[type=checkbox] {
     padding-top: 4%;
 }
 
-.events-button{
-    background-color: #FFFFFF;
-    border: none;
-    width: 30vmax;
-    height: 15vmax;
-    /*padding: 8px 32px;*/
-    text-align: center;
-    font-size: 1.5vmax;
-    border-radius: 15px;
-    font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 10vmax;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
-}
-
 .events-container{
     display: inline-flex;
     padding-top: 2%;
 }
 
-.events-button-container{
+.events-container img{
+    padding-top: 2%;
+    width: 30vmax;
     float: left;
-    color: #856E9F;
-    font-weight: 700;
-    font-size: 5vmin;
 }
 
-.events-arrow{
-    position: absolute;
-    padding-left: 10vmax;
-    padding-top: 2.5vmax;
-}
 
 .events-description{
     margin-left: 5%;
@@ -681,7 +671,7 @@ input[type=checkbox] {
     padding-bottom: .8rem;
 }
 
-/* /*contact us page*/
+/*contact us page*/
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
     width: 100%;
@@ -744,7 +734,7 @@ input[type=submit] {
         margin-top: 0;
     }
 }
- */
+*/
 /* CONTACT US SECTION */
 
 .contact-us{
@@ -852,17 +842,5 @@ input[type=submit] {
     color: white;
     font-size: 1vmax;
     padding-bottom: 1vmin;
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-  }
-  
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
 }
 
