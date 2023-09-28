@@ -11,6 +11,7 @@
     color: #152950;
     margin-top: 5vmin;
     text-align: center;
+    font-family: 'Outfit', sans-serif;
 }
 .team-description{
     margin-top: 1%;
@@ -46,6 +47,7 @@
     color: #856E9F;
     font-weight: 600;
     font-size: 1.5vmax;
+    font-family: 'Outfit', sans-serif;
 }
 
 .exec-linkedin{
@@ -69,8 +71,13 @@
     margin-top: 10vmin;
     /* margin-bottom: 3vmin; */
     text-align: center;
+    font-family: 'Outfit', sans-serif;
 }
 
 .spacing-down{
     margin-bottom: 10vmin;
+}
+
+.spacing-up{
+    padding-top: 10%;
 }
