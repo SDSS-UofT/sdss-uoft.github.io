@@ -1,43 +1,3 @@
-#fade-in{
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -55,10 +15,11 @@ a{
 
 button{
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter',serif;
+    font-family: 'Inter',sans-serif;
     font-size: 22px;
     background: linear-gradient(-45deg, #FFFFFF, #fde9f9,#FFFFFF, #EBF1FF, #eedfff);
 	background-size: 400% 400%;
@@ -105,12 +66,25 @@ body {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: 2s all ease;
+    transition: 1s all ease;
 }
 
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
+}
+
+#slide-in{
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* NAVBAR MENU */
@@ -161,7 +135,7 @@ body {
 
 .menu {
     display: flex;
-    font-family: 'Inter',serif;
+    font-family: 'Outfit',serif;
     font-size: 2.5vmin;
     text-align: right;
     align-items: center;
@@ -288,7 +262,7 @@ input[type=checkbox] {
 }
 
 .intro2{
-    font-family: 'Inter',serif;
+    font-family: 'Outfit',serif;
     font-size: 4vmax;
     font-weight:700;
 
@@ -349,6 +323,7 @@ input[type=checkbox] {
         top: 10%;
         width: 100%;
         left: 30%;
+        overflow: hidden;
     }
 
     .intro-body-container{
@@ -367,8 +342,7 @@ input[type=checkbox] {
     font-weight: 700;
     font-size: 7vmin;
     text-align: center;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    font-family: 'Outfit',serif;
     display: block;
 }
 
@@ -460,6 +434,10 @@ input[type=checkbox] {
     justify-content: center;
 }
 
+.partner-images-row img{
+    width: 30%;
+}
+
 .our-teams-button{
     /* width: 100%; */
     position: relative;
@@ -524,34 +502,79 @@ input[type=checkbox] {
     font-weight: 700;
     color: #856E9F;
     padding-top: 5%;
+    font-family: 'Outfit', sans-serif;
 }
 
 .events-title{
     color:#B0579C;
     padding-top: 4%;
+    font-family: 'Outfit', sans-serif;
 }
 
-.events-container{
-    display: inline-flex;
-    padding-top: 2%;
-}
-
-.events-container img{
+.event-image{
     padding-top: 2%;
     width: 30vmax;
+    aspect-ratio: 1 / 1;
     float: left;
+}
+
+.event-container{
+    display: flex;
 }
 
 
 .events-description{
     margin-left: 5%;
+    float: right;
+    padding-top: 10%;
 }
+
+.event-link{
+    text-align: center;
+}
+
+.event-link button{
+    display: inline-block;
+    font-size: 23px;
+    padding: .5vmax;
+    border-radius: 30px;
+    font-weight: 500;
+    width: 50%;
+    color: white;
+    background-color: #B0579C;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .event-image{
+        padding-top: 1%;
+        width: 100%;
+        aspect-ratio: 1/1;
+        display: block;
+        float: none;
+        /* flex:none; */
+    }
+
+    .events-description{
+        font-size: 1rem;
+        margin: auto;
+        padding-top: 5%;
+    }
+
+    .event-link button{
+        width: 100%;
+    }
+}
+
 
 
 /*JOIN US PAGE*/
 .join-us {
-    margin-top: 5vmax;
-    padding-top: 7rem;
+    margin-top: 10vmax;
+    padding-top: 30%;
 }
 
 .join-us-square{
@@ -585,16 +608,16 @@ input[type=checkbox] {
 
 .join-us-button-title{
     font-weight: 600;
-    font-size: 1.5vmax;
+    font-size: 2vmax;
+    font-family: 'Outfit',serif;
 }
 
 .join-us-button-description{
     text-align: left;
     padding-left: 3vmax;
-    padding-top: 1vmax;
+    padding-top: .8vmax;
     font-size: 1.2vmax;
     padding-right: 3vmax;
-    font-size: .8em;
 }
 
 .join-us-button-description ul{
@@ -613,13 +636,14 @@ input[type=checkbox] {
 
 .join-us-button-link button{
     display: inline-block;
-    font-size: 23px;
+    font-size: 1.2vmax;
     padding: 1vmax;
     border-radius: 30px;
     font-weight: 500;
     width: 100%;
     color: white;
     border: none;
+    font-family: 'Outfit', sans-serif;
 
 }
 
@@ -658,7 +682,7 @@ input[type=checkbox] {
 }
 
 .gen-mem-benefits{
-    font-family: 'Inter',serif;
+    font-family: 'Outfit',serif;
     font-size: 1.115rem;
     padding-left: 3rem;
     padding-bottom: 2rem;
@@ -666,6 +690,51 @@ input[type=checkbox] {
 
 .gen-mem-benefits li{
     padding-bottom: .8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .join-us-square{
+        background-color: #FFFFFF;
+        border: none;
+        width: 100%;
+        height: 40vmax;
+        text-align: center;
+        border-radius: 40px;
+        border-color: #856E9F;
+        border-style: solid;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-bottom: 10vmax;
+        color: black;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .25);
+        display: block;
+        margin: auto;
+        position: relative;
+        
+    }
+
+    .join-us-button-description{
+        text-align: left;
+        padding-left: 3vmax;
+        padding-top: 1vmax;
+        font-size: 2vmax;
+        padding-right: 3vmax;
+    }
+
+    .join-us-button-link button{
+        display: inline-block;
+        font-size: 3vmax;
+        padding: 1vmax;
+        border-radius: 30px;
+        font-weight: 500;
+        width: 100%;
+        color: white;
+        border: none;
+        font-family: 'Outfit', sans-serif;
+    
+    }
+
+
 }
 
 /*contact us page*/
@@ -731,12 +800,14 @@ input[type=submit] {
         margin-top: 0;
     }
 }
-*/
+
 /* CONTACT US SECTION */
 
 .contact-us{
     margin-top: 5vmax;
 }
+
+
 .sender-form{
     margin-top: 2rem;
     padding: 1rem 3rem;
@@ -747,11 +818,11 @@ input[type=submit] {
 
 .sender-info input, .sender-message textarea, .sender-info select {
     border-radius: 15px;
-    border: solid 2px #856E9F;
+    border: solid 1.5px #856E9F;
 }
 
 .sender-info select, .sender-message textarea{
-    font-family: "Inter", serif;
+    font-family: "Outfit", serif;
     font-size: 1vmax;
 }
 
@@ -774,7 +845,7 @@ input[type=submit] {
     background-color: #856E9F;
     border-radius: 10px;
     font-size: 1.25vmax;
-    font-family: 'Inter', serif;
+    font-family: 'Outfit', serif;
     margin-bottom: 5rem;
 }
 
@@ -826,7 +897,7 @@ input[type=submit] {
 .copyright{
     text-align: center;
     color: white;
-    font-family: 'Inter',serif;
+    font-family: 'Outfit',serif;
     font-size: 1vmax;
     margin: 0 auto;
     /* align-self: flex-end; */
