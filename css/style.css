@@ -1,7 +1,7 @@
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden !important;
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow-y: auto; */
     /* scroll-padding-top: 30vmax; */
 }
 
@@ -29,6 +29,14 @@ body {
     min-height: 100vh;
 }
 
+#wrapper{
+    overflow-x: hidden !important;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* overflow-y: auto; */
+    position: relative;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -49,8 +57,10 @@ body {
 
 @media screen and (max-width: 1024px) {
     .content{
-        margin-left: 9vmin;
-        margin-right: 9vmin;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: relative;
+        /* overflow: hidden; */
     }
 }
 
@@ -290,6 +300,8 @@ input[type=checkbox] {
 
 .intro-body-container{
     font-size: 1.4vmax;
+    /* position: relative; */
+    overflow: hidden;
 }
 
 .intro-body1{
@@ -297,12 +309,28 @@ input[type=checkbox] {
 }
 
 
-.intro-body-container img{
+/* .intro-body-container img{
     position: absolute;
     top: 10%;
     z-index: -1;
     width: 45%;
     opacity: 70%;
+    overflow: hidden;
+} */
+
+.overflow-hidden{
+    overflow-x: hidden;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    z-index: -1;
+    width: 40%;
+    opacity: 70%;
+    overflow: hidden;
+}
+
+#overflow-hidden{
+    overflow: hidden;
 }
 
 
@@ -323,7 +351,7 @@ input[type=checkbox] {
         top: 10%;
         width: 100%;
         left: 30%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .intro-body-container{
@@ -333,6 +361,16 @@ input[type=checkbox] {
     .button-container {
         width: 100%;
         padding-top: 10%;
+    }
+
+    .overflow-hidden{
+        /* overflow-x: hidden; */
+        position: absolute;
+        top: 2%;
+        right: -30%;
+        z-index: -1;
+        width: 90%;
+        opacity: 50%;
     }
 
 }
@@ -414,6 +452,7 @@ input[type=checkbox] {
     .about-us-right{
         margin-left: 0;
         padding-top: 5%;
+        font-size: 4vmin;
     }
 }
 
@@ -693,6 +732,12 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 1024px) {
+    .join-us-button-title{
+        font-weight: 600;
+        font-size: 2.5vmax;
+        font-family: 'Outfit',serif;
+    }
+
     .join-us-square{
         background-color: #FFFFFF;
         border: none;
@@ -717,13 +762,13 @@ input[type=checkbox] {
         text-align: left;
         padding-left: 3vmax;
         padding-top: 1vmax;
-        font-size: 2vmax;
+        font-size: 1.5vmax;
         padding-right: 3vmax;
     }
 
     .join-us-button-link button{
         display: inline-block;
-        font-size: 3vmax;
+        font-size: 2vmax;
         padding: 1vmax;
         border-radius: 30px;
         font-weight: 500;
@@ -864,6 +909,30 @@ input[type=submit] {
     margin-top: 30px;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 600px) {
+    .sender-form{
+        display: block;
+    }
+
+    .sender-info input, .sender-message textarea, .sender-info select {
+        width: 100%;
+    }
+
+    .sender-info select, .sender-message textarea{
+        font-family: "Outfit", serif;
+        font-size: 1.5vmax;
+    }
+
+    .sender-message textarea{
+        height: 200px;
+    }
+
+    .send-confirm {
+        padding: 3rem 2rem;
+    }
+}
+
 
 /* FOOTER */
 
