@@ -196,6 +196,7 @@ input[type=checkbox] {
     display: none;
     top: 10vmin;
     left: -50%;
+    z-index: 100;
 }
 
 
@@ -627,7 +628,7 @@ input[type=checkbox] {
 
 /*JOIN US PAGE*/
 .join-us {
-    margin-top: 5vmax;
+    margin-top: 15vmax;
     padding-top: 10vmax;
 }
 
