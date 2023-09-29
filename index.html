@@ -32,9 +32,9 @@
                     <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
                     <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
                 </ul>
-                <li id="events-menu"><a href="#events">Events</a></li>
-                <li id="join-us-menu"><a href="#join-us">Join Us</a></li>
-                <li id="contact-menu"><a href="#contact">Contact</a></li>
+                <li id="events-menu"><a href="#events" onClick="uncheck()">Events</a></li>
+                <li id="join-us-menu"><a href="#join-us" onClick="uncheck()">Join Us</a></li>
+                <li id="contact-menu"><a href="#contact" onClick="uncheck()">Contact</a></li>
             </div>
         </ul>
         <script type="text/javascript">
@@ -43,8 +43,6 @@
                     var checkbox_toggle = document.getElementById("checkbox_toggle")
                     checkbox_toggle.checked = false;
                 }
-                // var menu = document.getElementById("menu")
-                // menu.style.display = "none";
             }
         </script>
     </nav>
