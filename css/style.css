@@ -872,28 +872,28 @@ input[type=submit] {
 
 .sender-form{
     margin-top: 2rem;
-    padding: 1rem 3rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
 }
 
 .sender-info input, .sender-message textarea, .sender-info select {
-    border-radius: 15px;
-    border: solid 1.5px #856E9F;
+    border-radius: 10px;
+    border: solid 1px #856E9F;
 }
 
 .sender-info select, .sender-message textarea{
     font-family: "Outfit", serif;
-    font-size: 1vmax;
+    font-size: 1.5vmax;
 }
 
-.sender-info input {
+/* .sender-info input {
     margin-bottom: 1rem;
-}
+} */
 
 .sender-message textarea{
-    height: 430px;
+    height: 370px;
 }
 
 
@@ -966,9 +966,21 @@ input[type=submit] {
         height: 200px;
     }
 
+    .sender-label{
+        font-size: .8rem;
+    }
+
     .send-confirm {
         padding: 3rem 2rem;
     }
+
+    .label-container{
+        display: inline-flex;
+        font-size: 1rem;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
 
 }
 
