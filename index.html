@@ -13,33 +13,43 @@
 </head>
 
 <body>
+
+    <nav class="navbar ms-auto" id="navBar">
+        <!-- LOGO -->
+        <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li class="About Us"><a href="#about-us" id="about-us-menu" onClick="uncheck()">About Us</a></li>
+                <li class="our-team-navbar">
+                    <a>Our Teams</a>
+                <ul class="dropdown">
+                    <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
+                    <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
+                    <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
+                    <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
+                </ul>
+                <li id="events-menu"><a href="#events">Events</a></li>
+                <li id="join-us-menu"><a href="#join-us">Join Us</a></li>
+                <li id="contact-menu"><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+        <script type="text/javascript">
+            function uncheck(){
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    var checkbox_toggle = document.getElementById("checkbox_toggle")
+                    checkbox_toggle.checked = false;
+                }
+                // var menu = document.getElementById("menu")
+                // menu.style.display = "none";
+            }
+        </script>
+    </nav>
+
     <div id="wrapper">
-        <nav class="navbar ms-auto" id="navBar">
-            <!-- LOGO -->
-            <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li class="About Us"><a href="#about-us">About Us</a></li>
-                    <li class="our-team-navbar">
-                        <a>Our Teams</a>
-                    <ul class="dropdown">
-                        <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
-                        <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
-                        <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
-                        <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
-                    </ul>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#join-us">Join Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </div>
-            </ul>
-        </nav>
-
-
         <div class='overflow-parent' id="overflow-hidden">
             <img class='overflow-hidden' src="sdss-website-images/sat_logo_intro.png" alt="sdss-intro-img"/>
         </div>
@@ -261,37 +271,49 @@
                 <div class="subtitle">
                     Contact Us
                 </div>
-                <div class="sender-form">
+                <div class="sender-form reveal">
                     <div class="sender-info">
-                        <div class="sender-name">
-                            Name:
-                            <input type="text" id="contact-name" required /><br />
+                        <div class="label-container">
+                            <div class="sender-label">
+                            Name: *
+                            </div>
+                            <div class="error-message" id="name-error"></div>
                         </div>
-                        <div class="sender-email">
-                            Email:
-                            <input type="text" id="contact-email" required /><br />
+                        <input type="text" id="contact-name" required /><br />
+                        <div class="label-container">
+                            <div class="sender-label">
+                                Email: *
+                            </div>
+                            <div class="error-message" id="email-error"></div>
                         </div>
-                        <div class="sender-company">
+                        <input type="text" id="contact-email" required /><br />
+                        <div class="sender-label">
                             Company:
-                            <input type="text" id="contact-company"/><br />
                         </div>
-                        <div class="sender-role">
+                        <input type="text" id="contact-company"/><br />
+                        <div class="sender-label">
                             Role:
-                            <input type="text" id="contact-role"/><br />
                         </div>
-                        <div class="sender-reason">
-                            Select Reason:
-                            <select id="contact-reason">
-                                <option value="General">General</option>
-                                <option value="Academic Development">Academic Development</option>
-                                <option value="Professional Development">Professional Development</option>
-                                <option value="Consulting">Consulting</option>
-                                <option value="Other">Other</option>
-                            </select>
+                        <input type="text" id="contact-role" required="required"/><br />
+                        <div class="sender-label">
+                            Select Reason: 
                         </div>
+                        <select id="contact-reason">
+                            <option value="General">General</option>
+                            <option value="Academic Development">Academic Development</option>
+                            <option value="Professional Development">Professional Development</option>
+                            <option value="Consulting">Consulting</option>
+                            <option value="Other">Other</option>
+                        </select>
                     </div>
                     <div class="sender-message">
-                        Message:
+                        <div class="label-container">
+                            <div class="sender-label">
+                                Message: *
+                            </div>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
                         <div class="sender-message-text">
                             <textarea id="contact-message" required></textarea><br />
                         </div>
@@ -299,7 +321,45 @@
                 </div>
                 
                 <div class="contact-button">
-                    <button onClick="SendMail()">Submit</button>
+                    <button onClick="checkEmpty()">Submit</button>
+                    <script type="text/javascript">
+                        function checkEmpty()
+                        {
+                          var name;
+                          var email;
+                          var reason;
+                          var message;
+
+                          name = document.getElementById("contact-name").value;
+                          email = document.getElementById("contact-email").value;
+                          reason = document.getElementById("contact-reason").value;
+                          message = document.getElementById("contact-message").value;
+                        
+                          if (name == "") 
+                           { 
+                              document.getElementById("name-error").innerHTML = "Please enter your name.";
+                              document.getElementById("name-error").style.color = "red";
+                           };
+                           if (email == "")
+                           {
+                            document.getElementById("email-error").innerHTML = "Please enter an email.";
+                            document.getElementById("email-error").style.color = "red";
+                           }
+                           if (message == "")
+                           {
+                            document.getElementById("message-error").innerHTML = "Please enter a message.";
+                            document.getElementById("message-error").style.color = "red";
+                           }
+                           else
+                            {
+                             SendMail();
+                             document.getElementById("name-error").innerHTML = "";
+                             document.getElementById("email-error").innerHTML = "";
+                             document.getElementById("message-error").innerHTML = "";
+                            }
+                           
+                        }
+                    </script>
                     <dialog class="send-confirm" id="send-confirm-popup">
                         Email successfully sent!</br>
                         <button class="send-return-popup">Return</button>
@@ -339,7 +399,6 @@
 
         <footer class="footer">
             <div class="footer-images">
-                <img src="sdss-website-images/logo%202%201.png" alt="white-logo"/>
                 <a href='https://www.utoronto.ca/'><img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
             </div>
             <div class="footer-container">
