@@ -263,11 +263,9 @@ input[type=checkbox] {
     }
 
     .dropdown {
-        left: 10%;
-        right: 10%;
+        left: 20%;
         top: 15vmin;
         z-index: 100;
-        text-align: center;
     }
 
     .dropdown li:hover {
