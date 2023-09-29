@@ -64,6 +64,9 @@ body {
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -210,6 +213,10 @@ input[type=checkbox] {
     display: block;
 }
 
+.our-team-navbar:click .dropdown {
+    display: block;
+}
+
 @media screen and (max-width: 1024px){
     .menu {
         display: none;
@@ -252,6 +259,7 @@ input[type=checkbox] {
     .hamburger {
         display: block;
         z-index: 100;
+        text-align: center;
     }
 
     .dropdown {
