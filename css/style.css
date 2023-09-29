@@ -263,11 +263,9 @@ input[type=checkbox] {
     }
 
     .dropdown {
-        left: 10%;
-        right: 10%;
+        left: 20%;
         top: 15vmin;
         z-index: 100;
-        text-align: center;
     }
 
     .dropdown li:hover {
@@ -314,7 +312,7 @@ input[type=checkbox] {
     background-color: #856E9F;
     display: inline-block;
     font-size: 2vmax;
-    padding: .5vmax;
+    padding: 1vmax;
     border-radius: 30px;
     font-weight: 500;
     width: 100%;
@@ -630,6 +628,15 @@ input[type=checkbox] {
 
     .event-link button{
         width: 100%;
+        display: inline-block;
+        font-size: 2vmax;
+        padding: 1vmax;
+        border-radius: 30px;
+        font-weight: 500;
+        width: 100%;
+        color: white;
+        border: none;
+        font-family: 'Outfit', sans-serif;
     }
 }
 
