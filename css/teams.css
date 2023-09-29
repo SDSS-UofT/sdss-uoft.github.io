@@ -34,6 +34,7 @@
 .exec-image{
     width: 100%;
     display: inline-block;
+    height: auto;
 }
 
 .exec-separator{
@@ -69,7 +70,6 @@
     font-weight: 600;
     color: #B0579C;
     margin-top: 10vmin;
-    /* margin-bottom: 3vmin; */
     text-align: center;
     font-family: 'Outfit', sans-serif;
 }
@@ -82,3 +82,12 @@
     padding-top: 10%;
 }
 
+@media screen and (max-width: 600px) {
+    .content-teams{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .team-description{
+        font-size: .7rem;
+    }
+}
