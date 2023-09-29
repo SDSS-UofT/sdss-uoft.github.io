@@ -255,9 +255,11 @@ input[type=checkbox] {
     }
 
     .dropdown {
-        left: 25%;
-        top: 12vmin;
+        left: 10%;
+        right: 10%;
+        top: 15vmin;
         z-index: 100;
+        text-align: center;
     }
 
     .dropdown li:hover {
@@ -302,16 +304,15 @@ input[type=checkbox] {
 
 .get-involved{
     background-color: #856E9F;
-    border: none;
-    color: white;
-    width: 100%;
-    padding: 8px 32px;
-    text-align: center;
-    /*text-decoration: none;*/
     display: inline-block;
-    font-size: 23px;
-    border-radius: 15px;
-    font-weight: 300;
+    font-size: 2vmax;
+    padding: .5vmax;
+    border-radius: 30px;
+    font-weight: 500;
+    width: 100%;
+    color: white;
+    border: none;
+    font-family: 'Outfit', sans-serif;
 }
 
 .intro-body-container{
@@ -638,7 +639,7 @@ input[type=checkbox] {
     width: 40vmax;
     height: 25vmax;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 10px;
     border-color: #856E9F;
     border-style: solid;
     font-weight: 300;
@@ -904,12 +905,16 @@ input[type=submit] {
 .contact-button button{
     align-items: center;
     padding: 0.5rem 1.5rem;
-    color: white;
-    background-color: #856E9F;
-    border-radius: 10px;
-    font-size: 1.25vmax;
-    font-family: 'Outfit', serif;
+    font-size: 1.5vmax;
     margin-bottom: 5rem;
+    background-color: #856E9F;
+    padding: 1vmax;
+    border-radius: 30px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    width: 30%;
 }
 
 .send-confirm {
@@ -926,6 +931,7 @@ input[type=submit] {
 .send-confirm button {
     margin-top: 30px;
     margin-bottom: 0;
+    
 }
 
 .sender-label{
@@ -980,6 +986,11 @@ input[type=submit] {
         justify-content: space-between;
         gap: 1rem;
     }
+
+    .contact-button button{
+        font-size: 2vmax;
+    }
+    
     
 
 }
