@@ -297,7 +297,7 @@ input[type=checkbox] {
 
 .intro2{
     font-family: 'Outfit',serif;
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     font-weight:700;
 
 }
@@ -311,8 +311,8 @@ input[type=checkbox] {
 .get-involved{
     background-color: #856E9F;
     display: inline-block;
-    font-size: 1.5vmax;
-    padding: 1vmax;
+    font-size: 23px;
+    padding: .5vmax;
     border-radius: 30px;
     font-weight: 500;
     width: 100%;
@@ -420,7 +420,7 @@ input[type=checkbox] {
 .about-us-container{
     /*display: flex;*/
     display: block;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .about-us-text{
@@ -439,6 +439,7 @@ input[type=checkbox] {
 .about-us-right{
     /* display: flex; */
     margin-left: 40%;
+    font-size: 2.5vmin;
 }
 
 .about-us-link{
@@ -607,9 +608,9 @@ input[type=checkbox] {
     font-weight: 500;
     width: 100%;
     color: white;
-    background-color: #B0579C;
     border: none;
     font-family: 'Outfit', sans-serif;
+    background-color: #B0579C;
 
 }
 
@@ -704,15 +705,15 @@ input[type=checkbox] {
     padding-left: 3vmax;
     padding-right: 3vmax; 
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     margin: auto;
     width: 100%;
 }
 
 .join-us-button-link button{
     display: inline-block;
-    font-size: 1.2vmax;
-    padding: 1vmax;
+    font-size: 23px;
+    padding: .5vmax;
     border-radius: 30px;
     font-weight: 500;
     width: 100%;
@@ -1033,6 +1034,7 @@ input[type=submit] {
     display: flex;
     min-height: 5vmax;
     padding: 1.15% 2%;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer-images{
@@ -1057,7 +1059,6 @@ input[type=submit] {
 .copyright{
     text-align: center;
     color: white;
-    font-family: 'Outfit',serif;
     font-size: 1vmax;
     margin: 0 auto;
     /* align-self: flex-end; */
