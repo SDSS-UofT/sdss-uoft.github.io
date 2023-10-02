@@ -6,7 +6,7 @@
 }
 
 .team-title {
-    font-size: 4vmax;
+    font-size: 3vmax;
     font-weight: 600;
     color: #152950;
     margin-top: 5vmin;
@@ -18,6 +18,8 @@
     margin-bottom: 5vmin;
     margin-left: 7%;
     margin-right: 7%;
+    text-align: center;
+    font-size: 1.5vmax;
 }
 
 .team-image-row {
@@ -66,7 +68,7 @@
 }
 
 .subteam-title{
-    font-size: 3vmax;
+    font-size: 2.5vmax;
     font-weight: 600;
     color: #B0579C;
     margin-top: 10vmin;
