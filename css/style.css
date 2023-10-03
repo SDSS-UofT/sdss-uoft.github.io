@@ -1037,8 +1037,8 @@ input[type=submit] {
     font-family: 'Inter', sans-serif;
 }
 
-.footer-images{
-    height: 5.5vw;
+.footer-images img{
+    width: 100%;
     display: flex;
 }
 
