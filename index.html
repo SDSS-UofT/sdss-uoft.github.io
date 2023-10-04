@@ -23,10 +23,10 @@
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <!-- NAVIGATION MENUS -->
             <div class="menu">
-                <li class="About Us"><a href="#about-us" id="about-us-menu" onClick="uncheck()">About Us</a></li>
+                <li class="About Us"><a href="#about-us" id="about-us-menu" onClick="javascript: uncheck()">About Us</a></li>
                 <li class="our-team-navbar">
                     <a>Our Teams</a>
-                <ul class="dropdown" id="dropdown" onfocus="javascript: showDropdown()"> 
+                <ul class="dropdown" id="dropdown" onclick="javascript: showDropdown()"> 
                     <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
                     <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
                     <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
@@ -38,6 +38,11 @@
             </div>
         </ul>
         <script type="text/javascript">
+            const container = document.querySelector(".dropdown");
+            container.addEventListener('touchstart', () => {});
+            container.addEventListener('touchend', () => {});
+            container.addEventListener('touchcancel', () => {});
+            container.addEventListener('touchmove', () => {});
             function uncheck(){
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                     var checkbox_toggle = document.getElementById("checkbox_toggle")
