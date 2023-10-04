@@ -417,8 +417,8 @@ input[type=checkbox] {
     }
 
     .get-involved{
-        font-size: 2.5vmax;
-        padding: 1rem;
+        font-size: 3.5vw;
+        padding: .8rem;
     }
 
 }
@@ -847,8 +847,9 @@ input[type=checkbox] {
         font-weight: 500;
         color: white;
         border: none;
-        font-size: 2.5vmax;
-        padding: 1rem;
+        font-size: 3.5vw;
+        white-space: nowrap;
+        padding: .8rem;
         font-family: 'Outfit', sans-serif;
     
     }
@@ -1047,7 +1048,7 @@ input[type=submit] {
 
     .contact-button button{
         font-size: 2.5vmax;
-        padding: 1rem;
+        padding: .8rem;
         width: 50%;
         font-family: 'Outfit', sans-serif;
         display: inline-block;
@@ -1055,6 +1056,7 @@ input[type=submit] {
         font-weight: 500;
         color: white;
         border: none;
+        font-size: 3.5vw;
     }
     
     
