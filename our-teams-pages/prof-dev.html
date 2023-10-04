@@ -14,124 +14,128 @@
     </head>
 
 <body>
-
-    <nav class="navbar ms-auto" id="navBar">
-        <!-- LOGO -->
-        <a href="../index.html"><img src="../sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li class="About Us"><a href="../index.html#about-us">About Us</a></li>
-                <li class="our-team-navbar">
-                    <a>Our Teams</a>
-                <ul class="dropdown">
-                    <li><a href="internal-team.html">Internal</a></li>
-                    <li><a href="prof-dev.html">Professional Development</a></li>
-                    <li><a href="aca-dev.html">Academic Development</a></li>
-                    <li><a href="consulting.html">Consulting</a></li>
-                </ul>
-                <li><a href="../index.html#events">Events</a></li>
-                <li><a href="../index.html#join-us">Join Us</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </div>
-        </ul>
-        <script type="text/javascript">
-            const container = document.querySelector(".dropdown");
-            container.addEventListener('touchstart', () => {});
-            container.addEventListener('touchend', () => {});
-            container.addEventListener('touchcancel', () => {});
-            container.addEventListener('touchmove', () => {});
-        </script>
-    </nav>
-
-    <div class="content">
-        <div class="team-title">Professional Development</div>
-        <div class="team-description">The Professional Development Team is responsible for planning monthly professional development and leadership events for students interested in building a career in Data Science and Statistics. </div>
-        <div class="team-image-row reveal" id="slide-in">
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/mudit.jpg"/>
-                <div class="exec-caption">
-                    <div class="exec-name">Mudit Chandna</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-VP of PD</div>
-                <a href='https://www.linkedin.com/in/mudit-chandna/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+    <div onclick="void(0);">
+        <nav class="navbar ms-auto" id="navBar">
+            <!-- LOGO -->
+            <a href="../index.html"><img src="../sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li class="About Us"><a href="../index.html#about-us">About Us</a></li>
+                    <li class="our-team-navbar">
+                        <a>Our Teams</a>
+                    <ul class="dropdown" id="dropdown" onclick="javascript: showDropdown()">
+                        <li><a href="internal-team.html">Internal</a></li>
+                        <li><a href="prof-dev.html">Professional Development</a></li>
+                        <li><a href="aca-dev.html">Academic Development</a></li>
+                        <li><a href="consulting.html">Consulting</a></li>
+                    </ul>
+                    <li><a href="../index.html#events">Events</a></li>
+                    <li><a href="../index.html#join-us">Join Us</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
                 </div>
-                
-            </div>
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/minha.jpg"/>
-                <div class="exec-name">Minha Faheem</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-VP of PD</div>
-                <a href='https://www.linkedin.com/in/minha-faheem/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
-            </div>
-        </div>
+            </ul>
+            <script type="text/javascript">
+                function showDropdown(){
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    var dropdown = document.getElementById("dropdown")
+                    dropdown.style.display = "block";
+                }
+                }
+            </script>
+        </nav>
 
-        <div class="subteam-title">Logistics</div>
-        <div class="team-image-row reveal">
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/khalid.jpg"/>
-                <div class="exec-name">Khalid Edris</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-Director of Logistics</div>
-                <a href='https://www.linkedin.com/in/khalid-edris-081229244/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
-            </div>
-
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/arnav.jpg"/>
-                <div class="exec-name">Arnav Dey</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-Director of Logistics</div>
-                <a href='https://www.linkedin.com/in/arnav-dey-603684246/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
-            </div>
-        </div>
-
-        <div class="subteam-title">Outreach</div>
-        <div class="team-image-row spacing-down reveal">
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/shiri.jpg"/>
-                <div class="exec-caption">
-                    <div class="exec-name">Shiri Yeung</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-Director of Outreach</div>
-                <div class="exec-socials"></div>
+        <div class="content">
+            <div class="team-title">Professional Development</div>
+            <div class="team-description">The Professional Development Team is responsible for planning monthly professional development and leadership events for students interested in building a career in Data Science and Statistics. </div>
+            <div class="team-image-row reveal" id="slide-in">
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/mudit.jpg"/>
+                    <div class="exec-caption">
+                        <div class="exec-name">Mudit Chandna</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-VP of PD</div>
+                    <a href='https://www.linkedin.com/in/mudit-chandna/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                    </div>
+                    
                 </div>
-                
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/minha.jpg"/>
+                    <div class="exec-name">Minha Faheem</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-VP of PD</div>
+                    <a href='https://www.linkedin.com/in/minha-faheem/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                </div>
             </div>
-            <div class="exec-container">
-                <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/jakub.jpg"/>
-                <div class="exec-name">Jakub Riha</div>
-                <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
-                <div class="exec-position">Co-Director of Outreach</div>
-                <a href='https://www.linkedin.com/in/-jakub-riha/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+
+            <div class="subteam-title">Logistics</div>
+            <div class="team-image-row reveal">
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/khalid.jpg"/>
+                    <div class="exec-name">Khalid Edris</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-Director of Logistics</div>
+                    <a href='https://www.linkedin.com/in/khalid-edris-081229244/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                </div>
+
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/arnav.jpg"/>
+                    <div class="exec-name">Arnav Dey</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-Director of Logistics</div>
+                    <a href='https://www.linkedin.com/in/arnav-dey-603684246/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                </div>
+            </div>
+
+            <div class="subteam-title">Outreach</div>
+            <div class="team-image-row spacing-down reveal">
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/shiri.jpg"/>
+                    <div class="exec-caption">
+                        <div class="exec-name">Shiri Yeung</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-Director of Outreach</div>
+                    <div class="exec-socials"></div>
+                    </div>
+                    
+                </div>
+                <div class="exec-container">
+                    <img class="exec-image" src="../sdss-website-images/sdss-exec-pictures/jakub.jpg"/>
+                    <div class="exec-name">Jakub Riha</div>
+                    <img src="../sdss-website-images/exec-seperator.png" class="exec-separator"/>
+                    <div class="exec-position">Co-Director of Outreach</div>
+                    <a href='https://www.linkedin.com/in/-jakub-riha/'><img class="exec-linkedin" src="../sdss-website-images/linkedin-purple.png" id=="exec-linkedin"></img></a>
+                </div>
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="footer-images">
+                <a href='https://www.utoronto.ca/'><img src="../sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
+            </div>
+            <div class="footer-container">
+                <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
+                <div class="copyright">
+                Students in Data Science and Statistics &copy 2023
+                </div>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://instagram.com/sdssuoft"><img src="../sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
+                <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
+                    <img src="../sdss-website-images/image%201.png" alt="sdss-linkedin"/>
+                </a>
+                <a href="https://discord.gg/9b8Z5aGk36"><img src="../sdss-website-images/image 2.png" alt="sdss-discord"></a>
+            </div>
+        </footer>
+
+        <script src="../index.js"></script>
     </div>
 
-    <footer class="footer">
-        <div class="footer-images">
-            <a href='https://www.utoronto.ca/'><img src="../sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
-        </div>
-        <div class="footer-container">
-            <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
-            <div class="copyright">
-            Students in Data Science and Statistics &copy 2023
-            </div>
-        </div>
-        
-        <div class="footer-socials">
-            <a href="https://instagram.com/sdssuoft"><img src="../sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
-            <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
-                <img src="../sdss-website-images/image%201.png" alt="sdss-linkedin"/>
-            </a>
-            <a href="https://discord.gg/9b8Z5aGk36"><img src="../sdss-website-images/image 2.png" alt="sdss-discord"></a>
-        </div>
-    </footer>
-
-    <script src="../index.js"></script>
+    
 
 </body>
 

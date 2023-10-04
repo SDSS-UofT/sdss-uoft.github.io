@@ -13,420 +13,417 @@
 </head>
 
 <body>
+    <div onclick="void(0);">
+        <nav class="navbar ms-auto" id="navBar">
+            <!-- LOGO -->
+            <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" onclick="uncheck()" /></a>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links navbar-nav me-2">
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li class="About Us"><a href="#about-us" id="about-us-menu" onClick="javascript: uncheck()">About Us</a></li>
+                    <li class="our-team-navbar">
+                        <a>Our Teams</a>
 
-    <nav class="navbar ms-auto" id="navBar">
-        <!-- LOGO -->
-        <a href="#"><img src="sdss-website-images/black-sdss-logo.png" alt="logo" /></a>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links navbar-nav me-2">
-            <input type="checkbox" id="checkbox_toggle"/>
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li class="About Us"><a href="#about-us" id="about-us-menu" onClick="javascript: uncheck()">About Us</a></li>
-                <li class="our-team-navbar">
-                    <a>Our Teams</a>
-                    <ul class="dropdown" id="dropdown" onclick="void(0)"> 
-                        <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
-                        <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
-                        <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
-                        <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
-                    </ul>
-                    <li id="events-menu"><a href="#events" onClick="uncheck()">Events</a></li>
-                    <li id="join-us-menu"><a href="#join-us" onClick="uncheck()">Join Us</a></li>
-                    <li id="contact-menu"><a href="#contact" onClick="uncheck()">Contact</a></li>
-                <!-- <ul class="dropdown" id="dropdown" onfocus="javascript: showDropdown()"> 
-                    <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
-                    <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
-                    <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
-                    <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
-                </ul>
-                <li id="events-menu"><a href="#events" onClick="uncheck()">Events</a></li>
-                <li id="join-us-menu"><a href="#join-us" onClick="uncheck()">Join Us</a></li>
-                <li id="contact-menu"><a href="#contact" onClick="uncheck()">Contact</a></li> -->
-            </div>
-        </ul>
-        <script type="text/javascript">
-            function uncheck(){
-                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                    var checkbox_toggle = document.getElementById("checkbox_toggle")
-                    checkbox_toggle.checked = false;
+                        <ul class="dropdown" id="dropdown" onclick="javascript: showDropdown()"> 
+                            <li><a href="our-teams-pages/internal-team.html">Internal</a></li>
+                            <li><a href="our-teams-pages/prof-dev.html">Professional Development</a></li>
+                            <li><a href="our-teams-pages/aca-dev.html">Academic Development</a></li>
+                            <li><a href="our-teams-pages/consulting.html">Consulting</a></li>
+                        </ul>
+                        <li id="events-menu"><a href="#events" onClick="uncheck()">Events</a></li>
+                        <li id="join-us-menu"><a href="#join-us" onClick="uncheck()">Join Us</a></li>
+                        <li id="contact-menu"><a href="#contact" onClick="uncheck()">Contact</a></li>
+
+                    </li>
+                </div>
+            </ul>
+            <script type="text/javascript">
+                function uncheck(){
+                    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                        var checkbox_toggle = document.getElementById("checkbox_toggle")
+                        checkbox_toggle.checked = false;
+                    }
                 }
-            }
 
-            function showDropdown(){
-                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                    var dropdown = document.getElementById("dropdown")
-                    dropdown.style.display = "block";
+                function showDropdown(){
+                    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                        var dropdown = document.getElementById("dropdown")
+                        dropdown.style.display = "block";
+                    }
                 }
-            }
-        </script>
-    </nav>
+            </script>
+        </nav>
 
-    <div id="wrapper">
-        <div class='overflow-parent' id="overflow-hidden">
-            <img class='overflow-hidden' src="sdss-website-images/sat_logo_intro.png" alt="sdss-intro-img"/>
-        </div>
-
-
-        <div class="content" id="slide-in">
-            <div class="intro">
-                <div class="intro1">
-                    University of Toronto's
-                </div>
-                <div class="intro-container">
-                    <div class="intro2">
-                        Students in
-                    </div>
-                    <div class="intro2">
-                        Data Science
-                    </div>
-                    <div class="intro2">
-                        and Statistics
-                    </div>
-
-                </div>
-
-                <div class="intro-body-container">
-                    <!-- <div id="overflow-hidden">
-                        <img class='overflow-hidden' src="sdss-website-images/sat_logo_intro.png" alt="sdss-intro-img"/>
-                    </div> -->
-                    
-                    <div class="intro-body1">
-                        Welcome to the world of data and technology at UofT.
-                    </div>
-                    <div class="intro-body2">
-                        Our group that enables a diverse community of passionate individuals to explore, learn, grow, and
-                        engage in social good in the world of Data Science and Statistics.
-                        <div class="button-container">
-                            <a href='#join-us'><button type="button" class='get-involved'>Get Involved</button></a>
-                        </div>
-                    </div>
-                </div>
-
-
+        <div id="wrapper">
+            <div class='overflow-parent' id="overflow-hidden">
+                <img class='overflow-hidden' src="sdss-website-images/sat_logo_intro.png" alt="sdss-intro-img"/>
             </div>
-        </div>
 
-        <div class="content" id="fade-in">
-            <div class="about-us" id="about-us">
-                <div class="subtitle">About Us</div>
-                <div class="about-us-container reveal">
-                    <div class="about-us-text">
-                        <div class="about-us-left">
-                            Education.
-                        </div>
-                        <div class="about-us-right">
-                            Our <a class="about-us-link" href="/our-teams-pages/aca-dev.html"> Academic Development Team</a> provides academic opportunities and resources for students of 
-                            all skill levels to learn and grow in the field of data science and statistics.
-                        </div>
-                    </div>
-                    <div class="about-us-text">
-                        <div class="about-us-left">
-                            Career.
-                        </div>
-                        <div class="about-us-right">
-                            Our <a class="about-us-link" href="/our-teams-pages/prof-dev.html">Professional Development</a> events will provide students exposure to Data Science and Statistics in a professional workplace and give the confidence to continue to pursue a career in this pathway. 
 
-                        </div>
+            <div class="content" id="slide-in">
+                <div class="intro">
+                    <div class="intro1">
+                        University of Toronto's
                     </div>
-                    <div class="about-us-text">
-                        <div class="about-us-left">
-                            Consulting.
+                    <div class="intro-container">
+                        <div class="intro2">
+                            Students in
                         </div>
-                        <div class="about-us-right">
-                            Our <a class="about-us-link" href="/our-teams-pages/consulting.html">Consulting Team</a> provides students with the opportunity to work on real-world data science and statistics projects for non-profit organizations and businesses.
+                        <div class="intro2">
+                            Data Science
                         </div>
-                    </div>
-                    <div class="about-us-text">
-                        <div class="about-us-left">
-                            Community.
+                        <div class="intro2">
+                            and Statistics
                         </div>
-                        <div class="about-us-right">
-                            SDSS is dedicated to providing a supportive and positive community at UofT. Our <a class='about-us-link' href="/our-teams-pages/internal-team.html">Internal Team</a> establishes the foundation of our community and ensures that our members are able to grow and learn in a safe and welcoming environment.
-                        </div>
+
                     </div>
 
-                </div>
-            </div>
-            <div class="our-partners" id="our-teams">
-                <div class="subtitle">Our Partners</div>
-                <div class="our-partners-container">
-                    <div class="partner-images-row reveal">
-                        <a href="https://community.bravecareer.io/c/start-here/"><img src="sdss-website-images/partner-images/brave.png" alt="partner-image"/></a>
+                    <div class="intro-body-container">
+                        <!-- <div id="overflow-hidden">
+                            <img class='overflow-hidden' src="sdss-website-images/sat_logo_intro.png" alt="sdss-intro-img"/>
+                        </div> -->
                         
-                    </div>
-
-                </div>
-            </div>
-            <div class="events" id="events">
-                <div class="subtitle">
-                    Events
-                </div>
-
-                <!-- <div class="events-section reveal">
-                    <div class="events-section-title">
-                        Upcoming Events
-                    </div>
-                    
-                    
-                </div> -->
-                    
-                <div class="events-section reveal">
-                    <div class="events-section-title">
-                        Past Events
-                    </div>
-
-                    <div class="events-title">
-                        Resume/Cover Letter Workshop
-                    </div>
-                    <img class="event-image" src="/sdss-website-images/events/Workshop/Resume&Cover/1.png"/>
-                    <div class="event-container">
-                    
-                        <div class="events-description">
-                            Introducing our first event of the year: <b>Resume & Cover Letter Workshop</b>! 
-                            <br><br>
-                            <!-- <div class="event-link">
-                                <a href="https://forms.gle/3v8riAcSs4i4pGVP6"><button type="button">Register here!</button></a>
-                            </div> -->
+                        <div class="intro-body1">
+                            Welcome to the world of data and technology at UofT.
+                        </div>
+                        <div class="intro-body2">
+                            Our group that enables a diverse community of passionate individuals to explore, learn, grow, and
+                            engage in social good in the world of Data Science and Statistics.
+                            <div class="button-container">
+                                <a href='#join-us'><button type="button" class='get-involved'>Get Involved</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+
+                </div>
             </div>
 
-            <div class="join-us" id="join-us">
-                <div class="join-us-container">
+            <div class="content" id="fade-in">
+                <div class="about-us" id="about-us">
+                    <div class="subtitle">About Us</div>
+                    <div class="about-us-container reveal">
+                        <div class="about-us-text">
+                            <div class="about-us-left">
+                                Education.
+                            </div>
+                            <div class="about-us-right">
+                                Our <a class="about-us-link" href="/our-teams-pages/aca-dev.html"> Academic Development Team</a> provides academic opportunities and resources for students of 
+                                all skill levels to learn and grow in the field of data science and statistics.
+                            </div>
+                        </div>
+                        <div class="about-us-text">
+                            <div class="about-us-left">
+                                Career.
+                            </div>
+                            <div class="about-us-right">
+                                Our <a class="about-us-link" href="/our-teams-pages/prof-dev.html">Professional Development</a> events will provide students exposure to Data Science and Statistics in a professional workplace and give the confidence to continue to pursue a career in this pathway. 
+
+                            </div>
+                        </div>
+                        <div class="about-us-text">
+                            <div class="about-us-left">
+                                Consulting.
+                            </div>
+                            <div class="about-us-right">
+                                Our <a class="about-us-link" href="/our-teams-pages/consulting.html">Consulting Team</a> provides students with the opportunity to work on real-world data science and statistics projects for non-profit organizations and businesses.
+                            </div>
+                        </div>
+                        <div class="about-us-text">
+                            <div class="about-us-left">
+                                Community.
+                            </div>
+                            <div class="about-us-right">
+                                SDSS is dedicated to providing a supportive and positive community at UofT. Our <a class='about-us-link' href="/our-teams-pages/internal-team.html">Internal Team</a> establishes the foundation of our community and ensures that our members are able to grow and learn in a safe and welcoming environment.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="our-partners" id="our-teams">
+                    <div class="subtitle">Our Partners</div>
+                    <div class="our-partners-container">
+                        <div class="partner-images-row reveal">
+                            <a href="https://community.bravecareer.io/c/start-here/"><img src="sdss-website-images/partner-images/brave.png" alt="partner-image"/></a>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="events" id="events">
                     <div class="subtitle">
-                    Join Us
-                    </div>
-                    <div class="join-us-buttons-container reveal">
-                        <div class="join-us-button-container">
-                            <div class="join-us-square">
-                                <div class="join-us-button-title">General Membership</div>
-                                <div class="join-us-button-description">
-                                    Anyone can be a general member! Perks include:
-                                    <ul>
-                                        <li>Be an active part of the SDSS community</li>
-                                        <li>Be subscribed to the SDSS monthly newsletter for data science and statistics highlights throughout the world, resources, event updates, and more</li>
-                                        <li>Opportunities to volunteer/lead events</li>
-                                        <li>Priority in future executive selection</li>
-                                        <li>Early access to our events</li>
-                                        <li>And more!</li>
-                                    </ul>
-                                    
-                                </div>
-                                <div class="join-us-button-link">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6PJ_L-ySkaDO220GjopQm3Lf2eKEpCrWT3VrNNVz6HJqMVQ/viewform?usp=sf_link">
-                                        <button type="button" class="join-us-gen-mem">Register Here!</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="join-us-button-container">
-                            <div class="join-us-square">
-                                <div class="join-us-button-title">Executive Team</div>
-                                <div class="join-us-button-description">
-                                    The Executive Team provides the foundational base for creating mentorship, support, and community for SDSS. It consists of the:
-                                    <br><br>
-                                    <ul>
-                                        <li>Academic Development Team</li>
-                                        <li>Professional Development Team</li>
-                                        <li>Internal Team</li>
-                                    </ul>
-                                </div>
-                                <div class="join-us-button-link">
-                                    <a href="">
-                                        <button type="button" class="join-us-executive">Applications closed, check back later</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="join-us-button-container">
-                            <div class="join-us-square">
-                                <div class="join-us-button-title">Consulting Team</div>
-                                <div class="join-us-button-description">
-                                    SDSS provides opportunities for members to gain practical experience by working on real-world projects, applying their skills to solve meaningful problems, contributing to organizations, and seeking data-drive solutions. Current Teams consist of:    
-                                    <br><br>                            
-                                    <ul> 
-                                        <li>Business Team</li>
-                                        <li>Social Good Team</li>
-                                    </ul>
-                                </div>
-                                <div class="join-us-button-link">
-                                    <a href="">
-                                        <button type="button" class="join-us-consulting">Applications closed, check back later</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        Events
                     </div>
 
-                </div>
-                
-            
-            </div>
-
-            <div class="contact-us" id="contact">
-                <div class="subtitle">
-                    Contact Us
-                </div>
-                <div class="sender-form reveal">
-                    <div class="sender-info">
-                        <div class="label-container">
-                            <div class="sender-label">
-                            Name: *
-                            </div>
-                            <div class="error-message" id="name-error"></div>
-                        </div>
-                        <input type="text" id="contact-name" required /><br />
-                        <div class="label-container">
-                            <div class="sender-label">
-                                Email: *
-                            </div>
-                            <div class="error-message" id="email-error"></div>
-                        </div>
-                        <input type="text" id="contact-email" required /><br />
-                        <div class="sender-label">
-                            Company:
-                        </div>
-                        <input type="text" id="contact-company"/><br />
-                        <div class="sender-label">
-                            Role:
-                        </div>
-                        <input type="text" id="contact-role" required="required"/><br />
-                        <div class="sender-label">
-                            Select Reason: 
-                        </div>
-                        <select id="contact-reason">
-                            <option value="General">General</option>
-                            <option value="Academic Development">Academic Development</option>
-                            <option value="Professional Development">Professional Development</option>
-                            <option value="Consulting">Consulting</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div class="sender-message">
-                        <div class="label-container">
-                            <div class="sender-label">
-                                Message: *
-                            </div>
-                            <div class="error-message" id="message-error"></div>
+                    <!-- <div class="events-section reveal">
+                        <div class="events-section-title">
+                            Upcoming Events
                         </div>
                         
-                        <div class="sender-message-text">
-                            <textarea id="contact-message" required></textarea><br />
+                        
+                    </div> -->
+                        
+                    <div class="events-section reveal">
+                        <div class="events-section-title">
+                            Past Events
+                        </div>
+
+                        <div class="events-title">
+                            Resume/Cover Letter Workshop
+                        </div>
+                        <img class="event-image" src="/sdss-website-images/events/Workshop/Resume&Cover/1.png"/>
+                        <div class="event-container">
+                        
+                            <div class="events-description">
+                                Introducing our first event of the year: <b>Resume & Cover Letter Workshop</b>! 
+                                <br><br>
+                                <!-- <div class="event-link">
+                                    <a href="https://forms.gle/3v8riAcSs4i4pGVP6"><button type="button">Register here!</button></a>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-button">
-                    <button onClick="checkEmpty()">Submit</button>
-                    <script type="text/javascript">
-                        function checkEmpty()
-                        {
-                          var name;
-                          var email;
-                          var reason;
-                          var message;
 
-                          name = document.getElementById("contact-name").value;
-                          email = document.getElementById("contact-email").value;
-                          reason = document.getElementById("contact-reason").value;
-                          message = document.getElementById("contact-message").value;
-                        
-                          if (name == "") 
-                           { 
-                              document.getElementById("name-error").innerHTML = "Please enter your name.";
-                              document.getElementById("name-error").style.color = "red";
-                           };
-                           if (email == "")
-                           {
-                            document.getElementById("email-error").innerHTML = "Please enter an email.";
-                            document.getElementById("email-error").style.color = "red";
-                           }
-                           if (message == "")
-                           {
-                            document.getElementById("message-error").innerHTML = "Please enter a message.";
-                            document.getElementById("message-error").style.color = "red";
-                           }
-                           else
+                </div>
+
+                <div class="join-us" id="join-us">
+                    <div class="join-us-container">
+                        <div class="subtitle">
+                        Join Us
+                        </div>
+                        <div class="join-us-buttons-container reveal">
+                            <div class="join-us-button-container">
+                                <div class="join-us-square">
+                                    <div class="join-us-button-title">General Membership</div>
+                                    <div class="join-us-button-description">
+                                        Anyone can be a general member! Perks include:
+                                        <ul>
+                                            <li>Be an active part of the SDSS community</li>
+                                            <li>Be subscribed to the SDSS monthly newsletter for data science and statistics highlights throughout the world, resources, event updates, and more</li>
+                                            <li>Opportunities to volunteer/lead events</li>
+                                            <li>Priority in future executive selection</li>
+                                            <li>Early access to our events</li>
+                                            <li>And more!</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="join-us-button-link">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6PJ_L-ySkaDO220GjopQm3Lf2eKEpCrWT3VrNNVz6HJqMVQ/viewform?usp=sf_link">
+                                            <button type="button" class="join-us-gen-mem">Register Here!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="join-us-button-container">
+                                <div class="join-us-square">
+                                    <div class="join-us-button-title">Executive Team</div>
+                                    <div class="join-us-button-description">
+                                        The Executive Team provides the foundational base for creating mentorship, support, and community for SDSS. It consists of the:
+                                        <br><br>
+                                        <ul>
+                                            <li>Academic Development Team</li>
+                                            <li>Professional Development Team</li>
+                                            <li>Internal Team</li>
+                                        </ul>
+                                    </div>
+                                    <div class="join-us-button-link">
+                                        <a href="">
+                                            <button type="button" class="join-us-executive">Applications closed, check back later</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="join-us-button-container">
+                                <div class="join-us-square">
+                                    <div class="join-us-button-title">Consulting Team</div>
+                                    <div class="join-us-button-description">
+                                        SDSS provides opportunities for members to gain practical experience by working on real-world projects, applying their skills to solve meaningful problems, contributing to organizations, and seeking data-drive solutions. Current Teams consist of:    
+                                        <br><br>                            
+                                        <ul> 
+                                            <li>Business Team</li>
+                                            <li>Social Good Team</li>
+                                        </ul>
+                                    </div>
+                                    <div class="join-us-button-link">
+                                        <a href="">
+                                            <button type="button" class="join-us-consulting">Applications closed, check back later</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                
+                </div>
+
+                <div class="contact-us" id="contact">
+                    <div class="subtitle">
+                        Contact Us
+                    </div>
+                    <div class="sender-form reveal">
+                        <div class="sender-info">
+                            <div class="label-container">
+                                <div class="sender-label">
+                                Name: *
+                                </div>
+                                <div class="error-message" id="name-error"></div>
+                            </div>
+                            <input type="text" id="contact-name" required /><br />
+                            <div class="label-container">
+                                <div class="sender-label">
+                                    Email: *
+                                </div>
+                                <div class="error-message" id="email-error"></div>
+                            </div>
+                            <input type="text" id="contact-email" required /><br />
+                            <div class="sender-label">
+                                Company:
+                            </div>
+                            <input type="text" id="contact-company"/><br />
+                            <div class="sender-label">
+                                Role:
+                            </div>
+                            <input type="text" id="contact-role" required="required"/><br />
+                            <div class="sender-label">
+                                Select Reason: 
+                            </div>
+                            <select id="contact-reason">
+                                <option value="General">General</option>
+                                <option value="Academic Development">Academic Development</option>
+                                <option value="Professional Development">Professional Development</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="sender-message">
+                            <div class="label-container">
+                                <div class="sender-label">
+                                    Message: *
+                                </div>
+                                <div class="error-message" id="message-error"></div>
+                            </div>
+                            
+                            <div class="sender-message-text">
+                                <textarea id="contact-message" required></textarea><br />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-button">
+                        <button onClick="checkEmpty()">Submit</button>
+                        <script type="text/javascript">
+                            function checkEmpty()
                             {
-                             SendMail();
-                             document.getElementById("name-error").innerHTML = "";
-                             document.getElementById("email-error").innerHTML = "";
-                             document.getElementById("message-error").innerHTML = "";
+                            var name;
+                            var email;
+                            var reason;
+                            var message;
+
+                            name = document.getElementById("contact-name").value;
+                            email = document.getElementById("contact-email").value;
+                            reason = document.getElementById("contact-reason").value;
+                            message = document.getElementById("contact-message").value;
+                            
+                            if (name == "") 
+                            { 
+                                document.getElementById("name-error").innerHTML = "Please enter your name.";
+                                document.getElementById("name-error").style.color = "red";
+                            };
+                            if (email == "")
+                            {
+                                document.getElementById("email-error").innerHTML = "Please enter an email.";
+                                document.getElementById("email-error").style.color = "red";
                             }
-                           
-                        }
-                    </script>
-                    <dialog class="send-confirm" id="send-confirm-popup">
-                        Email successfully sent!</br>
-                        <button class="send-return-popup">Return</button>
-                    </dialog>
-
-                    <script>
-                        const ConfirmPopUp = document.querySelector(".send-confirm");
-                        const CloseConfirmPopUp = document.querySelector(".send-return-popup");
-
-                        function SendMail() {
-                            var contactParams = {
-                                from_name: document.getElementById("contact-name").value,
-                                email_id: document.getElementById("contact-email").value,
-                                company: document.getElementById("contact-company").value,
-                                role: document.getElementById("contact-role").value,
-                                reason: document.getElementById("contact-reason").value,
-                                message: document.getElementById("contact-message").value
-
+                            if (message == "")
+                            {
+                                document.getElementById("message-error").innerHTML = "Please enter a message.";
+                                document.getElementById("message-error").style.color = "red";
                             }
-                            emailjs.send("service_xz4ojhe", "template_b7e1t6n", contactParams);
-                            document.getElementById("contact-name").value="";
-                            document.getElementById("contact-email").value="";
-                            document.getElementById("contact-company").value="";
-                            document.getElementById("contact-role").value="";
-                            document.getElementById("contact-message").value="";
-                            ConfirmPopUp.showModal();
-                        }
-                        
-                        CloseConfirmPopUp.addEventListener('click', () => {
-                            ConfirmPopUp.close();
-                        });
-                    </script>
+                            else
+                                {
+                                SendMail();
+                                document.getElementById("name-error").innerHTML = "";
+                                document.getElementById("email-error").innerHTML = "";
+                                document.getElementById("message-error").innerHTML = "";
+                                }
+                            
+                            }
+                        </script>
+                        <dialog class="send-confirm" id="send-confirm-popup">
+                            Email successfully sent!</br>
+                            <button class="send-return-popup">Return</button>
+                        </dialog>
+
+                        <script>
+                            const ConfirmPopUp = document.querySelector(".send-confirm");
+                            const CloseConfirmPopUp = document.querySelector(".send-return-popup");
+
+                            function SendMail() {
+                                var contactParams = {
+                                    from_name: document.getElementById("contact-name").value,
+                                    email_id: document.getElementById("contact-email").value,
+                                    company: document.getElementById("contact-company").value,
+                                    role: document.getElementById("contact-role").value,
+                                    reason: document.getElementById("contact-reason").value,
+                                    message: document.getElementById("contact-message").value
+
+                                }
+                                emailjs.send("service_xz4ojhe", "template_b7e1t6n", contactParams);
+                                document.getElementById("contact-name").value="";
+                                document.getElementById("contact-email").value="";
+                                document.getElementById("contact-company").value="";
+                                document.getElementById("contact-role").value="";
+                                document.getElementById("contact-message").value="";
+                                ConfirmPopUp.showModal();
+                            }
+                            
+                            CloseConfirmPopUp.addEventListener('click', () => {
+                                ConfirmPopUp.close();
+                            });
+                        </script>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-images">
+                    <a href='https://www.utoronto.ca/'><img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
+                </div>
+                <div class="footer-container">
+                    <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
+                    <div class="copyright">
+                    Students in Data Science and Statistics &copy 2023
+                    </div>
                 </div>
                 
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="footer-images">
-                <a href='https://www.utoronto.ca/'><img src="sdss-website-images/image%20(3)%201.png" alt="uoft"/></a>
-            </div>
-            <div class="footer-container">
-                <a class="email" href="mailto:sdss.uoft@gmail.com">sdss.uoft@gmail.com</a>
-                <div class="copyright">
-                Students in Data Science and Statistics &copy 2023
+                <div class="footer-socials">
+                    <a href="https://instagram.com/sdssuoft"><img src="sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
+                    <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
+                        <img src="sdss-website-images/image%201.png" alt="sdss-linkedin"/>
+                    </a>
+                    <a href="https://discord.gg/9b8Z5aGk36"><img src="sdss-website-images/image 2.png" alt="sdss-discord"></a>
                 </div>
-            </div>
-            
-            <div class="footer-socials">
-                <a href="https://instagram.com/sdssuoft"><img src="sdss-website-images/image%203.png" alt="sdss-ig"/> </a>
-                <a href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft/">
-                    <img src="sdss-website-images/image%201.png" alt="sdss-linkedin"/>
-                </a>
-                <a href="https://discord.gg/9b8Z5aGk36"><img src="sdss-website-images/image 2.png" alt="sdss-discord"></a>
-            </div>
-        </footer>
+            </footer>
 
 
-        <script src="index.js"></script>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init("s9mHeu7INv0aC72Sq");
-            })();
-        </script>
+            <script src="index.js"></script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init("s9mHeu7INv0aC72Sq");
+                })();
+            </script>
+        </div>
     </div>
+
+    
 </body>
 </html>
