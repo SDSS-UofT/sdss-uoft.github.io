@@ -946,16 +946,21 @@ input[type=submit] {
 .contact-button button{
     align-items: center;
     padding: 0.5rem 1.5rem;
-    font-size: 1.5vmax;
     margin-bottom: 5rem;
     background-color: #856E9F;
     padding: 1vmax;
-    border-radius: 30px;
     font-weight: 500;
     color: white;
     border: none;
     font-family: 'Outfit', sans-serif;
     width: 30%;
+    display: inline-block;
+    font-size: 1.2vmax;
+    border-radius: 30px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    font-family: 'Outfit', sans-serif;
 }
 
 .send-confirm {
