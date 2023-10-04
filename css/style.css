@@ -276,7 +276,7 @@ input[type=checkbox] {
     .dropdown {
         left: 20%;
         right: 20%;
-        top: 15vmin;
+        top: 10vmin;
         z-index: 100;
         position: absolute; /*WITH RESPECT TO PARENT*/
         display: none;
