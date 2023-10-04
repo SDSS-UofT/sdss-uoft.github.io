@@ -154,7 +154,7 @@ body {
 .navbar img {
     /* float: left; */
     padding: 2vmin;
-    width: 4rem;
+    width: 5rem;
     padding-top: 20px;
 }
 
@@ -276,7 +276,7 @@ input[type=checkbox] {
     .dropdown {
         left: 20%;
         right: 20%;
-        top: 13vmin;
+        top: 13.5vmin;
         z-index: 100;
         position: absolute; /*WITH RESPECT TO PARENT*/
         display: none;
@@ -1141,7 +1141,7 @@ input[type=submit] {
     .copyright{
         text-align: center;
         color: white;
-        font-family: 'Outfit',serif;
+        font-family: 'Inter',serif;
         font-size: 1vmax;
         margin: 0 auto;
         /* align-self: flex-end; */
@@ -1149,12 +1149,12 @@ input[type=submit] {
     
     .email{
         display: block;
-        font-family: 'Outfit',serif;
+        font-family: 'Inter',serif;
         text-align: center;
         text-decoration: none;
         color: white;
         font-size: 1vmax;
-        padding-bottom: 1vmin;
+        padding-bottom: 1vmax;
     }
 
 }
