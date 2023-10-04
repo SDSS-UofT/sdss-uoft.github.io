@@ -1141,7 +1141,7 @@ input[type=submit] {
     .copyright{
         text-align: center;
         color: white;
-        font-family: 'Inter',serif;
+        font-family: 'Inter', sans-serif;
         font-size: 1vmax;
         margin: 0 auto;
         /* align-self: flex-end; */
@@ -1149,7 +1149,7 @@ input[type=submit] {
     
     .email{
         display: block;
-        font-family: 'Inter',serif;
+        font-family: 'Inter', sans-serif;
         text-align: center;
         text-decoration: none;
         color: white;
