@@ -258,7 +258,7 @@ input[type=checkbox] {
     }
 
     .menu a:hover{
-        color: white;
+        color: #152950;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
