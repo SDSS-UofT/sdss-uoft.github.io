@@ -221,7 +221,7 @@ input[type=checkbox] {
     .navbar img {
         /* float: left; */
         margin: 2%;
-        width: 5vmax;
+        width: 8vmax;
         padding-top: 20px;
     }
 
@@ -243,7 +243,6 @@ input[type=checkbox] {
 
     .menu li:hover {
         display: inline-block;
-        background-color: #856E9F;
         width: 100%;
         transition: 0.3s ease;
         cursor: pointer;
