@@ -614,6 +614,7 @@ input[type=checkbox] {
 
 .event-container{
     display: flex;
+    padding-bottom: 30%;
 }
 
 
