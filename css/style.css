@@ -529,7 +529,9 @@ input[type=checkbox] {
 }
 
 .partner-images-row img{
-    width: 30%;
+    width: 25vw;
+    height: auto;
+    padding: 5%;
 }
 
 .our-teams-button{
