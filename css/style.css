@@ -1,7 +1,11 @@
+
+
 .temp-home{
     /* center items to center of page */
     margin: 0 auto;
-    display: flex;
+    @media screen and (min-width: 601px) {
+        display: flex;
+    }
     height: 50vh;
 }
 
@@ -22,6 +26,7 @@
 .temp-1-link-container{
     padding-top: 2%;
 }
+
 
 
 .temp-2-img{
