@@ -1,3 +1,37 @@
+.temp-home{
+    /* center items to center of page */
+    margin: 0 auto;
+    display: flex;
+    height: 50vh;
+}
+
+.temp-1{
+    color: black;
+    font-weight: 500;
+    font-size: 3vmax;
+    width: 100%;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.temp-1-link{
+    text-decoration: none;
+    
+}
+
+.temp-1-link-container{
+    padding-top: 2%;
+}
+
+
+.temp-2-img{
+    height: 100%;
+}
+
+.temp-3{
+    padding-top: 5%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,12 +52,13 @@ button{
 body {
     font-family: 'Inter',sans-serif;
     font-size: 22px;
-    background: linear-gradient(-45deg, #FFFFFF, #fde9f9,#FFFFFF, #EBF1FF, #eedfff);
+    /* background: linear-gradient(-45deg, #FFFFFF, #fde9f9,#FFFFFF, #EBF1FF, #eedfff); */
 	background-size: 400% 400%;
     background-attachment: fixed;
     background-position: center;
 	animation: gradient 10s ease infinite;
     min-height: 100vh;
+    margin: 10%;
 }
 
 #wrapper{
