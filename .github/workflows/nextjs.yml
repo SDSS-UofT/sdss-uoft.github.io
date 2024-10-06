@@ -57,6 +57,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm 
       - name: Install Dependencies
+        working-directory: ./sdss-website
         run: pnpm install
       - name: Build
         run: pnpm build
