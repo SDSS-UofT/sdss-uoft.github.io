@@ -44,9 +44,25 @@ export const eventData =
     {
         "id": 5,
         "name": "Future Finds",
-        "date": "2023-12-06",
+        "date": "2024-12-06",
         "cover-image": "/event-pictures/5/future-finds.png",
         "short-description": "Harness the chance to find your future in finance and data science.",
         "long-description": "Students will learn about the job search process, resume building, and interview preparation with Brave Career, a career development platform that helps students and recent graduates land their dream jobs."
-    }
+    },
+    {
+        "id": 6,
+        "name": "SQL Workshop",
+        "date": "2024-09-23",
+        "cover-image": "/event-pictures/6/sql-2024.png",
+        "short-description": "Get an introduction to how SQL interacts with structured data, syntax, writing queries.",
+        "long-description": "Get an introduction to how SQL interacts with structured data, syntax, writing queries & a case study walkthrough from a Data Science Consultant @ IBM"
+    },
+    {
+        "id": 7,
+        "name": "SDSS x Brave: Hiring Manager Insights, Finance",
+        "date": "2024-09-27",
+        "cover-image": "/event-pictures/6/brave-hm.png",
+        "short-description": "Entry-level opportunities, hard skill requirements & domain knowledge, how to get a stellar resume",
+        "long-description": "Get an introduction to how SQL interacts with structured data, syntax, writing queries & a case study walkthrough from a Data Science Consultant @ IBM"
+    },
 ]
