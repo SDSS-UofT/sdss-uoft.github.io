@@ -62,13 +62,10 @@ jobs:
       - name: Build
         working-directory: ./sdss-website
         run: pnpm build
-      - name: Export static files
-        working-directory: ./sdss-website
-        run: pnpm export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./sdss-website/.next
+          path: ./sdss-website/out
 
   # Deployment job
   deploy:
