@@ -27,11 +27,11 @@ const TopNavbar = () => {
 
             <ul className="hidden md:flex lg:gap-x-6 body-regular">
               <li>
-                <Link href="/" passHref className="btn bg-white secondary-purple meet-teams-button hover:text-white border-none rounded-full lg:px-4 py-2">
+                <Link href="/" passHref className="btn bg-white secondary-purple meet-teams-button hover:text-white border-none rounded-full lg:px-4 py-2" style={{ textTransform: 'none' }}>
                   About
                 </Link>
               </li><li>
-                <Link href="/our-teams" passHref className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2">
+                <Link href="/our-teams" passHref className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2" style={{ textTransform: 'none' }}>
                   Our Team
                 </Link>
               </li>
@@ -42,6 +42,7 @@ const TopNavbar = () => {
                   className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2"
                   target="_blank" 
                   rel="noopener noreferrer" 
+                  style={{ textTransform: 'none' }}
                 >
                   Contact Us
                 </Link>
