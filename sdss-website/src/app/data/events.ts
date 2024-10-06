@@ -59,7 +59,7 @@ export const eventData =
     },
     {
         "id": 7,
-        "name": "SDSS x Brave: Hiring Manager Insights, Finance",
+        "name": "Hiring Manager Insights, Finance",
         "date": "2024-09-27",
         "cover-image": "/event-pictures/7/brave-hm.png",
         "short-description": "Entry-level opportunities, hard skill requirements & domain knowledge, how to get a stellar resume",

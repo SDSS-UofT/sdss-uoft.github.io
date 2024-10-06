@@ -17,7 +17,7 @@ const TopNavbar = () => {
   if (pathname === '/') {
     topNavSDSS = 'text-white';
   } else if (pathname === '/our-teams') {
-    topNavSDSS = 'bottom-nav-sdss-gradient ';
+    topNavSDSS = 'lg:bottom-nav-sdss-gradient text-white';
   }
 
   return (

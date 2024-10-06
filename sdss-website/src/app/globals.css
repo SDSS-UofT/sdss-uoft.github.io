@@ -262,6 +262,12 @@ body {
   height: 55vh;
 }
 
+.event-card-mobile {
+  background-color: white;
+  width: 18em;
+  height: 26em; 
+}
+
 .event-card-desc{
   width: 100vw;
 }

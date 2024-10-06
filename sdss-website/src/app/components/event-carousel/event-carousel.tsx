@@ -36,7 +36,7 @@ const EventCarousel = ({ eventData }: { eventData: Event[] }) => {
                     <button onClick={prevItem} className="btn bg-transparent secondary-purple border-none">❮</button>
 
                     <div key={lastItems[currentIndex].id} className="flex justify-center items-center">
-                        <div className="event-card p-5 lg:max-w-sm h-full">
+                        <div className="event-card-mobile p-5 lg:max-w-sm h-full">
                             <img
                                 src={lastItems[currentIndex]["cover-image"]}
                                 alt={lastItems[currentIndex].name}
