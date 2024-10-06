@@ -71,7 +71,7 @@ export default function Teams() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-4 justify-items-center">
             {financeTeamData.map((exec) => (
               <ExecCard key={exec.id} {...exec} />
-            ))}RR
+            ))}
           </div>
 
         </div>
