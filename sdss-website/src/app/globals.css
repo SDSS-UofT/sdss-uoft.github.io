@@ -1,0 +1,297 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Nav */
+/* Dark color at the top */
+.navTop {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark color */
+  color: white;
+}
+
+/* Light or other color after scrolling down */
+.navScrolled {
+  background-color: rgba(255, 255, 255, 0.8); /* Light or different color */
+  color: black;
+}
+
+/* Nav */
+
+.bg-gradient {
+  background: linear-gradient(
+    180deg,
+    #4E4D76 0%,
+    #5F5E95 15%, 
+    #E3CCEB 30%,
+    white 95%
+  );
+  height: 100%;
+}
+
+.bg-teams{
+  /* background: white; */
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    #F9F4FB 60%
+
+  );
+}
+
+.bg-dark-purple {
+  background-color: #4E4D76;
+}
+
+.bg-secondary-purple {
+  background-color: #9554E5; 
+}
+
+.meet-teams-button:hover {
+  background-color: #9554E5; 
+  transition: background-color 0.2s;
+}
+
+.bg-teams-rest{
+  background: #F9F4FB;
+}
+
+.display-large {
+  font-family: 'Archivo', sans-serif; 
+  font-size: 3.6rem;
+  font-weight: bold; 
+}
+
+.display {
+  font-family: 'Archivo', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.heading {
+  font-family: 'Archivo', sans-serif;
+  font-size: 2rem;
+}
+
+.body-large {
+  font-family: 'Noto Sans', sans-serif; 
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.body-regular {
+  font-family: 'Noto Sans', sans-serif; 
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.body-small {
+  font-family: 'Noto Sans', sans-serif; 
+  font-size: 1.2rem;
+}
+
+/* Small screens (Mobile devices) */
+@media (max-width: 768px) {
+  .display-large {
+    font-size: 2.8rem;
+  }
+
+  .display {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .body-large {
+    font-size: 1.2rem;
+  }
+
+  .body-regular {
+    font-size: 1rem;
+  }
+
+  .body-small {
+    font-size: 0.9rem;
+  }
+}
+
+.bg-blur{
+  backdrop-filter: blur(6px);
+
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #9554E5, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bottom-nav-sdss-gradient {
+  background: linear-gradient(-26deg, #9554E5, #C5CFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.purple {
+  color: #6348AF;
+}
+
+.dark-purple {
+  color: #616475;
+}
+
+.secondary-purple {
+  color: #9554E5;
+}
+
+.gray {
+ color: #616475; 
+}
+
+.black {
+  color: #000000;
+}
+
+.light-pink {
+  color: #F8E3FF;
+}
+
+.pink-border{
+  border: 2px solid #F8E3FF;
+}
+
+.purple-border {
+  border: 1.5px solid #9554E5;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .display-large {
+    font-size: 2rem; /* smaller size for mobile */
+  }
+
+  .first-heading {
+    width: 100%
+  }
+
+}
+
+
+body {
+  font-family: 'Archivo', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  
+}
+
+.first {
+  height: 100vh;
+}
+
+.mission-numbers {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.mission-section {
+  flex: 1;
+
+}
+
+.mission-section img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: #eee;
+}
+
+.mission-statement {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10vh;
+}
+
+
+.mission-statement h2 {
+  font-family: 'Archivo', sans-serif; 
+  font-size: 2.5rem;
+  color: black;
+  font-weight: medium;
+}
+
+.mission-statement p {
+  font-family: 'Archivo', sans-serif; 
+  font-size: 2.7rem;
+  color: black;
+  font-weight: bold;
+}
+
+.team-image {
+  height: 30rem;
+}
+
+.team-image-mobile {
+  height: 20rem;
+}
+
+.event-card {
+  background-color: white;
+  width: 70vw;
+}
+
+.carousel {
+  overflow-x: hidden;
+}
+
+.card-width {
+  width: 37vw;
+  height: 23vh;
+}
+
+.card-mobile {
+  height: 25vh;
+}
+
+.about-us {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10vh;
+}
+
+.president-pfp {
+  /* height: 100%; */
+  width: 100%;
+  aspect-ratio: 1 / 1
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 20rem;
+}
