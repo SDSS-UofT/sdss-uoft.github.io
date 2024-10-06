@@ -63,7 +63,6 @@ jobs:
         working-directory: ./sdss-website
         run: pnpm build
       - name: Upload artifact
-        working-directory: ./sdss-website
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./next
