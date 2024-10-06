@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="/our-teams" className="flex w-1/2 meet-teams-button mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
+          <Link href="/our-teams" className="flex lg:w-1/3 w-1/2 meet-teams-button mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
             <span className="mr-2 p-1">Meet Our Team</span>
             <span className="">→</span>
           </Link>
