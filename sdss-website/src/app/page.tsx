@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import { eventData } from "./data/events";
 import EventCarousel from "./components/event-carousel/event-carousel";
 
@@ -108,10 +109,10 @@ export default function Home() {
             </div>
           </div>
 
-          <button className="flex meet-teams-button mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
-            <span className="mr-2 p-1">Meet Our Teams</span>
-            <span className="">→</span> 
-          </button>
+          <Link href="/our-teams" className="flex meet-teams-button mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
+            <span className="mr-2 p-1">Meet Our Team</span>
+            <span className="">→</span>
+          </Link>
 
         </div>
       </div>
