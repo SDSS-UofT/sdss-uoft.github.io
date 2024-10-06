@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { eventData } from "./data/events";
 import EventCarousel from "./components/event-carousel/event-carousel";
+import { usePathname } from 'next/navigation';
 
 // import { Key } from "react";
 
 export default function Home() {
+
   return (
     <main className="flex min-h-screen flex-col justify-between lg:pr-20 lg:pl-20 lg:pb-20 pl-4 pr-4">
       <div className="first lg:ml-20 lg:mr-0">
@@ -48,17 +50,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="event-cards-container carousel space-x-20 mt-20">
-        {eventData ? eventData.slice(-3).map((event) => (
-          <div className="event-card p-5">
-            <img src={event["cover-image"]} alt={event.name} />
-            <div className="body-regular dark-purple upper-case whitespace-normal pt-3 pb-3">{event.name}</div>
-            <div className="body-regular black">{event["short-description"]}</div>
-          </div>
-
-        )) : <p>Loading...</p>}
-
-      </div> */}
       <div className="flex justify-center">
         <EventCarousel eventData={eventData} />
       </div>
@@ -109,7 +100,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="/our-teams" className="flex lg:w-1/3 w-1/2 meet-teams-button mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
+          <Link href="/our-teams" className="inline-flex meet-teams-button w- mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
             <span className="mr-2 p-1">Meet Our Team</span>
             <span className="">→</span>
           </Link>

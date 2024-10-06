@@ -116,7 +116,6 @@ const TopNavbar = () => {
                   <Link
                   href="mailto:sdss.uoft@gmail.com" 
                   passHref
-                  className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   style={{ textTransform: 'none' }}

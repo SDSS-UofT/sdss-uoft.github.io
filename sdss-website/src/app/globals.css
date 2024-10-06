@@ -258,7 +258,8 @@ body {
 
 .event-card {
   background-color: white;
-  width: 70vw;
+  width: 60vw;
+  height: 50vh;
 }
 
 .carousel {
