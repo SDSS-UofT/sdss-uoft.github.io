@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/sdss-website",
+    basePath: "/sdss-uoft.github.io",
     output: "export",
     reactStrictMode: true,
 };
