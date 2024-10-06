@@ -12,7 +12,14 @@ const TopNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const hamburgerColor = pathname === '/' ? 'text-white' : 'text-black';
+  let topNavSDSS = '';
+
+  if (pathname === '/') {
+    topNavSDSS = 'text-white';
+  } else if (pathname === '/our-teams') {
+    topNavSDSS = 'bottom-nav-sdss-gradient ';
+  }
+
   return (
     <>
       <div className={`w-full h-20 top-0 ${isOpen ? 'bg-dark-purple' : 'lg:bg-transparent lg:backdrop-blue-none bg-dark-purple bg-opacity-10'} transition-colors duration-300`}>
@@ -20,7 +27,7 @@ const TopNavbar = () => {
           <div className="flex justify-between items-center h-full">
             <Link href="/" passHref className="flex flex-row gap-x-2 items-center">
               <img className='w-10 object-contain' src="sdss-icon-bottom.png" alt="SDSS Logo" />
-              <div className="text-white body-large">
+              <div className={`body-large ${topNavSDSS}`}>
                 SDSS
               </div>
             </Link>
