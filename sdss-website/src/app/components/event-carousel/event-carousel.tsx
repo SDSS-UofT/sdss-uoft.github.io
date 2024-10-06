@@ -45,7 +45,12 @@ const EventCarousel = ({ eventData }: { eventData: Event[] }) => {
                             <div className="body-regular dark-purple uppercase whitespace-normal pt-3 pb-3">
                                 {lastItems[currentIndex].name}
                             </div>
-                            <div className="body-regular black">
+                            <div className="body-regular black even-card-desc  text-ellipsis overflow-hidden" style={{
+                                        display: '-webkit-box',
+                                        WebkitBoxOrient: 'vertical',
+                                        WebkitLineClamp: 2, // Change this to set the number of lines
+                                        height: 'calc(1.5em * 2)', // Adjust based on desired line height
+                                    }}>
                                 {lastItems[currentIndex]["short-description"]}
                             </div>
                         </div>
@@ -65,10 +70,15 @@ const EventCarousel = ({ eventData }: { eventData: Event[] }) => {
                                         alt={event.name}
                                         className="w-full h-auto"
                                     />
-                                    <div className="body-regular dark-purple uppercase whitespace-normal pt-3 pb-3">
+                                    <div className="body-regular dark-purple uppercase pt-3 pb-3">
                                         {event.name}
                                     </div>
-                                    <div className="body-regular black">
+                                    <div className="body-regular black even-card-desc  text-ellipsis overflow-hidden" style={{
+                                        display: '-webkit-box',
+                                        WebkitBoxOrient: 'vertical',
+                                        WebkitLineClamp: 2, // Change this to set the number of lines
+                                        height: 'calc(1.5em * 2)', // Adjust based on desired line height
+                                    }}>
                                         {event["short-description"]}
                                     </div>
                                 </div>

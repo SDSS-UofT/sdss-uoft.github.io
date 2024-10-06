@@ -259,7 +259,11 @@ body {
 .event-card {
   background-color: white;
   width: 60vw;
-  height: 50vh;
+  height: 55vh;
+}
+
+.event-card-desc{
+  width: 100vw;
 }
 
 .carousel {
@@ -272,7 +276,7 @@ body {
 }
 
 .card-mobile {
-  height: 25vh;
+  height: 32vh; 
 }
 
 .about-us {
