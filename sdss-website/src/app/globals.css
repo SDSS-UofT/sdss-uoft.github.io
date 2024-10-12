@@ -276,13 +276,12 @@ body {
   overflow-x: hidden;
 }
 
-.card-width {
-  width: 37vw;
-  height: 23vh;
-}
 
-.card-mobile {
-  height: 32vh; 
+@media (max-width: 768px) {
+  .card-height {
+    height: 32vh; 
+  }
+
 }
 
 .about-us {
