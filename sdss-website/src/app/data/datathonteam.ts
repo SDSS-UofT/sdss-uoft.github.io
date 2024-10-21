@@ -50,7 +50,7 @@ export const datathonTeamData =
         "name": "Joshua Cuevas",
         "role": "Case Design Mentor",
         "year": "UofT Alum",
-        "program": "Statistics and Economics Majors, Business German Minor",
+        "program": "Economics Major, Statistics and Mathematics Minors",
         "linkedin": "https://www.linkedin.com/in/joshua-joel-cuevas/",
         "pfp": "pfps/joshc.jpg",
     }, 
