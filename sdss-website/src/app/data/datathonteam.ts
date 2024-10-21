@@ -46,6 +46,15 @@ export const datathonTeamData =
         "pfp": "pfps/sameeckb.jpg",
     },
     {
+        "id": 4,
+        "name": "Joshua Cuevas",
+        "role": "Case Design Mentor",
+        "year": "UofT Alum",
+        "program": "Statistics and Economics Majors, Business German Minor",
+        "linkedin": "https://www.linkedin.com/in/joshua-joel-cuevas/",
+        "pfp": "pfps/joshc.jpg",
+    }, 
+    {
         "id": 5,
         "name": "Vicky Chan",
         "role": "Co-Director of Sponsorships",
@@ -81,4 +90,5 @@ export const datathonTeamData =
         "linkedin": "https://www.linkedin.com/in/joshua-crisologo/",
         "pfp": "pfps/joshuac.png",
     },
+
 ]

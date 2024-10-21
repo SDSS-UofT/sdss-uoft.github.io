@@ -26,14 +26,5 @@ export const financeTeamData =
         "program": "Industrial Engineering",
         "linkedin": "",
         "pfp": "/pfps/annabellet.png",
-    },
-    {
-        "id": 3,
-        "name": "Jessica Zhu",
-        "role": "Co-Director of Partnerships",
-        "year": "3rd year",
-        "program": "Statistics Specialist (Quantitative Finance Stream), Mathematics Minor",
-        "linkedin": "",
-        "pfp": "/pfps/jessicaz.png",
     }
 ]
