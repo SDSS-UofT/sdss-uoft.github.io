@@ -11,7 +11,7 @@ import React from 'react';
 
 export default function Teams() {
   return (
-    <main className="flex lg:mt-20 min-h-screen flex-col flex-row justify-between">
+    <main className="flex min-h-screen flex-col flex-row justify-between">
       <div className="">
         <div className="gradient-text flex flex-col lg:pl-60 lg:pr-60 lg:pt-20 lg:pb-20 pt-28 pl-4 pr-4">
           <div className="body-regular">OUR TEAM</div>
