@@ -27,23 +27,24 @@ const BottomNav = () => (
                         <div className='flex flex-col gap-y-2'>
                             <div className='body-regular black'>SOCIALS</div>
 
-                            <li>
-                                <Link className="body-regular purple" href="www.instagram.com/sdssuoft">
-                                    Instagram
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="body-regular purple" href="/about">
-                                    Linkedin
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="body-regular purple" href="/about">
-                                    Discord
-                                </Link>
-                            </li>
+                            <ul>
+                                <li>
+                                    <Link className="body-regular purple" href="https://www.instagram.com/sdssuoft" target="_blank" rel="noopener noreferrer">
+                                        Instagram
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="body-regular purple" href="https://www.linkedin.com/company/sdssuoft" target="_blank" rel="noopener noreferrer">
+                                        LinkedIn
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="body-regular purple" href="https://discord.com/invite/GWEtFzvBBe" target="_blank" rel="noopener noreferrer">
+                                        Discord
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-
 
                     </ul>
                 </div>

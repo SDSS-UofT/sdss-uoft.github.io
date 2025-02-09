@@ -210,6 +210,10 @@ body {
   height: 100vh;
 }
 
+.line-divider{
+  height: 1px;
+}
+
 .mission-numbers {
   display: flex;
   /* justify-content: space-between; */
