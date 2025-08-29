@@ -7,7 +7,7 @@ export const consultingTeamData =
         "year": "Alum",
         "program": "Computer Science and Statistics Majors",
         "linkedin": "https://www.linkedin.com/in/mingon-song-8b0154224/",
-        "pfp": "/pfps/mingons.png",
+        "pfp": "pfps/mingons.png",
     },
     {
         "id": 1,
@@ -16,7 +16,7 @@ export const consultingTeamData =
         "year": "3rd Year",
         "program": "Data Science Specialist",
         "linkedin": "https://www.linkedin.com/in/siyi-zhu-18603224b/",
-        "pfp": "/pfps/siyiz.png",
+        "pfp": "pfps/siyiz.png",
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@ export const consultingTeamData =
         "year": "3rd year",
         "program": "Industrial Engineering",
         "linkedin": "https://www.linkedin.com/in/j2004/",
-        "pfp": "/pfps/jimenah.png",
+        "pfp": "pfps/jimenah.png",
     },
     {
         "id": 3,
@@ -34,7 +34,7 @@ export const consultingTeamData =
         "year": "3rd year",
         "program": "Computer Science Specialist and Mathematics Major",
         "linkedin": "https://www.linkedin.com/in/daniel-niu-9a0ba9213/",
-        "pfp": "/pfps/danieln.png",
+        "pfp": "pfps/danieln.png",
     },
     {
         "id": 4,
@@ -43,7 +43,7 @@ export const consultingTeamData =
         "year": "4th year",
         "program": "Industrial Engineering, AI and Engineering Business Minor",
         "linkedin": "https://www.linkedin.com/in/boyi-fan/",
-        "pfp": "/pfps/howardf.jpg",
+        "pfp": "pfps/howardf.jpg",
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@ export const consultingTeamData =
         "year": "3rd year",
         "program": "Data Science Specialist, Computer Science Major",
         "linkedin": "https://www.linkedin.com/in/timothy-pasaribu-0804aa211/",
-        "pfp": "/pfps/timothyp.png",
+        "pfp": "pfps/timothyp.png",
     },
     {
         "id": 6,
@@ -61,6 +61,6 @@ export const consultingTeamData =
         "year": "3rd year",
         "program": "Computer Science and Data Science Specialists",
         "linkedin": "https://www.linkedin.com/in/christoffer-tan/",
-        "pfp": "/pfps/christoffert.png",
+        "pfp": "pfps/christoffert.png",
     },
 ]

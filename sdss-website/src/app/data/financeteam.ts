@@ -7,7 +7,7 @@ export const financeTeamData =
         "year": "4th year",
         "program": "Finance & Economics Specialist",
         "linkedin": "",
-        "pfp": "/pfps/timk.png",
+        "pfp": "pfps/timk.png",
     },
     {
         "id": 1,
@@ -16,7 +16,7 @@ export const financeTeamData =
         "year": "4th year",
         "program": "Bachelor of Information",
         "linkedin": "",
-        "pfp": "/pfps/shirleyc.png",
+        "pfp": "pfps/shirleyc.png",
     },
     {
         "id": 2,
@@ -25,6 +25,6 @@ export const financeTeamData =
         "year": "3rd year",
         "program": "Industrial Engineering",
         "linkedin": "",
-        "pfp": "/pfps/annabellet.png",
+        "pfp": "pfps/annabellet.png",
     }
 ]

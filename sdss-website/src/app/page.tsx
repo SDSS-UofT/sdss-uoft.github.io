@@ -22,49 +22,6 @@ export default function Home() {
           </div>
 
         </div>
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSezVJTq-SxrF5PEk3jnlI5yQ-krV5OoXnLrQf8Hze-XWZDUwQ/viewform?usp=sharing" className="inline-flex meet-teams-button body-regular secondary-purple items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
-          <span className="p-1">Register for SDSS Datathon</span>
-        </Link>
-      </div>
-
-      <div className="lg:pl-40 lg:pr-40">
-        <div className="heading white">Introducing SDSS Datathon 2025</div>
-        <div className="body-regular white">The first campus-wide datathon at UofT St. George is happening <b>March 1-2</b>!</div>
-        <div className="flex flex-row items-center mt-10">
-          <div className="line-divider w-full bg-white"></div>
-        </div>
-        <div className="bg-white rounded-2xl lg:pl-10 lg:pr-10 pl-4 pr-4 pt-4 pb-4 mt-10">
-          <div className="lg:grid lg:grid-cols-3 gap-10 m-6">
-            <div className="flex flex-col">
-              <div className="body-regular purple lg:mt-0 mt-5 mb-5">What is it?</div>
-              <div className="body-regular black">Over two days, participants tackle complex data challenges, creating unique and innovative real-world data and machine learning applications from our carefully crafted cases. They can also enhance them with their own datasets!</div>
-            </div>
-            <div className="flex flex-col">
-              <div className="body-regular purple lg:mt-0 mt-10 mb-5">Who can join?</div>
-              <div className="body-regular black">Any UofT undergraduates from beginners to experienced data scientists! Our different awards will ensure applicants can be tested fairly across various dimensions such as model performance, quality of insights, and quality of visualizations.</div>
-            </div>
-            <div className="flex flex-col">
-              <div className="body-regular purple lg:mt-0 mt-10 mb-5">Location</div>
-              <div className="body-regular black">
-                Room 1130 - Bahen Centre for Information Technology. <br></br>
-                <a
-                  href="https://www.google.com/maps/place/40+St+George+St,+Toronto,+ON+M5S+2E4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "underline" }}
-                >
-                  40 St George St, Toronto, ON M5S 2E4
-                </a>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSezVJTq-SxrF5PEk3jnlI5yQ-krV5OoXnLrQf8Hze-XWZDUwQ/viewform?usp=sharing" className="inline-flex meet-teams-button w- mt-10 body-regular items-center bg-white border purple-border rounded-full px-4 py-2 text-gray-800 hover:bg-secondary-purple hover:text-white transition duration-200">
-          <span className="mr-2 p-1">Register now</span>
-          <span className="">→</span>
-        </Link>
       </div>
 
       <div className="mission-statement lg:pl-40 lg:pr-40 pl-6 pr-6">
@@ -73,7 +30,7 @@ export default function Home() {
           <div className="heading black">
             SDSS is a student-run organization at the University of Toronto that aims to foster a community of students interested in data science and statistics. We provide students with the resources, opportunities, and support they need to succeed in their academic and professional careers.
           </div>
-          <img src="brave.png" alt="Mission Statement" />
+          <img src="/brave.png" alt="Mission Statement" />
           <div className="mission-numbers space-x-2 flex lg:flex-row flex-col items-center">
             <div className="mission-section mb-10 lg:text-left text-center">
               <div className="body-regular purple">FOUNDED IN </div>

@@ -8,7 +8,7 @@ export const marketingTeamData =
         "year": "Co-op Year",
         "program": "Bachelor of Information",
         "linkedin": "https://www.linkedin.com/in/im-jessica/",
-        "pfp": "/pfps/jessicai.jpeg",
+        "pfp": "pfps/jessicai.jpeg",
     },
     {
         "id": 1,
@@ -17,7 +17,7 @@ export const marketingTeamData =
         "year": "3rd Year",
         "program": "Economics and Statistics Majors",
         "linkedin": "https://www.linkedin.com/in/serlinaazaria/",
-        "pfp": "/pfps/serlinaa.jpeg",
+        "pfp": "pfps/serlinaa.jpeg",
     },
     {
         "id": 2,
@@ -26,7 +26,7 @@ export const marketingTeamData =
         "year": "ASIP Year",
         "program": "Computer Science Specialist, Statistics Minor",
         "linkedin": "A workshop with Brave Career to help students prepare for the job search.",
-        "pfp": "/pfps/helenag.jpeg",
+        "pfp": "pfps/helenag.jpeg",
     },
     {
         "id": 3,
@@ -35,6 +35,6 @@ export const marketingTeamData =
         "year": "4th Year",
         "program": "Statistics Major, Human Geography and GIS Minors",
         "linkedin": "A workshop with Brave Career to help students prepare for the job search.",
-        "pfp": "/pfps/renaw.png",
+        "pfp": "pfps/renaw.png",
     },
 ]

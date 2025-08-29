@@ -8,7 +8,7 @@ export const profDevTeamData =
         "year": "3rd Year",
         "program": "Statistics and Economics Majors",
         "linkedin": "https://www.linkedin.com/in/rahil-chadha-7109941b2/",
-        "pfp": "/pfps/rahilc.png",
+        "pfp": "pfps/rahilc.png",
     },
     {
         "id": 1,
@@ -17,7 +17,7 @@ export const profDevTeamData =
         "year": "4th Year",
         "program": "Mathematics and Statistics Majors",
         "linkedin": "https://www.linkedin.com/in/khalid-edris-081229244/",
-        "pfp": "/pfps/khalide.png",
+        "pfp": "pfps/khalide.png",
     },
     {
         "id": 2,
@@ -26,7 +26,7 @@ export const profDevTeamData =
         "year": "4th Year",
         "program": "Mathematics & Its Applications (Finance/Economics) Specialist, Statistics Minor",
         "linkedin": "https://www.linkedin.com/in/jake-miao-marshall/",
-        "pfp": "/pfps/jakemm.jpeg",
+        "pfp": "pfps/jakemm.jpeg",
     },
     {
         "id": 3,
@@ -35,7 +35,7 @@ export const profDevTeamData =
         "year": "3rd Year",
         "program": "Mathematics Major, Statistics and African Studies Minors",
         "linkedin": "https://www.linkedin.com/in/ezrajacobs/",
-        "pfp": "/pfps/ezraj.jpeg",
+        "pfp": "pfps/ezraj.jpeg",
     },
     {
         "id": 4,
@@ -44,6 +44,6 @@ export const profDevTeamData =
         "year": "2nd Year",
         "program": "Actuarial Science and Statistics Majors",
         "linkedin": "",
-        "pfp": "/pfps/lisat.jpeg",
+        "pfp": "pfps/lisat.jpeg",
     },
 ]

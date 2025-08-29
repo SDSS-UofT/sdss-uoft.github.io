@@ -7,7 +7,7 @@ export const datathonTeamData =
         "year": "4th year",
         "program": "Economics and Statistics Majors",
         "linkedin": "https://www.linkedin.com/in/arnav-dey/",
-        "pfp": "/pfps/arnavd.png",
+        "pfp": "pfps/arnavd.png",
     },
     {
         "id": 1,
@@ -16,7 +16,7 @@ export const datathonTeamData =
         "year": "4th Year",
         "program": "Mathematics & Its Applications (Probability/Statistics) Specialist",
         "linkedin": "https://www.linkedin.com/in/seongminc",
-        "pfp": "/pfps/seongminc.jpeg",
+        "pfp": "pfps/seongminc.jpeg",
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@ export const datathonTeamData =
         "year": "4th year",
         "program": "Statistics and Economics Majors, Mathematics Minor",
         "linkedin": "https://www.linkedin.com/in/amandali8/",
-        "pfp": "/pfps/amandal.jpeg",
+        "pfp": "pfps/amandal.jpeg",
     },
     {
         "id": 3,
@@ -34,7 +34,7 @@ export const datathonTeamData =
         "year": "3rd year",
         "program": "Statistics and Economics Majors, Computer Science Minor",
         "linkedin": "https://www.linkedin.com/in/raghav-sinha/",
-        "pfp": "/pfps/raghavs.png",
+        "pfp": "pfps/raghavs.png",
     },
     {
         "id": 4,

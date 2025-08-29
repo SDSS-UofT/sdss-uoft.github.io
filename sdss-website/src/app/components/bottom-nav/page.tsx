@@ -8,11 +8,11 @@ const BottomNav = () => (
                 <div className="flex lg:flex-row flex-col lg:justify-between lg:items-center h-full">
                     <div className='flex lg:flex-row flex-row gap-x-8 mt-6 items-start mb-10 lg:order-1 order-2'>
                         <div className='flex flex-row items-center'>
-                            <img className='w-10 object-contain' src="sdss-icon-bottom.png" alt="SDSS Logo" />
+                            <img className='w-10 object-contain' src="/sdss-icon-bottom.png" alt="SDSS Logo" />
                             <div className='heading bottom-nav-sdss-gradient lg:pl-5 pl-2'>SDSS</div>
                         </div>
 
-                        <img className='h-10 object-contain lg:pl-10 pl-0' src="uoft-icon.png" alt="UofT Logo" />
+                        <img className='h-10 object-contain lg:pl-10 pl-0' src="/uoft-icon.png" alt="UofT Logo" />
                     </div>
 
                     <ul className="flex lg:flex-row flex-col gap-x-20 gap-y-4 lg:order-2 order-1">

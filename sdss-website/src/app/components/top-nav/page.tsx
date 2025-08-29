@@ -26,7 +26,7 @@ const TopNavbar = () => {
         <div className="container lg:mx-20 px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Link href="/" passHref className="flex flex-row gap-x-2 items-center">
-              <img className='w-10 object-contain' src="sdss-icon-bottom.png" alt="SDSS Logo" />
+              <img className='w-10 object-contain' src="/sdss-icon-bottom.png" alt="SDSS Logo" />
               <div className={`body-large ${topNavSDSS}`}>
                 SDSS
               </div>
