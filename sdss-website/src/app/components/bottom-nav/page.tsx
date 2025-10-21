@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const BottomNav = () => (
     <>
-        <div className="w-full h-20 bg-transparent sticky top-0 lg:pb-60 padding-bottom">
+        <div className="w-full h-20 bg-transparent sticky top-0 lg:pb-60 padding-bottom ">
             <div className="container mx-auto px-4 h-full">
                 <div className="flex lg:flex-row flex-col lg:justify-between lg:items-center h-full">
                     <div className='flex lg:flex-row flex-row gap-x-8 mt-6 items-start mb-10 lg:order-1 order-2'>

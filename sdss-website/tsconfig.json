@@ -12,14 +12,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",                 // ✅ add
+    "paths": { "@/*": ["src/*"] },  // ✅ keep minimal
+    "types": ["node"]               // ✅ add (lets TS resolve Node packages properly)
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

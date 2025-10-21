@@ -12,11 +12,13 @@
   "dependencies": {
     "daisyui": "^3.4.0",
     "next": "^14.2.23",
+    "nodemailer": "^7.0.9",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",

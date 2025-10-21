@@ -309,3 +309,21 @@ body {
 .padding-bottom {
   padding-bottom: 20rem;
 }
+
+/* Keep autofilled inputs white with your text color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #4e4d76;                  /* your text color */
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;  /* force white bg */
+  transition: background-color 9999s ease-out;       /* hide yellow flash */
+  caret-color: #4e4d76;
+}
+
+/* Optional: keep form controls in light color scheme on Safari/iOS */
+form, input, textarea, select {
+  color-scheme: light;
+}
+
