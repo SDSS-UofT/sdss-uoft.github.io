@@ -1,7 +1,7 @@
 // src/app/thanks/page.tsx
 export default function Thanks() {
   return (
-    <main className="min-h-screen bg-white pt-24 px-4">
+    <main className="min-h-screen bg-gray-50 pt-24 px-4">
       <div className="mx-auto max-w-md bg-white p-6 rounded-2xl shadow text-center">
         <h1 className="text-2xl font-semibold text-[#4e4d76]">
           You’re signed up! 🎉

@@ -26,7 +26,7 @@ const past: EventData[] = [
 export default function EventsPage() {
   return (
     // Keep some top padding so the fixed nav doesn't crowd; adjust if needed
-    <main className="min-h-screen bg-white pt-28 md:pt-24 px-8 md:px-10 lg:px-8 pb-[99px]">
+    <main className="min-h-screen bg-gray-50 pt-28 md:pt-24 px-8 md:px-10 lg:px-8 pb-[99px]">
       {/* Force h1/h2 left just in case some parent centers text */}
       <div className="mx-auto max-w-5xl [&_h1]:!text-left [&_h2]:!text-left">
         {/* Extra space from the navbar to the title */}
