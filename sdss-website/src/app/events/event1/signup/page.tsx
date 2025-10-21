@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ'; // public, safe to commit
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxhqBnOwfcBocGD4szQhZ6wwf547jn-ZkHWFyy9Z1KvTmV_raAQq3btJTtxcdZAxzrQiw/exec';          // your /exec URL
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzXcaNWXX6l6IBwiA10B6ZvJI-31QSdFRBKcQYbdkRZJ1ABzqrK7NVS_F2jNaDJ9xL3/exec';          // your /exec URL
 
 export default function Signup() {
   const router = useRouter();
