@@ -27,7 +27,7 @@ export const acaDevTeamData =
         "year": "2nd Year",
         "program": "Data Science specialist + Computer Science major",
         "linkedin": "https://www.linkedin.com/in/shen-xiaotong/",
-        "pfp": "pfps-2025-2026/xiaotong_s.jpeg"
+        "pfp": "pfps-2025-2026/xiatong_s.jpeg"
     },
 
     {
