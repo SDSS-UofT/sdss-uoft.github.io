@@ -5,6 +5,7 @@ import { consultingTeamData } from "../data/consultingteam";
 import { financeTeamData } from "../data/financeteam";
 import { profDevTeamData } from "../data/profdevteam";
 import { acaDevTeamData } from "../data/acadevteam";
+import { synergyTeamData } from "../data/synergyteam";
 import ExecCard from '../components/exec-card/ExecCard'
 import React from 'react';
 
@@ -55,7 +56,7 @@ export default function Teams() {
 
         </div>
 
-        {/* consulting team */}
+        /* {/* consulting team for 2024 - 2025 */}
         <div className="bg-white rounded-2xl lg:pr-40 lg:pl-40 pb-20 mt-20 lg:ml-10 lg:mr-10 ml-4 mr-4 pl-4 pr-4">
           <div className="body-regular secondary-purple pt-10 pb-4">CONSULTING TEAM</div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-4 justify-items-center">
@@ -63,9 +64,19 @@ export default function Teams() {
               <ExecCard key={exec.id} {...exec} />
             ))}
           </div>
+        </div> */
+
+        {/* synergy team */}
+        <div className="bg-white rounded-2xl lg:pr-40 lg:pl-40 pb-20 mt-20 lg:ml-10 lg:mr-10 ml-4 mr-4 pl-4 pr-4">
+          <div className="body-regular secondary-purple pt-10 pb-4">SYNERGY TEAM</div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-4 justify-items-center">
+            {synergyTeamData.map((exec) => (
+              <ExecCard key={exec.id} {...exec} />
+            ))}
+          </div>
         </div>
 
-        {/* datathon team */}
+        {/* finance team */}
         <div className="lg:pr-40 lg:pl-40 pb-20 mt-20 lg:ml-10 lg:mr-10 ml-4 mr-4 pl-4 pr-4">
           <div className="body-regular secondary-purple pb-4">FINANCE TEAM</div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-4 justify-items-center">
