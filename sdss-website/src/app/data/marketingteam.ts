@@ -8,7 +8,7 @@ export const marketingTeamData =
         "year": "2nd Year",
         "program": "Computer Science Specialist in Software Engineering with a minor in Statistics",
         "linkedin": "https://www.linkedin.com/in/jennifer-huang-b68ab4317/",
-        "pfp": "pfps-2025-2026/jessica_h.jpeg",
+        "pfp": "pfps-2025-2026/jennifer_h.jpeg",
     },
     {
         "id": 1,
