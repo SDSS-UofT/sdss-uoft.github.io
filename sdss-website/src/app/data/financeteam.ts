@@ -16,7 +16,7 @@ export const financeTeamData =
         "year": "4th Year",
         "program": "Economics major with a double minor in Statistics and Mathematics",
         "linkedin": "https://www.linkedin.com/in/aditya-pardeshi-uoft/",
-        "pfp": "pfps-2025-2026/aditya_p.jpeg",
+        "pfp": "pfps-2025-2026/aditya_p.png",
     },
 ]
 
