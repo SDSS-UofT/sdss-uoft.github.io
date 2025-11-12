@@ -17,7 +17,7 @@ export const acaDevTeamData =
         "year": "4th Year",
         "program": "Finance and Economics Specialist, Statistics Major",
         "linkedin": "https://www.linkedin.com/in/richard-hong-8685a0270/",
-        "pfp": ""
+        "pfp": "/pfps-2025-2026/richard_h.png"
     },
 
     {
