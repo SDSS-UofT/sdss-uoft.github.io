@@ -5,21 +5,33 @@ type EventData = React.ComponentProps<typeof Card>;
 
 const upcoming: EventData[] = [
   {
-    title: "Careers in Data!",
-    date: "Oct 23, 2025 • 6–8 PM",
-    location: "SS2108, UTSG",
-    description: "Join us for an evening of insights, networking, and career advice from UofT alumni working in the field.",
-    signup: { url: "/events/event1/signup", label: "Register", newTab: true },
+    title: "SQL Workshop: Real-World Data Applications!",
+    date: "Nov 18, 2025 • 6–9 PM",
+    location: "SS 2110, UTSG",
+    description: "Learn the SQL essentials that power real-world data solutions, from core commands and query logic to optimization and interview-ready problem solving!",
+    signup: { url: "/events/sql/signup", label: "Register", newTab: true },
+  },
+  {
+    title: "SDSS Alumni Night",
+    date: "Nov 21, 2025 • 6–9 PM",
+    location: "UTSU Room B100, UTSG",
+    description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community. Walk-ins accepted!",
   },
 ];
 
 const past: EventData[] = [
   {
     title: "Introduction to Python in Data Science",
-    date: "Oct 6, 2025 • 6–8:30 PM",
+    date: "Oct 6, 2025",
     location: "SS 1074, UTSG",
     description:
       "Build a data science project from start to finish using common libraries and skills in the industry!",
+  },
+  {
+    title: "Careers in Data!",
+    date: "Oct 23, 2025",
+    location: "SS2108, UTSG",
+    description: "Join us for an evening of insights, networking, and career advice from UofT alumni working in the field.",
   },
 ];
 

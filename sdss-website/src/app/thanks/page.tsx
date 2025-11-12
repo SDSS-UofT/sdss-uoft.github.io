@@ -8,8 +8,9 @@ export default function Thanks() {
         </h1>
 
         <p className="mt-3 text-[#4e4d76]/80">
-          We’ve emailed you a confirmation. We’ll also send a reminder the day
-          before the event.
+         We’ve sent a confirmation email and we’ll send a reminder the day before the event.<br /> 
+                    
+         <br /> If you don’t see them, please check your junk folder.
         </p>
 
         <a
