@@ -53,7 +53,7 @@ export const marketingTeamData =
         "year": "2nd Year",
         "program": "Mathematics major, Statistics minor, Sociology minor",
         "linkedin": "https://www.linkedin.com/in/eiqan-ahmed-549786254/",
-        "pfp": "",
+        "pfp": "pfps-2025-2026/lisa_c.png",
     },
 ]
 
