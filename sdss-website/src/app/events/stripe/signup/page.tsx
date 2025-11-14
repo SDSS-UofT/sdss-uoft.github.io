@@ -5,9 +5,10 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ'; // public, safe to commit
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzFO9oPLku3nk0-NUkTVK5U1FBBzaNyPg5cKqGh4BlYCMPcLz5uuqvRtVwu9cgE4HX4pg/exec'; 
+const SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbzFO9oPLku3nk0-NUkTVK5U1FBBzaNyPg5cKqGh4BlYCMPcLz5uuqvRtVwu9cgE4HX4pg/exec';
 
-export default function Signup() {
+export default function SignupStripe() {
   const router = useRouter();
   const [submitting, setSubmitting] = React.useState(false);
   const formRef = React.useRef<HTMLFormElement>(null);
@@ -27,8 +28,8 @@ export default function Signup() {
       // reCAPTCHA v3
       // @ts-ignore
       const token = window.grecaptcha
-        // @ts-ignore
-        ? await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'signup' })
+        ? // @ts-ignore
+          await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'signup' })
         : '';
       data.append('recaptchaToken', token);
 
@@ -44,7 +45,7 @@ export default function Signup() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 px-4 pt-28 md:pt-28">
+    <main className="min-h-screen bg-gray-50 px-4 pt-28 md:pt-28 pb-32">
       <Script
         src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
         strategy="afterInteractive"
@@ -55,12 +56,12 @@ export default function Signup() {
         </div>
 
         <h1 className="text-2xl font-semibold text-[#4e4d76] text-center">
-          Register for SQL Workshop: Real-World Data Applications
+          Register for SDSS x Stripe
         </h1>
 
         <form ref={formRef} className="space-y-4 mt-6" onSubmit={handleSubmit} noValidate>
           {/* tell server which event key to use (must match EVENTS allow-list) */}
-          <input type="hidden" name="event" value="SQL Workshop: Real-World Data Applications" />
+          <input type="hidden" name="event" value="SDSS x Stripe" />
 
           {/* name*/}
           <label className="block">
@@ -125,7 +126,7 @@ export default function Signup() {
             />
           </label>
 
-          {/* heardFrom (required) — backend also accepts heard_from */}
+          {/* heardFrom (required) */}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">How did you hear about this event?</span>
             <select
@@ -148,6 +149,50 @@ export default function Signup() {
               <option>Other</option>
             </select>
           </label>
+
+          {/* NEW: dietary restrictions */}
+          <label className="block">
+            <span className="text-sm text-[#4e4d76]">Dietary restrictions (if any)</span>
+            <input
+              name="dietary"
+              type="text"
+              disabled={submitting}
+              placeholder="E.g., Vegetarian, Halal, Nut Allergy"
+              className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-[#373754]
+                         focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+            />
+          </label>
+
+          {/* NEW: event track (engineering / data) */}
+          <fieldset className="block">
+            <legend className="text-sm text-[#4e4d76] mb-1">
+              Which event track are you interested in joining?
+            </legend>
+            <div className="space-y-1">
+              <label className="flex items-center gap-2 text-sm text-[#373754]">
+                <input
+                  type="radio"
+                  name="eventTrack"
+                  value="Engineering Track"
+                  required
+                  disabled={submitting}
+                  className="h-4 w-4"
+                />
+                <span>Engineering Track</span>
+              </label>
+              <label className="flex items-center gap-2 text-sm text-[#373754]">
+                <input
+                  type="radio"
+                  name="eventTrack"
+                  value="Data Track"
+                  required
+                  disabled={submitting}
+                  className="h-4 w-4"
+                />
+                <span>Data Track</span>
+              </label>
+            </div>
+          </fieldset>
 
           <button
             type="submit"

@@ -55,12 +55,12 @@ export default function Signup() {
         </div>
 
         <h1 className="text-2xl font-semibold text-[#4e4d76] text-center">
-          Register for SQL Workshop: Real-World Data Applications
+          Register for SDSS Alumni Night
         </h1>
 
         <form ref={formRef} className="space-y-4 mt-6" onSubmit={handleSubmit} noValidate>
           {/* tell server which event key to use (must match EVENTS allow-list) */}
-          <input type="hidden" name="event" value="SQL Workshop: Real-World Data Applications" />
+          <input type="hidden" name="event" value="SDSS Alumni Night" />
 
           {/* name*/}
           <label className="block">

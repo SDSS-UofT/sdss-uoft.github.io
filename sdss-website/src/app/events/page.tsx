@@ -15,7 +15,15 @@ const upcoming: EventData[] = [
     title: "SDSS Alumni Night",
     date: "Nov 21, 2025 • 6–9 PM",
     location: "UTSU Room B100, UTSG",
-    description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community. Walk-ins accepted!",
+    description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community.",
+    signup: { url: "/events/alumni/signup", label: "Register", newTab: true },
+  },
+  {
+    title: "SDSS x Stripe",
+    date: "Nov 20, 2025 • 5–7 PM",
+    location: "700 University Avenue, 10th floor. Rooms 100031 and 100032, UTSG",
+    description: "Join SDSS and Stripe for a hands-on tech interview workshop and networking night. Explore engineering and data interview tracks, gain application insights, and connect directly with Stripe engineers and recruiters",
+    signup: { url: "/events/stripe/signup", label: "Register", newTab: true },
   },
 ];
 
