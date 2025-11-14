@@ -6,7 +6,7 @@ import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ'; // public, safe to commit
 const SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbzFO9oPLku3nk0-NUkTVK5U1FBBzaNyPg5cKqGh4BlYCMPcLz5uuqvRtVwu9cgE4HX4pg/exec';
+  'https://script.google.com/macros/s/AKfycbwGoiLMClVPn1gRubXWdxmDbPDF0Qi2nBHlrLIZtn0b2wu7Ol4q5Fvjx4KK6R2631h0mw/exec';
 
 export default function SignupStripe() {
   const router = useRouter();
@@ -150,7 +150,7 @@ export default function SignupStripe() {
             </select>
           </label>
 
-          {/* NEW: dietary restrictions */}
+          {/* dietary restrictions */}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Dietary restrictions (if any)</span>
             <input
@@ -162,37 +162,6 @@ export default function SignupStripe() {
                          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
             />
           </label>
-
-          {/* NEW: event track (engineering / data) */}
-          <fieldset className="block">
-            <legend className="text-sm text-[#4e4d76] mb-1">
-              Which event track are you interested in joining?
-            </legend>
-            <div className="space-y-1">
-              <label className="flex items-center gap-2 text-sm text-[#373754]">
-                <input
-                  type="radio"
-                  name="eventTrack"
-                  value="Engineering Track"
-                  required
-                  disabled={submitting}
-                  className="h-4 w-4"
-                />
-                <span>Engineering Track</span>
-              </label>
-              <label className="flex items-center gap-2 text-sm text-[#373754]">
-                <input
-                  type="radio"
-                  name="eventTrack"
-                  value="Data Track"
-                  required
-                  disabled={submitting}
-                  className="h-4 w-4"
-                />
-                <span>Data Track</span>
-              </label>
-            </div>
-          </fieldset>
 
           <button
             type="submit"
