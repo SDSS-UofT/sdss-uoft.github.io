@@ -20,7 +20,7 @@ const upcoming: EventData[] = [
   },
   {
     title: "SDSS x Stripe",
-    date: "Nov 20, 2025 • 5–7 PM",
+    date: "Nov 20, 2025 • 5:30–7 PM",
     location: "700 University Avenue, 10th floor. UTSG",
     description: "Join us for SDSS x Stripe to learn how engineering and data work at Stripe and connect directly with Stripe professionals. A great chance to gain insights, ask questions, and build your network in fintech!",
     signup: { url: "/events/stripe/signup", label: "Register", newTab: true },
