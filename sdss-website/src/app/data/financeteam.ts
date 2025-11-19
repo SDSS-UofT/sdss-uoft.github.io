@@ -2,6 +2,15 @@ export const financeTeamData =
 [
     {
         "id": 0,
+        "name": "Dhruv Mantri",
+        "role": "Director of Finance",
+        "year": "4th Year",
+        "program": "Commerce, Finance, and Economics",
+        "linkedin": "https://www.linkedin.com/in/dhruv-mantri/",
+        "pfp": "pfps-2025-2026/dhruv_m.jpeg",
+    },
+    {
+        "id": 1,
         "name": "Avery Jun",
         "role": "Director of Finance",
         "year": "3rd Year",
@@ -10,7 +19,7 @@ export const financeTeamData =
         "pfp": "pfps-2025-2026/avery_j.jpeg",
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Aditya Pardeshi",
         "role": "VP of Finance",
         "year": "4th Year",
