@@ -5,13 +5,6 @@ type EventData = React.ComponentProps<typeof Card>;
 
 const upcoming: EventData[] = [
   {
-    title: "SQL Workshop: Real-World Data Applications!",
-    date: "Nov 18, 2025 • 6–9 PM",
-    location: "SS 2110, UTSG",
-    description: "Learn the SQL essentials that power real-world data solutions, from core commands and query logic to optimization and interview-ready problem solving!",
-    signup: { url: "/events/sql/signup", label: "Register", newTab: true },
-  },
-  {
     title: "SDSS Alumni Night",
     date: "Nov 21, 2025 • 6–9 PM",
     location: "UTSU Room B100, UTSG",
@@ -28,6 +21,12 @@ const upcoming: EventData[] = [
 ];
 
 const past: EventData[] = [
+  {
+    title: "SQL Workshop: Real-World Data Applications!",
+    date: "Nov 18, 2025 • 6–9 PM",
+    location: "SS 2110, UTSG",
+    description: "Learn the SQL essentials that power real-world data solutions, from core commands and query logic to optimization and interview-ready problem solving!",
+  },
   {
     title: "Introduction to Python in Data Science",
     date: "Oct 6, 2025",
