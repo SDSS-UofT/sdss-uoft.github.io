@@ -11,13 +11,6 @@ const upcoming: EventData[] = [
     description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community.",
     signup: { url: "/events/alumni/signup", label: "Register", newTab: true },
   },
-  {
-    title: "SDSS x Stripe",
-    date: "Nov 20, 2025 • 5:30–7 PM",
-    location: "700 University Avenue, 10th floor. UTSG",
-    description: "Join us for SDSS x Stripe to learn how engineering and data work at Stripe and connect directly with Stripe professionals. A great chance to gain insights, ask questions, and build your network in fintech!",
-    signup: { url: "/events/stripe/signup", label: "Register", newTab: true },
-  },
 ];
 
 const past: EventData[] = [
@@ -39,6 +32,12 @@ const past: EventData[] = [
     date: "Oct 23, 2025",
     location: "SS2108, UTSG",
     description: "Join us for an evening of insights, networking, and career advice from UofT alumni working in the field.",
+  },
+  {
+    title: "SDSS x Stripe",
+    date: "Nov 20, 2025 • 5:30–7 PM",
+    location: "700 University Avenue, 10th floor. UTSG",
+    description: "Join us for SDSS x Stripe to learn how engineering and data work at Stripe and connect directly with Stripe professionals. A great chance to gain insights, ask questions, and build your network in fintech!",
   },
 ];
 
