@@ -22,15 +22,29 @@ export default function Newsletter() {
     }
 
     try {
-      const res = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          fullName,
-          source: "homepage_form",
-        }),
-      });
+      const res = await fetch(
+        "https://nybucudurreongmvrbnx.functions.supabase.co/newsletter-signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, fullName }),
+        }
+      );
+
+      // debugging code to determine issue with fetch response parsing
+      // const raw = await res.text();
+      // console.log("STATUS:", res.status);
+      // console.log("RAW RESPONSE:", raw);
+
+      // let data2: any = null;
+      // try {
+      //   data2 = JSON.parse(raw);
+      // } catch {}
+
+      // if (!res.ok || !data2?.ok) {
+      //   throw new Error(data2?.error || raw || "Failed to subscribe");
+      // }
+      
     
       const data = await res.json();
       if (!res.ok || !data.ok) throw new Error(data.error || "Failed to subscribe");
