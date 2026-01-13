@@ -74,7 +74,7 @@ export default function Newsletter() {
       <div className="relative w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">Subscribe to Our Newsletter!</h1>
-          <p className="text-lg text-white/90 text-pretty">Stay updated with the latest from SDSS UofT</p>
+          {/* <p className="text-lg text-white/90 text-pretty">Stay updated with the latest from SDSS UofT</p> */}
         </div>
 
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
