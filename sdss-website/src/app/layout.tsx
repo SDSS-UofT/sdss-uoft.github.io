@@ -35,15 +35,19 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
       <body className={`relative ${backgroundClass}`}>
-        <div className="fixed w-screen">
+        {/* Navbar layer */}
+        <div className="fixed top-0 left-0 right-0 z-[9999]">
           <TopNavbar />
         </div>
-        
-        <div className="z-0 overflow-x-hidden">
+
+        {/* Page content */}
+        <div className="relative z-0 overflow-x-hidden pt-20">
           {children}
         </div>
+
         <BottomNav />
       </body>
+
     </html>
   );
 
