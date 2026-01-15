@@ -13,7 +13,7 @@ const TopNavbar = () => {
   let brandByRoute = "";
   if (pathname === "/") {
     brandByRoute = "text-white";
-  } else if (pathname.startsWith("/events") || pathname.startsWith("/our-teams") || pathname.startsWith("/thanks") ||  pathname.startsWith("/newsletter")) {
+  } else if (pathname.startsWith("/events") || pathname.startsWith("/our-teams") || pathname.startsWith("/thanks") ||  pathname.startsWith("/member-registration")) {
     brandByRoute = "secondary-purple"; 
   } else {
     brandByRoute = ""; // default
