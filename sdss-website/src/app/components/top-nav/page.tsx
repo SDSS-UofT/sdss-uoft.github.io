@@ -14,7 +14,7 @@ const TopNavbar = () => {
   if (pathname === "/") {
     brandByRoute = "text-white";
   } else if (pathname.startsWith("/events") || pathname.startsWith("/our-teams") || pathname.startsWith("/thanks") ||  pathname.startsWith("/newsletter")) {
-    brandByRoute = "secondary-purple"; // your purple
+    brandByRoute = "secondary-purple"; 
   } else {
     brandByRoute = ""; // default
   }
@@ -85,11 +85,11 @@ const TopNavbar = () => {
               </li>
               <li>
                 <Link
-                  href="/newsletter" 
+                  href="/member-registration" 
                   className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2"
                   style={{ textTransform: 'none' }}
                 >
-                  Newsletter
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -134,8 +134,8 @@ const TopNavbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/newsletter" passHref onClick={toggleMenu}>
-                    Newsletter
+                  <Link href="/member-registration" passHref onClick={toggleMenu}>
+                    Sign Up
                   </Link>
                 </li>
               </ul>
