@@ -89,7 +89,7 @@ const TopNavbar = () => {
                   className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2"
                   style={{ textTransform: 'none' }}
                 >
-                  Sign Up
+                  Membership
                 </Link>
               </li>
             </ul>
@@ -135,7 +135,7 @@ const TopNavbar = () => {
                 </li>
                 <li>
                   <Link href="/member-registration" passHref onClick={toggleMenu}>
-                    Sign Up
+                    Membership
                   </Link>
                 </li>
               </ul>
