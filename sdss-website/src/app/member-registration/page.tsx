@@ -248,7 +248,7 @@ export default function MemberRegistration() {
               {/* Specify Events */}
               <div className="space-y-2">
                 <label htmlFor="eventsSpecify" className="block text-base font-medium text-gray-900">
-                  If you chose 'Other', please specify
+                  If you chose &apos;Other&apos;, please specify
                 </label>
                 <textarea
                   id="eventsSpecify"
