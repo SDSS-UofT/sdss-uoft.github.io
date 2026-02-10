@@ -13,7 +13,7 @@ const TopNavbar = () => {
   let brandByRoute = "";
   if (pathname === "/") {
     brandByRoute = "text-white";
-  } else if (pathname.startsWith("/events") || pathname.startsWith("/our-teams") || pathname.startsWith("/thanks") ||  pathname.startsWith("/member-registration")) {
+  } else if (pathname.startsWith("/events") || pathname.startsWith("/our-teams") || pathname.startsWith("/thanks") ||  pathname.startsWith("/member-registration") || pathname.startsWith("/newsletter") ) {
     brandByRoute = "secondary-purple"; 
   } else {
     brandByRoute = ""; // default
@@ -92,6 +92,15 @@ const TopNavbar = () => {
                   Membership
                 </Link>
               </li>
+              <li>
+              <Link
+                  href="/newsletter" 
+                  className="btn bg-white border-none secondary-purple meet-teams-button hover:text-white rounded-full lg:px-4 py-2"
+                  style={{ textTransform: 'none' }}
+                >
+                  Newsletter
+                </Link>
+              </li>
             </ul>
 
             <button className="md:hidden focus:outline-none" onClick={toggleMenu} aria-label="Toggle navigation">
@@ -136,6 +145,11 @@ const TopNavbar = () => {
                 <li>
                   <Link href="/member-registration" passHref onClick={toggleMenu}>
                     Membership
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/newsletter" passHref onClick={toggleMenu}>
+                    Newsletter
                   </Link>
                 </li>
               </ul>
