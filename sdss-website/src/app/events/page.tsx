@@ -5,11 +5,11 @@ type EventData = React.ComponentProps<typeof Card>;
 
 const upcoming: EventData[] = [
   {
-    title: "SDSS Alumni Night",
-    date: "Nov 21, 2025 • 6–9 PM",
-    location: "UTSU Room B100, UTSG",
-    description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community.",
-    signup: { url: "/events/alumni/signup", label: "Register", newTab: true },
+    title: "Medical Imaging with CNN Workshop",
+    date: "March 4th, 2026 • 2:30–4:30 PM",
+    location: "SK 548, 246 Bloor St",
+    description: "Join us for a beginner-friendly workshop on medical image classification, where you’ll explore image data, build a CNN model, and learn how to interpret key performance metrics led by Professor Tyrrell.",
+    signup: { url: "/events/med-image/signup", label: "Register", newTab: true },
   },
 ];
 
@@ -38,6 +38,12 @@ const past: EventData[] = [
     date: "Nov 20, 2025 • 5:30–7 PM",
     location: "700 University Avenue, 10th floor. UTSG",
     description: "Join us for SDSS x Stripe to learn how engineering and data work at Stripe and connect directly with Stripe professionals. A great chance to gain insights, ask questions, and build your network in fintech!",
+  },
+  {
+    title: "SDSS Alumni Night",
+    date: "Nov 21, 2025 • 6–9 PM",
+    location: "UTSU Room B100, UTSG",
+    description: "Join us for an evening of connection, mentorship, and inspiring stories from our alumni in Statistics and Data Science community.",
   },
 ];
 

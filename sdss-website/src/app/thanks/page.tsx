@@ -10,7 +10,7 @@ export default function Thanks() {
         <p className="mt-3 text-[#4e4d76]/80">
          We’ve sent a confirmation email and we’ll send a reminder the day before the event.<br /> 
                     
-         <br /> If you don’t see them, please check your junk folder.
+         <br /> If you don’t see them/signed up from your utoronto email, please check your junk folder.
         </p>
 
         <a

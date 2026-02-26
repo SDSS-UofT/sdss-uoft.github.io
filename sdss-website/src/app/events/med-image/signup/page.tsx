@@ -4,8 +4,8 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
-const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ'; // public, safe to commit
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxhv4OP6M_b3T7GOK4dvYfI4-IKn72GU0R7CX_49yCf_8mw6QjQetHCjnSQ24dIF3sY_g/exec'; 
+const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7T9R04VRPc9bxXtrC_aRZgx9cFITKPa03M_DjLPtRu8OeouV3Mo3PxcCUObdYUpPlZg/exec';
 
 export default function Signup() {
   const router = useRouter();
@@ -20,11 +20,8 @@ export default function Signup() {
     try {
       const form = formRef.current!;
       const data = new FormData(form);
-
-      // strict origin hint for backend CORS allow-list
       data.append('__origin__', window.location.origin);
 
-      // reCAPTCHA v3
       // @ts-ignore
       const token = window.grecaptcha
         // @ts-ignore
@@ -32,10 +29,8 @@ export default function Signup() {
         : '';
       data.append('recaptchaToken', token);
 
-      // Fire-and-forget to Apps Script (redirect happens client-side)
       await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: data });
-
-      router.push('/thanks'); // your public thanks page
+      router.push('/thanks');
     } catch (err) {
       console.error(err);
       alert('Something went wrong. Please try again.');
@@ -55,14 +50,12 @@ export default function Signup() {
         </div>
 
         <h1 className="text-2xl font-semibold text-[#4e4d76] text-center">
-          Register for SDSS Alumni Night
+          Register for Medical Imaging with CNN Workshop
         </h1>
 
         <form ref={formRef} className="space-y-4 mt-6" onSubmit={handleSubmit} noValidate>
-          {/* tell server which event key to use (must match EVENTS allow-list) */}
-          <input type="hidden" name="event" value="SDSS Alumni Night" />
+          <input type="hidden" name="event" value="Medical Imaging with CNN Workshop" />
 
-          {/* name*/}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Name</span>
             <input
@@ -74,7 +67,6 @@ export default function Signup() {
             />
           </label>
 
-          {/* email (required) */}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Email</span>
             <input
@@ -87,7 +79,6 @@ export default function Signup() {
             />
           </label>
 
-          {/* year (required) */}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Year</span>
             <select
@@ -98,9 +89,7 @@ export default function Signup() {
               className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-[#373754]
                          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
             >
-              <option value="" disabled>
-                Select year
-              </option>
+              <option value="" disabled>Select year</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -112,7 +101,6 @@ export default function Signup() {
             </select>
           </label>
 
-          {/* major*/}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Major</span>
             <input
@@ -125,7 +113,6 @@ export default function Signup() {
             />
           </label>
 
-          {/* heardFrom (required) — backend also accepts heard_from */}
           <label className="block">
             <span className="text-sm text-[#4e4d76]">How did you hear about this event?</span>
             <select
@@ -136,9 +123,7 @@ export default function Signup() {
               className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-[#373754]
                          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
             >
-              <option value="" disabled>
-                Select an option
-              </option>
+              <option value="" disabled>Select an option</option>
               <option>Instagram</option>
               <option>Discord</option>
               <option>Friend/Classmate</option>
