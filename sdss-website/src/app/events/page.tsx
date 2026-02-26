@@ -48,7 +48,7 @@ const past: EventData[] = [
 
 export default function EventsPage() {
   return (
-    <main className="min-h-screen bg-white pt-20 px-8 md:px-10 lg:px-8 pb-[99px]">
+    <main className="min-h-screen bg-white pt-12 px-8 md:px-10 lg:px-4 pb-[99px]">
       <div className="mx-auto max-w-5xl [&_h1]:!text-left [&_h2]:!text-left">
         <header className="mt-4 mb-4">
           <h1 className="gradient-text text-4xl font-bold">Events</h1>
