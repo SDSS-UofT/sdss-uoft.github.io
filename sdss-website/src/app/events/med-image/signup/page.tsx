@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ';
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7T9R04VRPc9bxXtrC_aRZgx9cFITKPa03M_DjLPtRu8OeouV3Mo3PxcCUObdYUpPlZg/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxhv4OP6M_b3T7GOK4dvYfI4-IKn72GU0R7CX_49yCf_8mw6QjQetHCjnSQ24dIF3sY_g/exec';
 
 export default function Signup() {
   const router = useRouter();
@@ -39,12 +39,12 @@ export default function Signup() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 px-4 pt-28 md:pt-28">
+    <main className="min-h-screen bg-white px-4 pt-6 md:pt-8">
       <Script
         src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
         strategy="afterInteractive"
       />
-      <div className="mx-auto max-w-md bg-white/90 p-6 rounded-2xl shadow-lg">
+      <div className="mx-auto max-w-md bg-white p-6 rounded-2xl shadow-lg">
         <div className="w-full flex justify-center mb-3">
           <img src="/sdss-icon-top.png" alt="SDSS" width={64} height={64} className="h-16 w-16" />
         </div>

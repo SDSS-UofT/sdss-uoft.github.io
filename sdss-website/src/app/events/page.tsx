@@ -8,7 +8,7 @@ const upcoming: EventData[] = [
     title: "Medical Imaging with CNN Workshop",
     date: "March 4th, 2026 • 2:30–4:30 PM",
     location: "SK 548, 246 Bloor St",
-    description: "Join us for a beginner-friendly workshop on medical image classification, where you’ll explore image data, build a CNN model, and learn how to interpret key performance metrics led by Professor Tyrrell.",
+    description: "Join us for a beginner-friendly workshop on medical image classification, where you'll explore image data, build a CNN model, and learn how to interpret key performance metrics led by Professor Tyrrell.",
     signup: { url: "/events/med-image/signup", label: "Register", newTab: true },
   },
 ];
@@ -24,8 +24,7 @@ const past: EventData[] = [
     title: "Introduction to Python in Data Science",
     date: "Oct 6, 2025",
     location: "SS 1074, UTSG",
-    description:
-      "Build a data science project from start to finish using common libraries and skills in the industry!",
+    description: "Build a data science project from start to finish using common libraries and skills in the industry!",
   },
   {
     title: "Careers in Data!",
@@ -49,12 +48,9 @@ const past: EventData[] = [
 
 export default function EventsPage() {
   return (
-    // Keep some top padding so the fixed nav doesn't crowd; adjust if needed
-    <main className="min-h-screen bg-gray-50 pt-28 md:pt-24 px-8 md:px-10 lg:px-8 pb-[99px]">
-      {/* Force h1/h2 left just in case some parent centers text */}
+    <main className="min-h-screen bg-white pt-20 px-8 md:px-10 lg:px-8 pb-[99px]">
       <div className="mx-auto max-w-5xl [&_h1]:!text-left [&_h2]:!text-left">
-        {/* Extra space from the navbar to the title */}
-        <header className="mt-8 mb-6">
+        <header className="mt-4 mb-4">
           <h1 className="gradient-text text-4xl font-bold">Events</h1>
         </header>
 
@@ -62,13 +58,9 @@ export default function EventsPage() {
           <h2 className="gradient-text text-2xl font-semibold tracking-tight scroll-mt-12">
             Upcoming Events
           </h2>
-
           {upcoming.length === 0 ? (
-            <p className="text-gray-600 mt-1">
-              No upcoming events right now — check back soon!
-            </p>
+            <p className="text-gray-600 mt-1">No upcoming events right now — check back soon!</p>
           ) : (
-            // Bottom margin under the event cards
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 mt-1 mb-12">
               {upcoming.map((ev) => (
                 <Card key={ev.title} {...ev} />
@@ -77,15 +69,13 @@ export default function EventsPage() {
           )}
         </section>
 
-        <section id="past" className="mt-6">
+        <section id="past" className="mt-4">
           <h2 className="gradient-text text-2xl font-semibold tracking-tight scroll-mt-12">
             Past Events
           </h2>
-
           {past.length === 0 ? (
             <p className="text-gray-600 mt-1">No past events yet.</p>
           ) : (
-            // Bottom margin under the event cards
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 mt-1 mb-12">
               {past.map((ev) => (
                 <Card key={ev.title} {...ev} />
