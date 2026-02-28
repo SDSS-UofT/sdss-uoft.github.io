@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ';
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxhv4OP6M_b3T7GOK4dvYfI4-IKn72GU0R7CX_49yCf_8mw6QjQetHCjnSQ24dIF3sY_g/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7e9psPbR7nt2Twm4rO4tgLdeS79OQJz3Yk8RlFI2szzvhOeRI2laWh99UsoWXLir6nA/exec';
 
 export default function Signup() {
   const router = useRouter();
@@ -29,7 +29,15 @@ export default function Signup() {
         : '';
       data.append('recaptchaToken', token);
 
-      await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: data });
+      // Build query string — Apps Script reads e.parameter from GET reliably
+      const params = new URLSearchParams();
+      data.forEach((value, key) => params.append(key, value as string));
+
+      await fetch(`${SCRIPT_URL}?${params.toString()}`, {
+        method: 'GET',
+        mode: 'no-cors',
+      });
+
       router.push('/thanks');
     } catch (err) {
       console.error(err);
