@@ -29,7 +29,6 @@ export default function Signup() {
         : '';
       data.append('recaptchaToken', token);
 
-      // Build query string — Apps Script reads e.parameter from GET reliably
       const params = new URLSearchParams();
       data.forEach((value, key) => params.append(key, value as string));
 
@@ -58,11 +57,12 @@ export default function Signup() {
         </div>
 
         <h1 className="text-2xl font-semibold text-[#4e4d76] text-center">
-          Register for Medical Imaging with CNN Workshop
+          Register for Resume Review &amp; Interview Tips
         </h1>
+        <p className="text-center text-sm text-gray-500 mt-1">March 13th, 2026 • 5–7 PM • WB130</p>
 
         <form ref={formRef} className="space-y-4 mt-6" onSubmit={handleSubmit} noValidate>
-          <input type="hidden" name="event" value="Medical Imaging with CNN Workshop" />
+          <input type="hidden" name="event" value="Resume Review & Interview Tips" />
 
           <label className="block">
             <span className="text-sm text-[#4e4d76]">Name</span>
@@ -110,21 +110,22 @@ export default function Signup() {
           </label>
 
           <label className="block">
-            <span className="text-sm text-[#4e4d76]">Major</span>
+            <span className="text-sm text-[#4e4d76]">Program</span>
             <input
-              name="major"
+              name="program"
               type="text"
+              required
               disabled={submitting}
-              placeholder="e.g., Computer Science, Statistics"
+              placeholder="e.g., Statistics, Computer Science"
               className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-[#373754]
                          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
             />
           </label>
 
           <label className="block">
-            <span className="text-sm text-[#4e4d76]">How did you hear about this event?</span>
+            <span className="text-sm text-[#4e4d76]">Summer Internship Status</span>
             <select
-              name="heardFrom"
+              name="internshipStatus"
               required
               disabled={submitting}
               defaultValue=""
@@ -132,14 +133,22 @@ export default function Signup() {
                          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
             >
               <option value="" disabled>Select an option</option>
-              <option>Instagram</option>
-              <option>Discord</option>
-              <option>Friend/Classmate</option>
-              <option>Professor/Department</option>
-              <option>Email Newsletter</option>
-              <option>Booth/Tabling</option>
-              <option>Other</option>
+              <option value="Looking for a summer internship">Looking for a summer internship</option>
+              <option value="Already have a summer internship">Already have a summer internship</option>
+              <option value="None of the above">None of the above</option>
             </select>
+          </label>
+
+          <label className="block">
+            <span className="text-sm text-[#4e4d76]">Dietary Restrictions</span>
+            <input
+              name="dietaryRestrictions"
+              type="text"
+              disabled={submitting}
+              placeholder="e.g., Vegetarian, Gluten-free, None"
+              className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-[#373754]
+                         focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+            />
           </label>
 
           <button
