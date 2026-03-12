@@ -26,7 +26,6 @@ const past: EventData[] = [
     date: "March 4th, 2026 • 2:30–4:30 PM",
     location: "SK 548, 246 Bloor St",
     description: "Join us for a beginner-friendly workshop on medical image classification, where you'll explore image data, build a CNN model, and learn how to interpret key performance metrics led by Professor Tyrrell.",
-    signup: { url: "/events/med-image/signup", label: "Register", newTab: true },
   },
   {
     title: "SQL Workshop: Real-World Data Applications!",
