@@ -4,17 +4,17 @@ import Card from "@/app/components/event-card/event";
 type EventData = React.ComponentProps<typeof Card>;
 
 const upcoming: EventData[] = [
-  {
+  /*{
     title: "Resume Review & Interview Tips",
     date: "March 13th, 2026 • 5–7 PM",
     location: "WB130",
     description: "The SDSS Professional Development Team is hosting a Resume Review & Interview Tips event where UofT students with internship experience will share advice on resumes, recruiting, and interviews, followed by individual resume feedback and networking opportunities for attendees.",
     signup: { url: "/events/resume-review/signup", label: "Register", newTab: true },
-  },
+  },*/
   {
     title: "Building and Interpreting ML",
     date: "March 20th, 2026 • 7–9 PM",
-    location: "TBD",
+    location: "SS1083",
     description: "Register to learn how to build and interpret a full end-to-end data science pipeline with Yuqi Chen (Machine Learning Engineer at Layer 6 AI, TD), with a focus on applying and understanding GLM models (Poisson and Gamma) commonly used in real-world industry applications",
     signup: { url: "/events/build-ml/signup", label: "Register", newTab: true },
   },

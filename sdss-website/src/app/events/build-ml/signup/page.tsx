@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 
 const RECAPTCHA_SITE_KEY = '6LcWD_ArAAAAANUpVPBzuYam2n6vZ4Knvm0iZ-AQ';
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbysmDNDoAaqfI5_uTLzbjm5u5KR4shj1YnB42j_gwG78alguWmP4LB2ZhY2TmuaYTeqgQ/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzGOg82myM5jws1DSk00HB2mWMVLOo7k3j9qbFQMS0SSqbVQt3XXkQkxUTGazNjTXO3KQ/exec';
 
 export default function Signup() {
   const router = useRouter();
@@ -59,7 +59,7 @@ export default function Signup() {
         <h1 className="text-2xl font-semibold text-[#4e4d76] text-center">
           Register for Building and Interpreting ML
         </h1>
-        <p className="text-center text-sm text-gray-500 mt-1">March 20th, 2026 • 7–9 PM • TBD</p>
+        <p className="text-center text-sm text-gray-500 mt-1">March 20th, 2026 • 7–9 PM • SS1083</p>
 
         <form ref={formRef} className="space-y-4 mt-6" onSubmit={handleSubmit} noValidate>
           <input type="hidden" name="event" value="Building and Interpreting ML" />
