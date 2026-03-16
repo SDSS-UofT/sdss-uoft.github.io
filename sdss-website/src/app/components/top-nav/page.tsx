@@ -25,7 +25,7 @@ const TopNavbar = () => {
         className={`w-full h-20 top-0 ${
           isOpen
             ? "bg-dark-purple"
-            : pathname.startsWith("/events")
+            : pathname.startsWith("/events") || pathname.startsWith("/thanks") 
             ? "lg:bg-white bg-dark-purple bg-opacity-10"
             : "lg:bg-transparent lg:backdrop-blue-none bg-dark-purple bg-opacity-10"
         } transition-colors duration-300`}
