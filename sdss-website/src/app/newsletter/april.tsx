@@ -183,11 +183,10 @@ export default function AprilNewsletter() {
           What{"'"}s Next?
         </h3>
         <p className="text-foreground leading-relaxed">
-          The best is still ahead. Exec recruiting for next year is starting
-          soon — if you{"'"}ve ever wanted to be part of the team that makes all
+          The best is still ahead. The general membership application is going to be released in September. Furthermore, exec recruiting for next year is starting
+          soon — so if you{"'"}ve ever wanted to be part of the team that makes all
           of this happen, now{"'"}s your moment. Stay tuned on our socials for
-          applications, timelines, and everything you need to join the SDSS exec
-          team in 2026–27!
+          applications, timelines, and everything you need to join SDSS in 2026–27!
         </p>
       </div>
 
