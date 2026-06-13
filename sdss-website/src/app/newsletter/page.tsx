@@ -3,6 +3,7 @@
 import { type ReactNode, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import JanuaryNewsletter from "./january"
+import AprilNewsletter from "./april"
 
 interface Newsletter {
   month: string
@@ -17,22 +18,10 @@ const newsletters: Newsletter[] = [
     content: <JanuaryNewsletter />,
   },
   {
-    month: "February 2026",
-    id: "february-2026",
-    content: (
-      <p className="px-4 pb-6 text-muted-foreground">
-        Stay tuned for the February newsletter!
-      </p>
-    ),
-  },
-  {
-    month: "March 2026",
-    id: "march-2026",
-    content: (
-      <p className="px-4 pb-6 text-muted-foreground">
-        Stay tuned for the March newsletter!
-      </p>
-    ),
+    month: "April 2026",
+    id: "april-2026",
+    content: 
+        <AprilNewsletter />
   },
 ]
 
