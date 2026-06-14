@@ -81,7 +81,7 @@ export default function AprilNewsletter() {
       {/* First Semester */}
       <div className="space-y-3">
         <h3 className="text-lg font-semibold text-foreground">
-          First Semester Highlights
+          Fall Semester Highlights
         </h3>
         <div className="space-y-4">
           <EventCard
@@ -138,7 +138,7 @@ export default function AprilNewsletter() {
       {/* Second Semester */}
       <div className="space-y-3">
         <h3 className="text-lg font-semibold text-foreground">
-          Second Semester Highlights
+          Winter Semester Highlights
         </h3>
         <div className="space-y-4">
           <EventCard
