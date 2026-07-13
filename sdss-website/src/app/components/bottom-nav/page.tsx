@@ -35,7 +35,7 @@ const BottomNav = () => (
                 </Link>
               </li>
               <li>
-                <Link className="body-regular text-[#6b5ca7] hover:underline" href="https://www.linkedin.com/company/sdssuoft" target="_blank" rel="noopener noreferrer">
+                <Link className="body-regular text-[#6b5ca7] hover:underline" href="https://www.linkedin.com/company/students-in-data-science-and-statistics-sdss-uoft" target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </Link>
               </li>
