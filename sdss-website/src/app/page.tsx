@@ -87,8 +87,8 @@ export default function Home() {
             <div className="flex flex-row space-x-10 items-center">
               <img className="object-contain h-20" src="/consulting-icon.png" alt="About Us" />
               <div className="flex flex-col space-y-2 mt-6 mb-6">
-                <div className="body-regular purple">03 CONSULTING</div>
-                <div className="body-regular black">Our Consulting Team works on real-world data science and statistics projects for non-profit organizations and businesses.</div>
+                <div className="body-regular purple">03 MENTORSHIP</div>
+                <div className="body-regular black">Our Mentorship Team pairs students with upper year mentors to help guide them in their academic and professional careers.</div>
               </div>
             </div>
 

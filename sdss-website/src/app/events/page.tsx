@@ -11,6 +11,9 @@ const upcoming: EventData[] = [
     description: "The SDSS Professional Development Team is hosting a Resume Review & Interview Tips event where UofT students with internship experience will share advice on resumes, recruiting, and interviews, followed by individual resume feedback and networking opportunities for attendees.",
     signup: { url: "/events/resume-review/signup", label: "Register", newTab: true },
   },*/
+];
+
+const past: EventData[] = [
   {
     title: "Building and Interpreting ML",
     date: "March 20th, 2026 • 7–9 PM",
@@ -18,9 +21,6 @@ const upcoming: EventData[] = [
     description: "Register to learn how to build and interpret a full end-to-end data science pipeline with Yuqi Chen (Machine Learning Engineer at Layer 6 AI, TD), with a focus on applying and understanding GLM models (Poisson and Gamma) commonly used in real-world industry applications",
     signup: { url: "/events/build-ml/signup", label: "Register", newTab: true },
   },
-];
-
-const past: EventData[] = [
   {
     title: "Medical Imaging with CNN Workshop",
     date: "March 4th, 2026 • 2:30–4:30 PM",
