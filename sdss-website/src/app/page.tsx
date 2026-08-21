@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { eventData } from "./data/events";
 import EventCarousel from "./components/event-carousel/event-carousel";
-import { usePathname } from 'next/navigation';
 
 // import { Key } from "react";
 

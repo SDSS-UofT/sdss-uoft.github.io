@@ -3,8 +3,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import TopNavbar from "./components/top-nav/page";
-import BottomNav from "./components/bottom-nav/page";
+import TopNavbar from "./components/top-nav/top-nav";
+import BottomNav from "./components/bottom-nav/bottom-nav";
 import { usePathname } from 'next/navigation';
 
 
