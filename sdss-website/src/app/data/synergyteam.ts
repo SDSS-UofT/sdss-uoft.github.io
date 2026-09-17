@@ -15,7 +15,7 @@ export const synergyTeamData =
     "role": "Director of Synergy Outreach",
     "year": "4th Year",
     "program": "Statistics & Economics",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/feed/",
     "pfp": "pfps-2026-2027/doris_yang.jpg",
   }, 
   {

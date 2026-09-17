@@ -33,39 +33,7 @@ export const financeTeamData =
         "role": "Finance Director",
         "year": "2nd Year",
         "program": "Rotman Commerce (Finance and Economics)",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/feed/",
         "pfp": "pfps-2026-2027/rut_manurung.jpg",
     },
 ]
-
-// 2024 - 2025 TEAM DATA:
-// export const financeTeamData =
-// [
-//     {
-//         "id": 0,
-//         "name": "Tim Koukarine",
-//         "role": "VP of Finance",
-//         "year": "4th year",
-//         "program": "Finance & Economics Specialist",
-//         "linkedin": "",
-//         "pfp": "pfps/timk.png",
-//     },
-//     {
-//         "id": 1,
-//         "name": "Shirley Chen",
-//         "role": "Co-Director of Partnerships",
-//         "year": "4th year",
-//         "program": "Bachelor of Information",
-//         "linkedin": "",
-//         "pfp": "pfps/shirleyc.png",
-//     },
-//     {
-//         "id": 2,
-//         "name": "Annabelle Topas",
-//         "role": "Co-Director of Partnerships",
-//         "year": "3rd year",
-//         "program": "Industrial Engineering",
-//         "linkedin": "",
-//         "pfp": "pfps/annabellet.png",
-//     }
-// ]
