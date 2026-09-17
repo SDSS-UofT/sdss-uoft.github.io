@@ -31,7 +31,7 @@ const TopNavbar = () => {
         } transition-colors duration-300`}
       >
         <div className="container lg:mx-20 px-4 h-full">
-          <div className="flex justify-between items-center h-full">
+          <div className="flex justify-between items-left h-full items-center">
             <Link href="/" passHref className="flex flex-row gap-x-2 items-center">
               <img className="w-10 object-contain" src="/sdss-icon-bottom.png" alt="SDSS Logo" />
 
@@ -42,7 +42,7 @@ const TopNavbar = () => {
               <div className={`body-large hidden md:block ${brandByRoute}`}>SDSS</div>
             </Link>
 
-            <ul className="hidden md:flex lg:gap-x-6 body-regular">
+            <ul className="hidden md:flex lg:flex justify-end max-w-full gap-x-6 body-regular">
               <li>
                 <Link
                   href="/"
