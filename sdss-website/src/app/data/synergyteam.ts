@@ -3,7 +3,7 @@ export const synergyTeamData =
   {
     "id": 0,
     "name": "Nikita Jain",
-    "role": "Vice President of Synergy",
+    "role": "Vice President of Synergy Mentorship",
     "year": "4th Year",
     "program": "Economics, Statistics & Mathematics",
     "linkedin": "https://www.linkedin.com/in/nikita05/",
@@ -15,7 +15,7 @@ export const synergyTeamData =
     "role": "Director of Synergy Outreach",
     "year": "4th Year",
     "program": "Statistics & Economics",
-    "linkedin": "https://www.linkedin.com/feed/",
+    "linkedin": "https://www.linkedin.com/in/doris-yang-4665a5309/",
     "pfp": "pfps-2026-2027/doris_yang.jpg",
   }, 
   {

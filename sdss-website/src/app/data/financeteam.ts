@@ -33,7 +33,7 @@ export const financeTeamData =
         "role": "Finance Director",
         "year": "2nd Year",
         "program": "Rotman Commerce (Finance and Economics)",
-        "linkedin": "https://www.linkedin.com/feed/",
+        "linkedin": "https://www.linkedin.com/in/rutmanurung/",
         "pfp": "pfps-2026-2027/rut_manurung.jpg",
     },
 ]

@@ -60,8 +60,8 @@ export const marketingTeamData =
         "role": "Graphic Designer",
         "year": "2nd Year",
         "program": "Pharmacology, Health and Disease & Data Science",
-        "linkedin": "https://www.linkedin.com/feed/",
-        "pfp": "pfps-2026-2027/default_icon.jpg",
+        "linkedin": "https://www.linkedin.com/in/hillary-bongso-147096245/",
+        "pfp": "pfps-2026-2027/hillary_bongso.jpg",
     },
     {
         "id": 7,
