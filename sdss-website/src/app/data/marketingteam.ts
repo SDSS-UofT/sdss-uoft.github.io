@@ -33,7 +33,7 @@ export const marketingTeamData =
         "role": "Graphic Designer",
         "year": "3rd Year",
         "program": "Economics, Statistics & Mathematics",
-        "linkedin": "https://www.linkedin.com/feed/",
+        "linkedin": "https://www.linkedin.com/in/hyewonerinyoon/",
         "pfp": "pfps-2026-2027/erin_yoon.jpg",
     },
     {

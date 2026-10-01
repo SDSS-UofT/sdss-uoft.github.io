@@ -14,7 +14,7 @@ export const presidentData =
         "id": 1,
         "name": "Yolanda Thant",
         "role": "Co-President",
-        "year": "3th Year",
+        "year": "3rd Year",
         "program": "Computer Science & Statistics",
         "linkedin": "https://www.linkedin.com/in/yolandathant/",
         "pfp": "pfps-2026-2027/yolanda_thant.jpg",
