@@ -31,7 +31,7 @@ const TopNavbar = () => {
         } transition-colors duration-300`}
       >
         <div className="container lg:mx-1 px-4 h-full">
-          <div className="flex justify-between items-left h-full items-center">
+          <div className="flex justify-between h-full items-center">
             <Link href="/" passHref className="flex flex-row gap-x-2 items-center">
               <img className="w-10 object-contain" src="/sdss-icon-bottom.png" alt="SDSS Logo" />
 

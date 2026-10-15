@@ -4,13 +4,21 @@ import Card from "@/app/components/event-card/event";
 type EventData = React.ComponentProps<typeof Card>;
 
 const upcoming: EventData[] = [
+  // event template
   /*{
-    title: "Resume Review & Interview Tips",
-    date: "March 13th, 2026 • 5–7 PM",
-    location: "WB130",
-    description: "The SDSS Professional Development Team is hosting a Resume Review & Interview Tips event where UofT students with internship experience will share advice on resumes, recruiting, and interviews, followed by individual resume feedback and networking opportunities for attendees.",
-    signup: { url: "/events/resume-review/signup", label: "Register", newTab: true },
+    title: "TITLE",
+    date: "DATE",
+    location: "LOCATION",
+    description: "DESCRIPTION",
+    signup: { url: "URL", label: "Register", newTab: true },
   },*/
+  {
+    title: "Data Careers, Decoded: An SDSS Alumni Panel",
+    date: "Wednesday, October 21 | 5:30 - 7:30 pm",
+    location: "SS2127, Sidney Smith Hall, 100 St George St",
+    description: "Wondering how to get your first data internship or co-op? Tired of applying and hearing nothing back? Come hear how four U of T alumni made the jump into data, and what actually worked on their resumes and in their interviews.",
+    signup: { url: "https://forms.gle/iwbWVz36aKeXzDuF7", label: "Register", newTab: true },
+  }
 ];
 
 const past: EventData[] = [
@@ -19,7 +27,6 @@ const past: EventData[] = [
     date: "March 20th, 2026 • 7–9 PM",
     location: "SS1083",
     description: "Register to learn how to build and interpret a full end-to-end data science pipeline with Yuqi Chen (Machine Learning Engineer at Layer 6 AI, TD), with a focus on applying and understanding GLM models (Poisson and Gamma) commonly used in real-world industry applications",
-    signup: { url: "/events/build-ml/signup", label: "Register", newTab: true },
   },
   {
     title: "Medical Imaging with CNN Workshop",
