@@ -69,8 +69,8 @@ export const marketingTeamData =
         "role": "Graphic Designer",
         "year": "2nd Year",
         "program": "Mathematics",
-        "linkedin": "https://www.linkedin.com/in/anaya-chaudhry-584bb81a5/",
-        "pfp": "pfps-2026-2027/anaya_chaudhry.jpg",
+        "linkedin": "www.linkedin.com/in/anaya-chaudhry-1a9a3836a",
+        "pfp": "pfps-2026-2027/default_icon.jpg",
     },
     {
         "id": 8,
