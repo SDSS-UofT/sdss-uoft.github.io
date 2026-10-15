@@ -1,7 +1,6 @@
 import { presidentData } from "../data/presidents";
 import { marketingTeamData } from "../data/marketingteam";
 import { datathonTeamData } from "../data/datathonteam";
-import { consultingTeamData } from "../data/consultingteam";
 import { financeTeamData } from "../data/financeteam";
 import { profDevTeamData } from "../data/profdevteam";
 import { acaDevTeamData } from "../data/acadevteam";
