@@ -19,7 +19,6 @@ const past: EventData[] = [
     date: "March 20th, 2026 • 7–9 PM",
     location: "SS1083",
     description: "Register to learn how to build and interpret a full end-to-end data science pipeline with Yuqi Chen (Machine Learning Engineer at Layer 6 AI, TD), with a focus on applying and understanding GLM models (Poisson and Gamma) commonly used in real-world industry applications",
-    signup: { url: "/events/build-ml/signup", label: "Register", newTab: true },
   },
   {
     title: "Medical Imaging with CNN Workshop",
