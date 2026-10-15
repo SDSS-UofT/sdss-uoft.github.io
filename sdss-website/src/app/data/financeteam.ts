@@ -20,7 +20,7 @@ export const financeTeamData =
     },
     {
         "id": 2,
-        "name": "Chei Soedharmo",
+        "name": "Cherie Soedharmo",
         "role": "Finance Director",
         "year": "2nd Year",
         "program": "Economics",
