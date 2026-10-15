@@ -51,7 +51,7 @@ export const marketingTeamData =
         "role": "Graphic Designer",
         "year": "3rd Year",
         "program": "Economics, Statistics & Mathematics",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/hyewonerinyoon/",
         "pfp": "pfps-2026-2027/erin_yoon.jpg",
     },
     {
@@ -78,7 +78,7 @@ export const marketingTeamData =
         "role": "Graphic Designer",
         "year": "2nd Year",
         "program": "Pharmacology, Health and Disease & Data Science",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/hillary-bongso-147096245/",
         "pfp": "pfps-2026-2027/default_icon.jpg",
     },
 ]
