@@ -20,7 +20,7 @@ const nextConfig = {
                 source:'/(.*)',
                 headers: [
                     {
-                        key: 'X-Content Type Options',
+                        key: 'X-Content-Type-Options',
                         value: 'nosniff',
                     }
                 ]
