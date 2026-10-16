@@ -21,7 +21,7 @@ export const synergyTeamData =
   {
     "id": 2,
     "name": "Mariana Garcia Mejia",
-    "role": "Mentorship Outreach",
+    "role": "Mentorship Outreach Director",
     "year": "4th Year",
     "program": "Economics & Statistics",
     "linkedin": "https://www.linkedin.com/in/marianagarciamejia/",
@@ -30,7 +30,7 @@ export const synergyTeamData =
   {
     "id": 3,
     "name": "Hina Huang",
-    "role": "Mentorship Outreach",
+    "role": "Mentorship Outreach Director",
     "year": "3th Year",
     "program": "Global Health & Physiology",
     "linkedin": "https://www.linkedin.com/in/hina-huang-0602a5351/",
