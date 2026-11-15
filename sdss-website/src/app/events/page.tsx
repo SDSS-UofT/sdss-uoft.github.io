@@ -12,6 +12,13 @@ const upcoming: EventData[] = [
     description: "DESCRIPTION",
     signup: { url: "URL", label: "Register", newTab: true },
   },*/
+  {
+    title: "SDSS Research Pathways: Breaking Into Research",
+    date: "Thursday, November 19 | 6:00–8:00 PM",
+    location: "700 University Ave, Room 9014",
+    description: " Curious about research but not sure where to start? Hear from UofT faculty, researchers, and PhD students as they share how they got started in research, what grad school is really like, and the unconventional paths that led them here!",
+    signup: { url: "https://docs.google.com/forms/d/e/1FAIpQLSeBqGs9bGYfjevbBl-U3Iugvf8uEPvjhuCY9Ef2tMaIZMARLA/viewform", label: "Register", newTab: true },
+  },
 ];
 
 const past: EventData[] = [
